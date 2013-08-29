@@ -1,15 +1,14 @@
 var a00069 =
 [
-    [ "parentType_t", "a00069.html#ac3331e7746ea38a799a09fb68c0e057e", null ],
-    [ "ProductShPtr_t", "a00069.html#a7ed381024c39ddaa1123e0fa5e1488dd", null ],
-    [ "Product", "a00069.html#ab76dde7e852516b81cdb7d78a621596b", null ],
-    [ "~Product", "a00069.html#ac478e0d0632fa9805cc730e7bb6d53f4", null ],
-    [ "impl_compute", "a00069.html#a1fe52fe6b41395a945041a963a04f776", null ],
-    [ "impl_gradient", "a00069.html#a1687e2909c2f831addbed902e9b93400", null ],
-    [ "impl_jacobian", "a00069.html#afd57a699eb59e001795debaf9d7c864d", null ],
-    [ "left", "a00069.html#a641399a2f1b6c3abd60c605dd0d537d8", null ],
-    [ "left", "a00069.html#aa9df8d10e508914ed7714d047e73e68d", null ],
-    [ "right", "a00069.html#a2a04bb5774afd196984863548dd7be56", null ],
-    [ "right", "a00069.html#a5ae21a63e263c7c94d40762eafc3f047", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00069.html#a8aedb5c3a59794247402eaef608e1ed6", null ]
+    [ "hessian_t", "a00069.html#a88566ea169ba77a2c2b9caf939c12cd1", null ],
+    [ "hessianSize_t", "a00069.html#a8eb36050555e77e94717556bc0bf8d20", null ],
+    [ "GenericTwiceDifferentiableFunction", "a00069.html#af01b4e2ebb1119493337e12c105128c2", null ],
+    [ "hessian", "a00069.html#a7ab6bda5039008fb215ab24ecacd85a2", null ],
+    [ "hessian", "a00069.html#a62c40461536ac03d4c457f8681f8c2b3", null ],
+    [ "hessianSize", "a00069.html#ab88c89f971c0354c165165849b03c1f0", null ],
+    [ "impl_hessian", "a00069.html#ac5b5430ab527d7de393f876f4db314c2", null ],
+    [ "isValidHessian", "a00069.html#a1817e181cfbd18d6ffd6002c98763e6a", null ],
+    [ "print", "a00069.html#a78bf9018548e92c38803bbd0b39ef29a", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00069.html#ae1dfb2289bce927983df0ba0ecd3bf6f", null ],
+    [ "setZero", "a00069.html#a042286a811a4ec9b79c9d2c34f8e63c0", null ]
 ];

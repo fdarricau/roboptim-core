@@ -1,13 +1,15 @@
 var a00076 =
 [
-    [ "parentType_t", "a00076.html#a6802dfd6761714f83c4dbbe5f9bcef19", null ],
-    [ "SelectionShPtr_t", "a00076.html#a5cf29c8b2e9a95cf3553d7f21bb1ee83", null ],
-    [ "Selection", "a00076.html#a0dddb1c4cdb30e96e2ca952a63d49831", null ],
-    [ "~Selection", "a00076.html#a2f5c18b892a2c6e4d6d1f30561334d4e", null ],
-    [ "impl_compute", "a00076.html#a36ebb4a5335d3265e7678344aaacfcb7", null ],
-    [ "impl_gradient", "a00076.html#ae8b19b2db91de830c6d7d5081fb7c6bf", null ],
-    [ "impl_jacobian", "a00076.html#ae1860cce95830c0ed620aa241e891a24", null ],
-    [ "origin", "a00076.html#a5e3e5098b2fe6dd32b773d06ba3de648", null ],
-    [ "origin", "a00076.html#a0cbd7cc3ecf575d338b16306ea1b4646", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00076.html#a224033bde371676be065a7c89fba3d77", null ]
+    [ "~Matplotlib", "a00076.html#ad30ddac4c701f3857324dc1723bd431b", null ],
+    [ "Matplotlib", "a00076.html#a1d2873b927c952d8d71934c9507c1001", null ],
+    [ "clear", "a00076.html#ab74d871b72839dedd30f30877d05f960", null ],
+    [ "make_matplotlib", "a00076.html#a05c08fa46fa302274df29d1a680c92a9", null ],
+    [ "operator<<", "a00076.html#a64f59a4876bebeaebfa909fa087d881c", null ],
+    [ "operator<<", "a00076.html#add7be32075c5232ef70ac302c6483ee7", null ],
+    [ "print", "a00076.html#a565123c4086afdec4934dfd78aa5e6dc", null ],
+    [ "push_command", "a00076.html#aa2dde9d00c39af15e221bc2e4545a514", null ],
+    [ "push_import", "a00076.html#af77130e3b6b8f68dd95adc5e09daa51d", null ],
+    [ "resetImports", "a00076.html#ab6d4daa910500975a1805b340fa82c33", null ],
+    [ "withHeader", "a00076.html#a02fc7712b24296ca6da6f5c7b15a4a5c", null ],
+    [ "withHeader", "a00076.html#a59afeebf5cc92b39b8dd53a05ad05c9f", null ]
 ];

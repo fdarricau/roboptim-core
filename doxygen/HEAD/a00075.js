@@ -1,13 +1,13 @@
 var a00075 =
 [
-    [ "parentType_t", "a00075.html#a7953a20600361495460caa1f213e9011", null ],
-    [ "ScalarShPtr_t", "a00075.html#a20f63dc977977915cfc81b1743bd2416", null ],
-    [ "Scalar", "a00075.html#a45375aa30475b4928b32a46b8c71b4a8", null ],
-    [ "~Scalar", "a00075.html#a50fe6bb5f735657401bafce30044056c", null ],
-    [ "impl_compute", "a00075.html#af7da2d0ec317d96bbff695866db9cf20", null ],
-    [ "impl_gradient", "a00075.html#ad591b61ba39de5f5bbf7f7108926e978", null ],
-    [ "impl_jacobian", "a00075.html#a853cd301281c7c21036ee5c8de280d0b", null ],
-    [ "origin", "a00075.html#ad17cc3b06c7818946a6b94254ffcb1c1", null ],
-    [ "origin", "a00075.html#a4e8961237859adaa361aa9fec0d5057d", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00075.html#aefa2eb6460580af5ce6ecc78bf0319de", null ]
+    [ "MapShPtr_t", "a00075.html#a574f40013b83ac08459277e74dc8289e", null ],
+    [ "parentType_t", "a00075.html#aa472baf5213f2a8afc29b442073031eb", null ],
+    [ "Map", "a00075.html#a4c8f20cf07ee28545f24df00a427e7b9", null ],
+    [ "~Map", "a00075.html#af65411ba263b5776211a5edb162a89aa", null ],
+    [ "impl_compute", "a00075.html#ac5105e01d83e5837753b3c99d0b6ed71", null ],
+    [ "impl_gradient", "a00075.html#a8f63c844358c42b4cf223dcddc5caba6", null ],
+    [ "impl_jacobian", "a00075.html#aaf3d90bb7f6484f288ee797366f8f6a1", null ],
+    [ "origin", "a00075.html#a6084518aafb074773522d069b84418b3", null ],
+    [ "origin", "a00075.html#a323b53ffd6ed09b1460ea1c112c1b340", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00075.html#a934ae91992e7f17a02dbde5ec8e7de3c", null ]
 ];

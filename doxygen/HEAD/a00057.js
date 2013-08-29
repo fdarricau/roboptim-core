@@ -1,15 +1,12 @@
 var a00057 =
 [
-    [ "MinusShPtr_t", "a00057.html#ae344478e5d53643778a5c4aee576b55c", null ],
-    [ "parentType_t", "a00057.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031", null ],
-    [ "Minus", "a00057.html#ac824027a41ce9d5a343d1e0faa13bb8c", null ],
-    [ "~Minus", "a00057.html#a4eb1f38d5fb4f07cb695b431ff715f6c", null ],
-    [ "impl_compute", "a00057.html#af2c5ad8976a90884a0fadfc99d6e44e7", null ],
-    [ "impl_gradient", "a00057.html#aaf7a2ff910727e27d03cccd5e08a4e9e", null ],
-    [ "impl_jacobian", "a00057.html#aee47ee4fa54a298ea6ae658e274ee5ab", null ],
-    [ "left", "a00057.html#ad452d59bf5247d3f65c8e46154cce947", null ],
-    [ "left", "a00057.html#a6c53d7372eb9f682cf70b372df297b70", null ],
-    [ "right", "a00057.html#a736678b418a2be8841df0558ed2395fd", null ],
-    [ "right", "a00057.html#a6fb299cf7d68ae57699fca015b7f7eba", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00057.html#ada08c22a7499f3af4279f6df1c095d63", null ]
+    [ "GenericFiniteDifferenceGradient", "a00057.html#ade644f357e04020a3fb84207994f745b", null ],
+    [ "~GenericFiniteDifferenceGradient", "a00057.html#a52f35b313494e42eba9b96264ac4ab2f", null ],
+    [ "impl_compute", "a00057.html#a231a563eba65eb75c9695ccc337860c5", null ],
+    [ "impl_gradient", "a00057.html#ac9607a594f0a17201fe7149c28185a1c", null ],
+    [ "impl_jacobian", "a00057.html#a27f62e793466865b54308cbf177ba9f0", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00057.html#a583e5aeb130b6c46b7d12fe0f65c717f", null ],
+    [ "adaptee_", "a00057.html#aad6048bf897c560c6a0e03ce355413d1", null ],
+    [ "epsilon_", "a00057.html#a351983c229ac4c9cd42cdeb7ad0aebda", null ],
+    [ "xEps_", "a00057.html#a5c3139b3bfa459c225a2e77058259cb1", null ]
 ];

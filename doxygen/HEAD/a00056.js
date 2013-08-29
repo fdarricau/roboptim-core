@@ -1,13 +1,14 @@
 var a00056 =
 [
-    [ "MapShPtr_t", "a00056.html#a574f40013b83ac08459277e74dc8289e", null ],
-    [ "parentType_t", "a00056.html#aa472baf5213f2a8afc29b442073031eb", null ],
-    [ "Map", "a00056.html#a4c8f20cf07ee28545f24df00a427e7b9", null ],
-    [ "~Map", "a00056.html#af65411ba263b5776211a5edb162a89aa", null ],
-    [ "impl_compute", "a00056.html#ac5105e01d83e5837753b3c99d0b6ed71", null ],
-    [ "impl_gradient", "a00056.html#a8f63c844358c42b4cf223dcddc5caba6", null ],
-    [ "impl_jacobian", "a00056.html#aaf3d90bb7f6484f288ee797366f8f6a1", null ],
-    [ "origin", "a00056.html#a6084518aafb074773522d069b84418b3", null ],
-    [ "origin", "a00056.html#a323b53ffd6ed09b1460ea1c112c1b340", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00056.html#a934ae91992e7f17a02dbde5ec8e7de3c", null ]
+    [ "callback_t", "a00056.html#acff89ad608c772f445edb654d4c234c2", null ],
+    [ "parent_t", "a00056.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
+    [ "problem_t", "a00056.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
+    [ "solverState_t", "a00056.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
+    [ "GenericDummySolverLastState", "a00056.html#a6048ac28ab501a9457b41aba611b2565", null ],
+    [ "~GenericDummySolverLastState", "a00056.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
+    [ "callback", "a00056.html#a6a0c6a45d831bb9c967becf970330407", null ],
+    [ "setIterationCallback", "a00056.html#a5ce028c7aae7bbec2264162a79c93619", null ],
+    [ "solve", "a00056.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
+    [ "callback_", "a00056.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
+    [ "solverState_", "a00056.html#a1697fef1f95edda99bc4420e1143350e", null ]
 ];

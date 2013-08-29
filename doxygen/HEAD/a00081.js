@@ -1,8 +1,9 @@
 var a00081 =
 [
-    [ "problem_t", "a00081.html#ad075bea9aed21b399b4684d5c2258da7", null ],
-    [ "solver_t", "a00081.html#af7982512a4de7bfdd2e12669ea5d3d7b", null ],
-    [ "SolverFactory", "a00081.html#aadc8315a15a321eb1dcb064292d05077", null ],
-    [ "~SolverFactory", "a00081.html#a0a558a3b33d63421310b818c0577393a", null ],
-    [ "operator()", "a00081.html#ab4f632f2624c1fda7c8379b8136e5483", null ]
+    [ "size_type", "a00081.html#a0b16636d1ed2950355c0cd7e22aaffa8", null ],
+    [ "~NTimesDerivableFunction", "a00081.html#abac49e2227ca9041fd9a70b429ea3fa1", null ],
+    [ "NTimesDerivableFunction", "a00081.html#a794258aa1fd8a40705cb07af333dc5dd", null ],
+    [ "derivabilityOrderMax", "a00081.html#a78da40b42cc149c600873c1c7707941b", null ],
+    [ "print", "a00081.html#a1f48092699bd7d0ec66d698d215e24ac", null ],
+    [ "derivabilityOrder", "a00081.html#ad7b273dd6b55a50f56851d372fe1daa1", null ]
 ];

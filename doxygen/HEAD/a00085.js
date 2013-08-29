@@ -1,10 +1,17 @@
 var a00085 =
 [
-    [ "VectorInterpolationShPtr_t", "a00085.html#a93e2e8bd462686fe4b29891ae779e9a6", null ],
-    [ "VectorInterpolation", "a00085.html#ab960030f248f493c940a382bd7a4558f", null ],
-    [ "~VectorInterpolation", "a00085.html#a3d1fe193000a4055ec76b7d50f78b43a", null ],
-    [ "impl_compute", "a00085.html#a8174827edfa589b0dd43d0422129dc99", null ],
-    [ "impl_gradient", "a00085.html#a0babb4ec80bad140606ba075a1a16050", null ],
-    [ "impl_jacobian", "a00085.html#ab03109c3d7103bd752be1b5fd01c0d4f", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00085.html#abe0c00f18e9a52a817580fe4dd792117", null ]
+    [ "argument_t", "a00085.html#af4bb1d815e33a2fbb81165604d48e32a", null ],
+    [ "matrix_t", "a00085.html#ae1ae1137efff66af2fc84c967a2e64e5", null ],
+    [ "result_t", "a00085.html#a650dd3199ebc63021f83ab30b603d982", null ],
+    [ "size_type", "a00085.html#ac88a1cbae53587c432cb346982c9302d", null ],
+    [ "value_type", "a00085.html#ad6f5a983e3c1c4f657ef972d8a781a57", null ],
+    [ "vector_t", "a00085.html#a485059f799b3a571c5446677a8655a34", null ],
+    [ "ParametrizedFunction", "a00085.html#a0cb8331de8f0fdc4ad395446b191fc81", null ],
+    [ "~ParametrizedFunction", "a00085.html#af4e8e1ee202ade5a6ec8d66fd497fe29", null ],
+    [ "functionInputSize", "a00085.html#a067147c8d9a6cfe99f46820a41d08aeb", null ],
+    [ "functionOutputSize", "a00085.html#af15dfa5e7e9e13e7f5d4720091a7d28f", null ],
+    [ "impl_compute", "a00085.html#a491315022b13f12523b583b2699b965e", null ],
+    [ "inputSize", "a00085.html#aa11a87582936a2ce58f853f6ea4541d8", null ],
+    [ "operator()", "a00085.html#aa09793c665b51d543e7533ccb19d6864", null ],
+    [ "print", "a00085.html#a7769a5ffb197cd0009a27c6e12d40888", null ]
 ];
