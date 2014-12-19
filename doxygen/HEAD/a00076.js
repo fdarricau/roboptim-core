@@ -1,15 +1,12 @@
 var a00076 =
 [
-    [ "~Matplotlib", "a00076.html#ad30ddac4c701f3857324dc1723bd431b", null ],
-    [ "Matplotlib", "a00076.html#a1d2873b927c952d8d71934c9507c1001", null ],
-    [ "clear", "a00076.html#ab74d871b72839dedd30f30877d05f960", null ],
-    [ "make_matplotlib", "a00076.html#a05c08fa46fa302274df29d1a680c92a9", null ],
-    [ "operator<<", "a00076.html#a64f59a4876bebeaebfa909fa087d881c", null ],
-    [ "operator<<", "a00076.html#add7be32075c5232ef70ac302c6483ee7", null ],
-    [ "print", "a00076.html#a565123c4086afdec4934dfd78aa5e6dc", null ],
-    [ "push_command", "a00076.html#aa2dde9d00c39af15e221bc2e4545a514", null ],
-    [ "push_import", "a00076.html#af77130e3b6b8f68dd95adc5e09daa51d", null ],
-    [ "resetImports", "a00076.html#ab6d4daa910500975a1805b340fa82c33", null ],
-    [ "withHeader", "a00076.html#a02fc7712b24296ca6da6f5c7b15a4a5c", null ],
-    [ "withHeader", "a00076.html#a59afeebf5cc92b39b8dd53a05ad05c9f", null ]
+    [ "argument_t", "a00076.html#a5c3b8004bd8d141b63230b7face4449c", null ],
+    [ "differentiableFunction_t", "a00076.html#a02677fab92ae55a7000391bd9a04ed23", null ],
+    [ "jacobian_t", "a00076.html#abbeb60092977d57c29e444ca403d8640", null ],
+    [ "problem_t", "a00076.html#a81fc882c5a4cd9b7dafe32c246277a46", null ],
+    [ "size_type", "a00076.html#a8d8ca5968fad8205116dda3f171d73b1", null ],
+    [ "traits_t", "a00076.html#a7ee372d93dc3a68e78c1d434ad556905", null ],
+    [ "LogJacobianConstraint", "a00076.html#a6cdb213763ff5845b7728e6bc2e8208e", null ],
+    [ "operator()", "a00076.html#a6f00e3ff90f703822dfeee662a5cdd71", null ],
+    [ "operator()", "a00076.html#a9b7228b8c96ee3ee9376f6e19fcdda3b", null ]
 ];

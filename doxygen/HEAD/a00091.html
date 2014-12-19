@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Problem&lt; F, CLIST &gt; Class Template Reference</title>
+<title>roboptim::Polynomial&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,112 +63,382 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Problem&lt; F, CLIST &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00256.html">Optimization problems</a></div></div>  </div>
+<div class="title">roboptim::Polynomial&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00258.html">Mathematical functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Problem" -->
-<p><code>#include &lt;roboptim/core/problem.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::Polynomial" --><!-- doxytag: inherits="roboptim::GenericTwiceDifferentiableFunction" -->
+<p><a class="el" href="a00091.html" title="Polynomial function.">Polynomial</a> function.  
+ <a href="a00091.html#details">More...</a></p>
 
-<p><a href="a00311.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/core/function/polynomial.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::Polynomial&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00091.png" usemap="#roboptim::Polynomial&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::Polynomial&lt; T &gt;_map" name="roboptim::Polynomial&lt; T &gt;_map">
+<area href="a00070.html" title="Define an abstract function which is twice-derivable ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,300,136"/>
+<area href="a00056.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,56,300,80"/>
+<area href="a00059.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="0,0,300,24"/>
+</map>
+ </div></div>
+
+<p><a href="a00298.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::copy<br class="typebreak"/>
-&lt; CLIST, <br class="typebreak"/>
-boost::mpl::back_inserter<br class="typebreak"/>
-&lt; boost::mpl::vector<br class="typebreak"/>
-&lt;&gt; &gt; &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga0a0572e259faa479ccabb07882721d87">constraintsList_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints types list.  <a href="a00256.html#ga0a0572e259faa479ccabb07882721d87"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type.  <a href="a00256.html#ga880fef200a8fcb92b7612a37d3aed945"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-boost::make_variant_over<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-<a class="el" href="a00020.html">detail::add_shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="a00256.html#ga0a0572e259faa479ccabb07882721d87">constraintsList_t</a> &gt;::type &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gaeec8f9fd908d2c4aaf62c1cebb5c8703">constraint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint's type.  <a href="a00256.html#gaeec8f9fd908d2c4aaf62c1cebb5c8703"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import function's value_type type.  <a href="a00256.html#gac4d8783eb3cce4fb35902ef5b91635fd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gaaf9afed23707274cd5f4515ddea8e72a">vector_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="a00256.html#gaaf9afed23707274cd5f4515ddea8e72a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gac3031ce28dcf76501a038c37beeb5a0b">size_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="a00256.html#gac3031ce28dcf76501a038c37beeb5a0b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00256.html#gaeec8f9fd908d2c4aaf62c1cebb5c8703">constraint_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints are represented as a vector of constraints.  <a href="a00256.html#ga9087fb924dcb6579d1a15eab76b8526d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional&lt; <a class="el" href="a00256.html#gaaf9afed23707274cd5f4515ddea8e72a">vector_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">startingPoint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="a00256.html#gac7dd58ab9bad60d0dad5eeb94dfe1966"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval type (e.g. for bounds).  <a href="a00256.html#ga380a03c110b72daf32f237271c9132fb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Intervals type.  <a href="a00256.html#gad94c072558540fb7101c01002e08b3b8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00256.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale vector.  <a href="a00256.html#ga81acce0cec82db9dd19c849569fb034e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::names_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of names (e.g. for arguments).  <a href="a00256.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00256.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gad641304de213346c7bb5f7fa07b3c122">intervalsVect_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of interval vectors.  <a href="a00256.html#gad641304de213346c7bb5f7fa07b3c122"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00256.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of scale vectors.  <a href="a00256.html#gae1848dfccedc0fb037e5a10efb4c1ff5"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gad4c21d7353f11e2348381a3c1deac234">print</a> (std::ostream &amp;o) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the problem on the specified output stream.  <a href="a00256.html#gad4c21d7353f11e2348381a3c1deac234"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Constructors and destructors.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gac2a43bc8b9231f7549a61b5b3d01eec0">Problem</a> (const <a class="el" href="a00256.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a> &amp;cost)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gacaa910e2f9c1242183acba8cde0887d5">Problem</a> (const <a class="el" href="a00091.html">Problem</a>&lt; F, CLIST &gt; &amp;pb)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="a00256.html#gacaa910e2f9c1242183acba8cde0887d5"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename F_ , typename CLIST_ &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00256.html#ga6ca16bc6a4e146d58e92445a3b4dce27">Problem</a> (const <a class="el" href="a00091.html">Problem</a>&lt; F_, CLIST_ &gt; &amp;pb)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (convert from another class of problem).  <a href="a00256.html#ga6ca16bc6a4e146d58e92445a3b4dce27"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga64c92ade5e55f88d523f44cb0fd28104">~Problem</a> ()</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Cost function.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga2edd292aab53fc23f28ba983156e76d2">function</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve cost function.  <a href="a00256.html#ga2edd292aab53fc23f28ba983156e76d2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00256.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gae400e858c8def054c08375dfd08859db">argumentBounds</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00256.html#gae400e858c8def054c08375dfd08859db"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga459997c38e215e21f2de950ee8c45d46">argumentBounds</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00256.html#ga459997c38e215e21f2de950ee8c45d46"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00256.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gaee60337070faec61a157fd6067706932">argumentScales</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00256.html#gaee60337070faec61a157fd6067706932"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga1d3e35b7543c43f29c0fb75ccbfd925c">argumentScales</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00256.html#ga1d3e35b7543c43f29c0fb75ccbfd925c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00256.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gae40dfa8cc19ed0122e9db8ad3060a568">argumentNames</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00256.html#gae40dfa8cc19ed0122e9db8ad3060a568"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga81ef07115a6a028973dad6b8dae0455e">argumentNames</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00256.html#ga81ef07115a6a028973dad6b8dae0455e"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Constraints.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gabde1f80f2f4721f844b0508265437065">constraints</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints.  <a href="a00256.html#gabde1f80f2f4721f844b0508265437065"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00256.html#gaf42dc1f3d8e34b6eaf32a45004128c7a">addConstraint</a> (boost::shared_ptr&lt; C &gt; constraint, <a class="el" href="a00256.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a> interval, <a class="el" href="a00256.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a> scale=1.)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the problem.  <a href="a00256.html#gaf42dc1f3d8e34b6eaf32a45004128c7a"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00256.html#ga2a2a48229f704d8ad9aa9f428f846c03">addConstraint</a> (boost::shared_ptr&lt; C &gt; constraint, <a class="el" href="a00256.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> intervals, <a class="el" href="a00256.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> scales)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the problem.  <a href="a00256.html#ga2a2a48229f704d8ad9aa9f428f846c03"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#gad641304de213346c7bb5f7fa07b3c122">intervalsVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga321c61b8b452cd74626d0343a8358e4c">boundsVector</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints bounds vector.  <a href="a00256.html#ga321c61b8b452cd74626d0343a8358e4c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga35eb1490bb9b1cad4357553f60bf7959">scalesVector</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints scales vector.  <a href="a00256.html#ga35eb1490bb9b1cad4357553f60bf7959"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Starting point (initial guess).</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00256.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gac8049404b830aa3ef0e5b72c8975a849">startingPoint</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial guess.  <a href="a00256.html#gac8049404b830aa3ef0e5b72c8975a849"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00256.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#ga41794d906c0d101dbb635f19f2c7e6c0">startingPoint</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial guess.  <a href="a00256.html#ga41794d906c0d101dbb635f19f2c7e6c0"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="friends"></a>
-Friends</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#gacc081cc87e465ee811f25f9676550d09">Problem</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#af3c2cfc898e83edc8ce340b00c81e1dd">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00070.html">GenericTwiceDifferentiableFunction</a>&lt; T &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a4c3dea2afa1296ed105c85d08160492f">Polynomial</a> (const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;coefficients)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a polynomial function.  <a href="#a4c3dea2afa1296ed105c85d08160492f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#ae57cba490238f13f941fc6bb016436d0">~Polynomial</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a9d9d9ee3fd558e30aa8f5891e3028aba">print</a> (std::ostream &amp;o) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a9d9d9ee3fd558e30aa8f5891e3028aba"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a69836d80ab2b6fe5240db112e1ab5ada">impl_compute</a> (<a class="el" href="a00059.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a69836d80ab2b6fe5240db112e1ab5ada"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#ab249314f4936b2407c71a0b9d32a5342">impl_gradient</a> (<a class="el" href="a00056.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00056.html#a0d0772c3e1ea6ff70c2909ceaf776169">gradient</a>, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x, <a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#ab249314f4936b2407c71a0b9d32a5342"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a80b283a6d079f23ea550a118e4f7f731">impl_jacobian</a> (<a class="el" href="a00056.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;<a class="el" href="a00056.html#a18879d9ec115089c02e685a020a11c4d">jacobian</a>, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian evaluation.  <a href="#a80b283a6d079f23ea550a118e4f7f731"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#afaf03640533c95bae995e6ab91a814aa">impl_hessian</a> (<a class="el" href="a00070.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00070.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x, <a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#afaf03640533c95bae995e6ab91a814aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00059.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a59eba7224a48a5f2f749c71963986beb">applyPolynomial</a> (const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;coeffs, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement Horner's method.  <a href="#a59eba7224a48a5f2f749c71963986beb"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename F, typename CLIST&gt;<br/>
-class roboptim::Problem&lt; F, CLIST &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::Polynomial&lt; T &gt;</h3>
 
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00009.html#_a0">problem-cc.cc</a>.</dd>
-</dl></div></div><!-- contents -->
+<p><a class="el" href="a00091.html" title="Polynomial function.">Polynomial</a> function. </p>
+<p>Implement a polynomial function using the formula: </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[f(x) = a_0 + a_1 * x + a_2 * x^2 + a_3 * x^3 + ...\]" src="form_19.png"/>
+</p>
+<p> where polynomial coefficients <img class="formulaInl" alt="$a_i$" src="form_20.png"/> are set when the class is instanciated </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#_a2">finite-difference-gradient.cc</a>, and <a class="el" href="a00005.html#_a2">function-polynomial.cc</a>.</dd>
+</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4c3dea2afa1296ed105c85d08160492f"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a4c3dea2afa1296ed105c85d08160492f" args="(const vector_t &amp;coefficients)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html">Polynomial</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>coefficients</em></td><td>)</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Build a polynomial function. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coefficients</td><td>polynomial coefficients given in increasing degree order </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae57cba490238f13f941fc6bb016436d0"></a><!-- doxytag: member="roboptim::Polynomial::~Polynomial" ref="ae57cba490238f13f941fc6bb016436d0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::~<a class="el" href="a00091.html">Polynomial</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a59eba7224a48a5f2f749c71963986beb"></a><!-- doxytag: member="roboptim::Polynomial::applyPolynomial" ref="a59eba7224a48a5f2f749c71963986beb" args="(const vector_t &amp;coeffs, const argument_t &amp;x) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00091.html">Polynomial</a>&lt; T &gt;::<a class="el" href="a00059.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#a59eba7224a48a5f2f749c71963986beb">applyPolynomial</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>coeffs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implement Horner's method. </p>
+
+</div>
+</div>
+<a class="anchor" id="a69836d80ab2b6fe5240db112e1ab5ada"></a><!-- doxytag: member="roboptim::Polynomial::impl_compute" ref="a69836d80ab2b6fe5240db112e1ab5ada" args="(result_t &amp;result, const argument_t &amp;x) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#a69836d80ab2b6fe5240db112e1ab5ada">impl_compute</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00059.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>argument</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Function evaluation. </p>
+<p>Evaluate the function, has to be implemented in concrete classes. </p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00059.html#a58f0bde147e54bbeb8df944ef194f9ae" title="Evaluate the function at a specified point.">operator()(result_t&amp;, const argument_t&amp;) const</a> instead. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
+    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00059.html#a19fb6005aabfae3862429de2c736ab6e">roboptim::GenericFunction&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab249314f4936b2407c71a0b9d32a5342"></a><!-- doxytag: member="roboptim::Polynomial::impl_gradient" ref="ab249314f4936b2407c71a0b9d32a5342" args="(gradient_t &amp;gradient, const argument_t &amp;x, size_type) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#ab249314f4936b2407c71a0b9d32a5342">impl_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00056.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>gradient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>argument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
+          <td class="paramname"><em>functionId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gradient evaluation. </p>
+<p>Compute the gradient, has to be implemented in concrete classes. The gradient is computed for a specific sub-function which id is passed through the functionId argument. </p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00056.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> instead. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gradient</td><td>gradient will be store in this argument </td></tr>
+    <tr><td class="paramname">argument</td><td>point where the gradient will be computed </td></tr>
+    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00056.html#a84657c4eb2f67ea3bbaf49462f54fb68">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afaf03640533c95bae995e6ab91a814aa"></a><!-- doxytag: member="roboptim::Polynomial::impl_hessian" ref="afaf03640533c95bae995e6ab91a814aa" args="(hessian_t &amp;hessian, const argument_t &amp;x, size_type) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#afaf03640533c95bae995e6ab91a814aa">impl_hessian</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00070.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>hessian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>argument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
+          <td class="paramname"><em>functionId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hessian evaluation. </p>
+<p>Compute the hessian, has to be implemented in concrete classes. The hessian is computed for a specific sub-function which id is passed through the functionId argument. </p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00070.html#a7ab6bda5039008fb215ab24ecacd85a2" title="Compute the hessian at a given point.">hessian</a> instead. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hessian</td><td>hessian will be stored here </td></tr>
+    <tr><td class="paramname">argument</td><td>point where the hessian will be computed </td></tr>
+    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00070.html#ac5b5430ab527d7de393f876f4db314c2">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80b283a6d079f23ea550a118e4f7f731"></a><!-- doxytag: member="roboptim::Polynomial::impl_jacobian" ref="a80b283a6d079f23ea550a118e4f7f731" args="(jacobian_t &amp;jacobian, const argument_t &amp;x) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#a80b283a6d079f23ea550a118e4f7f731">impl_jacobian</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00056.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Jacobian evaluation. </p>
+<p>Computes the jacobian, can be overridden by concrete classes. The default behavior is to compute the jacobian from the gradient. </p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00056.html#a18879d9ec115089c02e685a020a11c4d" title="Computes the jacobian.">jacobian</a> instead. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jacobian</td><td>jacobian will be store in this argument </td></tr>
+    <tr><td class="paramname">arg</td><td>point where the jacobian will be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+<p>Reimplemented from <a class="el" href="a00056.html#a5aa21359d6844bc4c21280cbd1155d22">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d9d9ee3fd558e30aa8f5891e3028aba"></a><!-- doxytag: member="roboptim::Polynomial::print" ref="a9d9d9ee3fd558e30aa8f5891e3028aba" args="(std::ostream &amp;o) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#a9d9d9ee3fd558e30aa8f5891e3028aba">print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Display the function on the specified output stream. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a00070.html#a78bf9018548e92c38803bbd0b39ef29a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
+
+<p>References <a class="el" href="a00244.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00244.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00244.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3c2cfc898e83edc8ce340b00c81e1dd"></a><!-- doxytag: member="roboptim::Polynomial::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="af3c2cfc898e83edc8ce340b00c81e1dd" args="(GenericTwiceDifferentiableFunction&lt; T &gt;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00091.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00091.html#af3c2cfc898e83edc8ce340b00c81e1dd">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00070.html">GenericTwiceDifferentiableFunction</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -186,7 +456,7 @@ class roboptim::Problem&lt; F, CLIST &gt;</h3>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00240.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00091.html">Problem</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00091.html">Polynomial</a>      </li>
 </body>
 </html>

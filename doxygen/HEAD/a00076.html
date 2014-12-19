@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::visualization::Matplotlib Class Reference</title>
+<title>roboptim::detail::LogJacobianConstraint&lt; P &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,313 +63,226 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::visualization::Matplotlib Class Reference<div class="ingroups"><a class="el" href="a00258.html">Visualization</a></div></div>  </div>
+<div class="title">roboptim::detail::LogJacobianConstraint&lt; P &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::visualization::Matplotlib" -->
-<p>matplotlib script  
- <a href="a00076.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::detail::LogJacobianConstraint" -->
+<p><code>#include &lt;roboptim/core/optimization-logger.hxx&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/visualization/matplotlib.hh&gt;</code></p>
-
-<p><a href="a00351.html">List of all members.</a></p>
+<p><a href="a00348.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a81fc882c5a4cd9b7dafe32c246277a46">problem_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the problem.  <a href="#a81fc882c5a4cd9b7dafe32c246277a46"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+problem_t::function_t::traits_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function traits.  <a href="#a7ee372d93dc3a68e78c1d434ad556905"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00056.html">GenericDifferentiableFunction</a><br class="typebreak"/>
+&lt; <a class="el" href="a00076.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of differentiable functions.  <a href="#a02677fab92ae55a7000391bd9a04ed23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">differentiableFunction_t::argument_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="#a5c3b8004bd8d141b63230b7face4449c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef problem_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a8d8ca5968fad8205116dda3f171d73b1">size_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="#a8d8ca5968fad8205116dda3f171d73b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00056.html#a87eb6981a9e7e658bb45ced35914d938">differentiableFunction_t::jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#abbeb60092977d57c29e444ca403d8640">jacobian_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian type.  <a href="#abbeb60092977d57c29e444ca403d8640"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ad30ddac4c701f3857324dc1723bd431b">~Matplotlib</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#aa2dde9d00c39af15e221bc2e4545a514">push_command</a> (const <a class="el" href="a00034.html">matplotlib::Command</a> &amp;cmd)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new matplotlib command to the script.  <a href="#aa2dde9d00c39af15e221bc2e4545a514"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import</a> (const <a class="el" href="a00072.html">matplotlib::Import</a> &amp;import)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Python import to the script.  <a href="#af77130e3b6b8f68dd95adc5e09daa51d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a565123c4086afdec4934dfd78aa5e6dc">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the matplotlib script on the specified output stream.  <a href="#a565123c4086afdec4934dfd78aa5e6dc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;</a> (<a class="el" href="a00034.html">matplotlib::Command</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;</a> (<a class="el" href="a00072.html">matplotlib::Import</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ab74d871b72839dedd30f30877d05f960">clear</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the vectors of imports and commands.  <a href="#ab74d871b72839dedd30f30877d05f960"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a02fc7712b24296ca6da6f5c7b15a4a5c">withHeader</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a02fc7712b24296ca6da6f5c7b15a4a5c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a59afeebf5cc92b39b8dd53a05ad05c9f">withHeader</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a59afeebf5cc92b39b8dd53a05ad05c9f"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00076.html">Matplotlib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a05c08fa46fa302274df29d1a680c92a9">make_matplotlib</a> (bool with_header=true)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciate a matplotlib without setting a term.  <a href="#a05c08fa46fa302274df29d1a680c92a9"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib</a> (bool with_header=true)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor can not be called directly.  <a href="#a1d2873b927c952d8d71934c9507c1001"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ab6d4daa910500975a1805b340fa82c33">resetImports</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset imports to initial values.  <a href="#ab6d4daa910500975a1805b340fa82c33"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a6cdb213763ff5845b7728e6bc2e8208e">LogJacobianConstraint</a> (const <a class="el" href="a00076.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a> &amp;x, const boost::filesystem::path &amp;constraintPath)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">boost::enable_if<br class="typebreak"/>
+&lt; boost::is_base_of<br class="typebreak"/>
+&lt; <a class="el" href="a00076.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U &gt;<br class="typebreak"/>
+ &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00076.html#a6f00e3ff90f703822dfeee662a5cdd71">operator()</a> (const boost::shared_ptr&lt; U &gt; &amp;constraint) const </td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">boost::disable_if<br class="typebreak"/>
+&lt; boost::is_base_of<br class="typebreak"/>
+&lt; <a class="el" href="a00076.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U &gt;<br class="typebreak"/>
+ &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00076.html#a9b7228b8c96ee3ee9376f6e19fcdda3b">operator()</a> (const boost::shared_ptr&lt; U &gt; &amp;) const </td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>matplotlib script </p>
-<p>This class gathers matplotlib commands to build a complete matplotlib script. matplotlib commands can be inserted through this object through the <code>&lt;&lt;</code> operator and this object can be put into an output stream using the <code>&lt;&lt;</code> operator. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00014.html#_a2">visualization-matplotlib-function.cc</a>, and <a class="el" href="a00013.html#_a0">visualization-matplotlib-simple.cc</a>.</dd>
-</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad30ddac4c701f3857324dc1723bd431b"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::~Matplotlib" ref="ad30ddac4c701f3857324dc1723bd431b" args="()" -->
+<h3>template&lt;typename P&gt;<br/>
+ struct roboptim::detail::LogJacobianConstraint&lt; P &gt;</h3>
+
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a5c3b8004bd8d141b63230b7face4449c"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::argument_t" ref="a5c3b8004bd8d141b63230b7face4449c" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00076.html#ad30ddac4c701f3857324dc1723bd431b">roboptim::visualization::Matplotlib::~Matplotlib</a> </td>
+          <td class="memname">typedef <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">differentiableFunction_t::argument_t</a> <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Argument type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a02677fab92ae55a7000391bd9a04ed23"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::differentiableFunction_t" ref="a02677fab92ae55a7000391bd9a04ed23" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00056.html">GenericDifferentiableFunction</a>&lt;<a class="el" href="a00076.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a>&gt; <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of differentiable functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="abbeb60092977d57c29e444ca403d8640"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::jacobian_t" ref="abbeb60092977d57c29e444ca403d8640" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00056.html#a87eb6981a9e7e658bb45ced35914d938">differentiableFunction_t::jacobian_t</a> <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html#abbeb60092977d57c29e444ca403d8640">jacobian_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Jacobian type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81fc882c5a4cd9b7dafe32c246277a46"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::problem_t" ref="a81fc882c5a4cd9b7dafe32c246277a46" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html#a81fc882c5a4cd9b7dafe32c246277a46">problem_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of the problem. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8d8ca5968fad8205116dda3f171d73b1"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::size_type" ref="a8d8ca5968fad8205116dda3f171d73b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef problem_t::size_type <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html#a8d8ca5968fad8205116dda3f171d73b1">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Size type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ee372d93dc3a68e78c1d434ad556905"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::traits_t" ref="a7ee372d93dc3a68e78c1d434ad556905" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef problem_t::function_t::traits_t <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Function traits. </p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6cdb213763ff5845b7728e6bc2e8208e"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::LogJacobianConstraint" ref="a6cdb213763ff5845b7728e6bc2e8208e" args="(const argument_t &amp;x, const boost::filesystem::path &amp;constraintPath)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00076.html">LogJacobianConstraint</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a00076.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>constraintPath</em>&#160;</td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1d2873b927c952d8d71934c9507c1001"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::Matplotlib" ref="a1d2873b927c952d8d71934c9507c1001" args="(bool with_header=true)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00076.html#a1d2873b927c952d8d71934c9507c1001">roboptim::visualization::Matplotlib::Matplotlib</a> </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
-          <td><code> [explicit, protected]</code></td>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Default constructor can not be called directly. </p>
-<p>Use of the named constructor (see static methods) to instantiate this class. </p>
-
-<p>References <a class="el" href="a00076.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ab74d871b72839dedd30f30877d05f960"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::clear" ref="ab74d871b72839dedd30f30877d05f960" args="()" -->
+<a class="anchor" id="a6f00e3ff90f703822dfeee662a5cdd71"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::operator()" ref="a6f00e3ff90f703822dfeee662a5cdd71" args="(const boost::shared_ptr&lt; U &gt; &amp;constraint) const " -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00076.html#ab74d871b72839dedd30f30877d05f960">roboptim::visualization::Matplotlib::clear</a> </td>
+          <td class="memname">boost::enable_if&lt;boost::is_base_of&lt;<a class="el" href="a00076.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U&gt; &gt;::type <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::operator() </td>
           <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b7228b8c96ee3ee9376f6e19fcdda3b"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::operator()" ref="a9b7228b8c96ee3ee9376f6e19fcdda3b" args="(const boost::shared_ptr&lt; U &gt; &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::disable_if&lt;boost::is_base_of&lt;<a class="el" href="a00076.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U&gt; &gt;::type <a class="el" href="a00076.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Clear the vectors of imports and commands. </p>
-
-<p>References <a class="el" href="a00076.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a05c08fa46fa302274df29d1a680c92a9"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::make_matplotlib" ref="a05c08fa46fa302274df29d1a680c92a9" args="(bool with_header=true)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00076.html">Matplotlib</a> <a class="el" href="a00076.html#a05c08fa46fa302274df29d1a680c92a9">roboptim::visualization::Matplotlib::make_matplotlib</a> </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
-          <td><code> [inline, static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Instanciate a matplotlib without setting a term. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">with_header</td><td>whether to print the header or not </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib instance </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a64f59a4876bebeaebfa909fa087d881c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="a64f59a4876bebeaebfa909fa087d881c" args="(matplotlib::Command)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00034.html">matplotlib::Command</a>&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00076.html#aa2dde9d00c39af15e221bc2e4545a514">push_command()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="add7be32075c5232ef70ac302c6483ee7"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="add7be32075c5232ef70ac302c6483ee7" args="(matplotlib::Import)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00072.html">matplotlib::Import</a>&#160;</td>
-          <td class="paramname"><em>import</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00076.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a565123c4086afdec4934dfd78aa5e6dc"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::print" ref="a565123c4086afdec4934dfd78aa5e6dc" args="(std::ostream &amp;) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00076.html#a565123c4086afdec4934dfd78aa5e6dc">roboptim::visualization::Matplotlib::print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Display the matplotlib script on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Referenced by <a class="el" href="a00248.html#aa5714b11301afc8bc1ee4d544eafac2f">roboptim::visualization::operator&lt;&lt;()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa2dde9d00c39af15e221bc2e4545a514"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_command" ref="aa2dde9d00c39af15e221bc2e4545a514" args="(const matplotlib::Command &amp;cmd)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00076.html#aa2dde9d00c39af15e221bc2e4545a514">roboptim::visualization::Matplotlib::push_command</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00034.html">matplotlib::Command</a> &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Add a new matplotlib command to the script. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cmd</td><td>command that will be pushed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Referenced by <a class="el" href="a00076.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;()</a>, and <a class="el" href="a00258.html#ga754766ba098561274be740474369e1ba">roboptim::visualization::operator&lt;&lt;()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af77130e3b6b8f68dd95adc5e09daa51d"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_import" ref="af77130e3b6b8f68dd95adc5e09daa51d" args="(const matplotlib::Import &amp;import)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00076.html#af77130e3b6b8f68dd95adc5e09daa51d">roboptim::visualization::Matplotlib::push_import</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00072.html">matplotlib::Import</a> &amp;&#160;</td>
-          <td class="paramname"><em>import</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Add a new Python import to the script. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">import</td><td>package to import </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Referenced by <a class="el" href="a00076.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab6d4daa910500975a1805b340fa82c33"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::resetImports" ref="ab6d4daa910500975a1805b340fa82c33" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00076.html#ab6d4daa910500975a1805b340fa82c33">roboptim::visualization::Matplotlib::resetImports</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reset imports to initial values. </p>
-
-<p>Referenced by <a class="el" href="a00076.html#ab74d871b72839dedd30f30877d05f960">clear()</a>, and <a class="el" href="a00076.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a02fc7712b24296ca6da6f5c7b15a4a5c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::withHeader" ref="a02fc7712b24296ca6da6f5c7b15a4a5c" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool &amp; <a class="el" href="a00076.html#a02fc7712b24296ca6da6f5c7b15a4a5c">roboptim::visualization::Matplotlib::withHeader</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Whether to print the header (imports). </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Reference to withHeader_. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a59afeebf5cc92b39b8dd53a05ad05c9f"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::withHeader" ref="a59afeebf5cc92b39b8dd53a05ad05c9f" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a00076.html#a02fc7712b24296ca6da6f5c7b15a4a5c">roboptim::visualization::Matplotlib::withHeader</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Whether to print the header (imports). </p>
 
 </div>
 </div>
@@ -391,8 +304,8 @@ Protected Member Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00240.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00248.html">visualization</a>      </li>
-      <li class="navelem"><a class="el" href="a00076.html">Matplotlib</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00249.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00076.html">LogJacobianConstraint</a>      </li>
 </body>
 </html>

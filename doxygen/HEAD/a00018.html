@@ -70,11 +70,11 @@ A solver hierarchy defining solvers that are working on a class of optimizations
 <h2><a class="anchor" id="fct"></a>
 The function hierarchy</h2>
 <p>The function hierarchy is an abstract hierarchy which defines <b>meta-functions</b> in the sense that the user has to derive from these classes to define its <b>real</b> function.</p>
-<div class="fragment"><pre class="fragment">   <span class="keyword">struct </span>MyLinearFunction : <span class="keyword">public</span> <a class="code" href="a00240.html#abbf3e635a932ae99934936a092aec72c">LinearFunction</a> {
+<div class="fragment"><pre class="fragment">   <span class="keyword">struct </span>MyLinearFunction : <span class="keyword">public</span> <a class="code" href="a00244.html#abbf3e635a932ae99934936a092aec72c">LinearFunction</a> {
      <span class="comment">// FIXME: some code is missing</span>
    };
 
-   <span class="keyword">struct </span>MyDerivableFunction : <span class="keyword">public</span> <a class="code" href="a00240.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">DerivableFunction</a> {
+   <span class="keyword">struct </span>MyDerivableFunction : <span class="keyword">public</span> <a class="code" href="a00244.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">DerivableFunction</a> {
      <span class="comment">// FIXME: some code is missing</span>
    };
    <span class="comment">// etc...</span>
@@ -93,7 +93,7 @@ A linear function has the same constraints except its Hessian matrix is null and
 </ul>
 <p>It is important to note that all of these functions are <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_6.png"/> functions.</p>
 <p>These functions have to be considered as m functions such that <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/>. In particular, it means that in the gradient/Hessian methods, the second argument (integer) refers to which function you want to get the gradient/Hessian from.</p>
-<p>It avoids useless computations when the whole Jacobian is not needed. Hence, it also avoids the use of a tensor as this structure is particularly costly and not built-in in <a class="el" href="a00239.html">Eigen</a> (the matrix library the package relies on).</p>
+<p>It avoids useless computations when the whole Jacobian is not needed. Hence, it also avoids the use of a tensor as this structure is particularly costly and not built-in in <a class="el" href="a00243.html">Eigen</a> (the matrix library the package relies on).</p>
 <p>This set of meta-functions is completed by two generic implementations of quadratic and linear functions in respectively NumericQuadraticFunction and NumericLinearFunction. Those are real functions as the user is meant to instantiate them, not derive from them.</p>
 <h2><a class="anchor" id="pb"></a>
 The problem class</h2>

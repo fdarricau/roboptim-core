@@ -1,12 +1,17 @@
 var a00088 =
 [
-    [ "Polynomial", "a00088.html#a4c3dea2afa1296ed105c85d08160492f", null ],
-    [ "~Polynomial", "a00088.html#ae57cba490238f13f941fc6bb016436d0", null ],
-    [ "applyPolynomial", "a00088.html#a59eba7224a48a5f2f749c71963986beb", null ],
-    [ "impl_compute", "a00088.html#a69836d80ab2b6fe5240db112e1ab5ada", null ],
-    [ "impl_gradient", "a00088.html#ab249314f4936b2407c71a0b9d32a5342", null ],
-    [ "impl_hessian", "a00088.html#afaf03640533c95bae995e6ab91a814aa", null ],
-    [ "impl_jacobian", "a00088.html#a80b283a6d079f23ea550a118e4f7f731", null ],
-    [ "print", "a00088.html#a9d9d9ee3fd558e30aa8f5891e3028aba", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00088.html#af3c2cfc898e83edc8ce340b00c81e1dd", null ]
+    [ "argument_t", "a00088.html#af4bb1d815e33a2fbb81165604d48e32a", null ],
+    [ "matrix_t", "a00088.html#ae1ae1137efff66af2fc84c967a2e64e5", null ],
+    [ "result_t", "a00088.html#a650dd3199ebc63021f83ab30b603d982", null ],
+    [ "size_type", "a00088.html#ac88a1cbae53587c432cb346982c9302d", null ],
+    [ "value_type", "a00088.html#ad6f5a983e3c1c4f657ef972d8a781a57", null ],
+    [ "vector_t", "a00088.html#a485059f799b3a571c5446677a8655a34", null ],
+    [ "ParametrizedFunction", "a00088.html#a0cb8331de8f0fdc4ad395446b191fc81", null ],
+    [ "~ParametrizedFunction", "a00088.html#af4e8e1ee202ade5a6ec8d66fd497fe29", null ],
+    [ "functionInputSize", "a00088.html#a067147c8d9a6cfe99f46820a41d08aeb", null ],
+    [ "functionOutputSize", "a00088.html#af15dfa5e7e9e13e7f5d4720091a7d28f", null ],
+    [ "impl_compute", "a00088.html#a491315022b13f12523b583b2699b965e", null ],
+    [ "inputSize", "a00088.html#aa11a87582936a2ce58f853f6ea4541d8", null ],
+    [ "operator()", "a00088.html#aa09793c665b51d543e7533ccb19d6864", null ],
+    [ "print", "a00088.html#a7769a5ffb197cd0009a27c6e12d40888", null ]
 ];

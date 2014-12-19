@@ -80,15 +80,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00166.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00182.html">roboptim/core/numeric-linear-function.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00170.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00186.html">roboptim/core/numeric-linear-function.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
-<span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00047.html" title="Dummy solver which always fails.">DummySolver</a> <a name="a1"></a><a class="code" href="a00137.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a>;
+<span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00048.html" title="Dummy solver which always fails.">DummySolver</a> <a name="a1"></a><a class="code" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a>;
 
-<span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a2"></a><a class="code" href="a00049.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
-        <a name="_a3"></a><a class="code" href="a00050.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
+<span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a2"></a><a class="code" href="a00050.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
+        <a name="_a3"></a><a class="code" href="a00051.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
 
 BOOST_FIXTURE_TEST_SUITE (core, TestSuiteConfiguration)
 
@@ -97,13 +97,13 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_linear_function, T, functionTypes_t)
   boost::shared_ptr&lt;boost::test_tools::output_test_stream&gt;
     output = retrievePattern (<span class="stringliteral">&quot;numeric-linear-function&quot;</span>);
 
-  <span class="keyword">typename</span> <a name="_a4"></a><a class="code" href="a00064.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;::matrix_t</a> a (1, 5);
-  <span class="keyword">typename</span> <a class="code" href="a00064.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;::vector_t</a> b (1);
-  <span class="keyword">typename</span> <a class="code" href="a00064.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;::vector_t</a> x (5);
+  <span class="keyword">typename</span> <a name="_a4"></a><a class="code" href="a00065.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;::matrix_t</a> a (1, 5);
+  <span class="keyword">typename</span> <a class="code" href="a00065.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;::vector_t</a> b (1);
+  <span class="keyword">typename</span> <a class="code" href="a00065.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;::vector_t</a> x (5);
 
-  a.<a name="a5"></a><a class="code" href="a00069.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
-  b.<a name="a6"></a><a class="code" href="a00069.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
-  x.<a class="code" href="a00069.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
+  a.<a name="a5"></a><a class="code" href="a00070.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
+  b.<a name="a6"></a><a class="code" href="a00070.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
+  x.<a class="code" href="a00070.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
 
   a.coeffRef (0, 0) = 1.2;
   a.coeffRef (0, 1) = 3.4;
@@ -112,7 +112,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_linear_function, T, functionTypes_t)
 
   b[0] = 1.;
 
-  <a class="code" href="a00064.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> f (a, b);
+  <a class="code" href="a00065.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> f (a, b);
 
   (*output) &lt;&lt; f &lt;&lt; std::endl;
 
@@ -123,18 +123,18 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_linear_function, T, functionTypes_t)
   x[4] = 4.5;
 
   (*output) &lt;&lt; <span class="stringliteral">&quot;f(x) = &quot;</span> &lt;&lt; f (x) &lt;&lt; std::endl;
-  (*output) &lt;&lt; <span class="stringliteral">&quot;G(x) = &quot;</span> &lt;&lt; f.<a name="a7"></a><a class="code" href="a00055.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> (x, 0) &lt;&lt; std::endl;
-  (*output) &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.<a name="a8"></a><a class="code" href="a00055.html#a18879d9ec115089c02e685a020a11c4d" title="Computes the jacobian.">jacobian</a> (x) &lt;&lt; std::endl;
-  (*output) &lt;&lt; <span class="stringliteral">&quot;H(x) = &quot;</span> &lt;&lt; f.<a name="a9"></a><a class="code" href="a00069.html#a7ab6bda5039008fb215ab24ecacd85a2" title="Compute the hessian at a given point.">hessian</a> (x) &lt;&lt; std::endl;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;G(x) = &quot;</span> &lt;&lt; f.<a name="a7"></a><a class="code" href="a00056.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> (x, 0) &lt;&lt; std::endl;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.<a name="a8"></a><a class="code" href="a00056.html#a18879d9ec115089c02e685a020a11c4d" title="Computes the jacobian.">jacobian</a> (x) &lt;&lt; std::endl;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;H(x) = &quot;</span> &lt;&lt; f.<a name="a9"></a><a class="code" href="a00070.html#a7ab6bda5039008fb215ab24ecacd85a2" title="Compute the hessian at a given point.">hessian</a> (x) &lt;&lt; std::endl;
 
-  <a class="code" href="a00064.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunction (a, b);
-  <a name="_a10"></a><a class="code" href="a00063.html" title="Define an abstract linear function.">GenericLinearFunction&lt;T&gt;</a>* linearFunction = &amp;numericLinearFunction;
+  <a class="code" href="a00065.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunction (a, b);
+  <a name="_a10"></a><a class="code" href="a00064.html" title="Define an abstract linear function.">GenericLinearFunction&lt;T&gt;</a>* linearFunction = &amp;numericLinearFunction;
 
-  <a class="code" href="a00064.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunctionRebuilt (*linearFunction);
+  <a class="code" href="a00065.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunctionRebuilt (*linearFunction);
 
-  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00240.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00064.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> (),
-       numericLinearFunctionRebuilt.<a class="code" href="a00064.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> ()));
-  BOOST_CHECK_EQUAL (numericLinearFunction.<a name="a13"></a><a class="code" href="a00064.html#a5f335d97438f278d3a12651bdf88748d">b</a> (), numericLinearFunctionRebuilt.<a class="code" href="a00064.html#a5f335d97438f278d3a12651bdf88748d">b</a> ());
+  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00244.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00065.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> (),
+       numericLinearFunctionRebuilt.<a class="code" href="a00065.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> ()));
+  BOOST_CHECK_EQUAL (numericLinearFunction.<a name="a13"></a><a class="code" href="a00065.html#a5f335d97438f278d3a12651bdf88748d">b</a> (), numericLinearFunctionRebuilt.<a class="code" href="a00065.html#a5f335d97438f278d3a12651bdf88748d">b</a> ());
 
   std::cout &lt;&lt; output-&gt;str () &lt;&lt; std::endl;
   <span class="comment">//BOOST_CHECK (output-&gt;match_pattern ());</span>

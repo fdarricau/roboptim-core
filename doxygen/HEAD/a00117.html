@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>cache.hh File Reference</title>
+<title>roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -18,8 +18,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -41,8 +41,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -61,32 +63,215 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-types">Public Types</a>  </div>
   <div class="headertitle">
-<div class="title">cache.hh File Reference</div>  </div>
+<div class="title">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;list&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;boost/unordered_map.hpp&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00118.html">roboptim/core/cache.hxx</a>&gt;</code><br/>
-</div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html">roboptim::LRUCache&lt; K, V &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">LRU (Least Recently Used) cache.  <a href="a00074.html#details">More...</a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
-<br/></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00240.html#aceea90721ffb0d24fe233493b1a3cf78">roboptim::operator&lt;&lt;</a> (std::ostream &amp;o, const LRUCache&lt; K, V &gt; &amp;cache)</td></tr>
+<!-- doxytag: class="roboptim::detail::ProductDifferentiation::Types" -->
+<p>Some useful types for product differentiation.  
+ <a href="a00117.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/core/filter/product.hxx&gt;</code></p>
+
+<p><a href="a00344.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::and_<br class="typebreak"/>
+&lt; boost::is_same&lt; typename <br class="typebreak"/>
+U::traits_t, <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;<br class="typebreak"/>
+, boost::is_same&lt; typename <br class="typebreak"/>
+V::traits_t, <a class="el" href="a00050.html">EigenMatrixDense</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a274b7e2e4294839941f34eeda3321169">fullDense_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00096.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00096.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef U::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a1c1fc587a3b258bbcbbbcb87f16f9138">vectorU_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef V::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#add12a07c744cc581841ca5703404f958">vectorV_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef U::gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#af31cbe6ad6b4decc7f93f05b96758df4">gradientU_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef V::gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a22311a22a417e5cfb32bbaf1c201fba4">gradientV_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00096.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00117.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef U::jacobian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#af19873151b60ab357dd7ffc9c4fee909">jacobianU_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef V::jacobian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a9ea41e92078c1b800662fc5e3c963a1f">jacobianV_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00096.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename U, typename V&gt;<br/>
+struct roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</h3>
+
+<p>Some useful types for product differentiation. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">U</td><td>left function. </td></tr>
+    <tr><td class="paramname">V</td><td>right function. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a274b7e2e4294839941f34eeda3321169"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::fullDense_t" ref="a274b7e2e4294839941f34eeda3321169" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::mpl::and_&lt; boost::is_same&lt;typename U::traits_t, <a class="el" href="a00050.html">EigenMatrixDense</a>&gt;, boost::is_same&lt;typename V::traits_t, <a class="el" href="a00050.html">EigenMatrixDense</a>&gt; &gt; <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a274b7e2e4294839941f34eeda3321169">fullDense_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac1d10d2e062c9df230d2e824f21ac055"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradient_t" ref="ac1d10d2e062c9df230d2e824f21ac055" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00096.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00117.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a> <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af31cbe6ad6b4decc7f93f05b96758df4"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradientU_t" ref="af31cbe6ad6b4decc7f93f05b96758df4" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef U::gradient_t <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#af31cbe6ad6b4decc7f93f05b96758df4">gradientU_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22311a22a417e5cfb32bbaf1c201fba4"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradientV_t" ref="a22311a22a417e5cfb32bbaf1c201fba4" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef V::gradient_t <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a22311a22a417e5cfb32bbaf1c201fba4">gradientV_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47913e4c9fa621dd074a8297546055db"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobian_t" ref="a47913e4c9fa621dd074a8297546055db" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00096.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00117.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a> <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af19873151b60ab357dd7ffc9c4fee909"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobianU_t" ref="af19873151b60ab357dd7ffc9c4fee909" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef U::jacobian_t <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#af19873151b60ab357dd7ffc9c4fee909">jacobianU_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ea41e92078c1b800662fc5e3c963a1f"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobianV_t" ref="a9ea41e92078c1b800662fc5e3c963a1f" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef V::jacobian_t <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a9ea41e92078c1b800662fc5e3c963a1f">jacobianV_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66d1f3a83ef661ffb621f5c944b6cbf7"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::size_type" ref="a66d1f3a83ef661ffb621f5c944b6cbf7" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00096.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00117.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a> <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a994f3d3e48ffc911b40f9a7e28979692"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::value_type" ref="a994f3d3e48ffc911b40f9a7e28979692" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00096.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00117.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a> <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c1fc587a3b258bbcbbbcb87f16f9138"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::vectorU_t" ref="a1c1fc587a3b258bbcbbbcb87f16f9138" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef U::vector_t <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#a1c1fc587a3b258bbcbbbcb87f16f9138">vectorU_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add12a07c744cc581841ca5703404f958"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::vectorV_t" ref="add12a07c744cc581841ca5703404f958" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef V::vector_t <a class="el" href="a00117.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00117.html#add12a07c744cc581841ca5703404f958">vectorV_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -105,6 +290,9 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00117.html">cache.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00249.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00097.html">ProductDifferentiation</a>      </li>
+      <li class="navelem"><a class="el" href="a00117.html">Types</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Minus&lt; U, V &gt; Class Template Reference</title>
+<title>roboptim::LRUCache&lt; K, V &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -66,56 +66,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Minus&lt; U, V &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00255.html">Function filters</a></div></div>  </div>
+<div class="title">roboptim::LRUCache&lt; K, V &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Minus" -->
-<p>Subtract two RobOptim functions.  
+<!-- doxytag: class="roboptim::LRUCache" -->
+<p>LRU (Least Recently Used) cache.  
  <a href="a00077.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/filter/minus.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/cache.hh&gt;</code></p>
 
-<p><a href="a00281.html">List of all members.</a></p>
+<p><a href="a00272.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00097.html">detail::PromoteTrait</a><br class="typebreak"/>
-&lt; U, V &gt;::T_promote&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031">parentType_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="a00077.html">Minus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ae344478e5d53643778a5c4aee576b55c">MinusShPtr_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef K&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#af0ed66c55b2f65a742e39f575aa56917">key_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of keys.  <a href="#af0ed66c55b2f65a742e39f575aa56917"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#af2e6ba538480cc0643fb7511046ab059">value_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of values.  <a href="#af2e6ba538480cc0643fb7511046ab059"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="a00077.html#af0ed66c55b2f65a742e39f575aa56917">key_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ade0b7f976a89e5678027cfb71d28dc50">keyTracker_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00077.html#af2e6ba538480cc0643fb7511046ab059">value_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a2d20d2abcc8bc9436f0cfcf412991917">valuePool_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="a00077.html#af0ed66c55b2f65a742e39f575aa56917">key_t</a>, typename <br class="typebreak"/>
+valuePool_t::iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aa382887f0e1edd1cc3091caafd638cab">map_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00078.html" title="Apply a function several times to an input vector.">Map</a> from key to iterator in the value pool.  <a href="#aa382887f0e1edd1cc3091caafd638cab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef map_t::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef map_t::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04">iterator</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ada08c22a7499f3af4279f6df1c095d63">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00077.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac824027a41ce9d5a343d1e0faa13bb8c">Minus</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00077.html#ad452d59bf5247d3f65c8e46154cce947">left</a>, boost::shared_ptr&lt; V &gt; <a class="el" href="a00077.html#a736678b418a2be8841df0558ed2395fd">right</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a4eb1f38d5fb4f07cb695b431ff715f6c">~Minus</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ad452d59bf5247d3f65c8e46154cce947">left</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">U &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a6c53d7372eb9f682cf70b372df297b70">left</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; V &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a736678b418a2be8841df0558ed2395fd">right</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">V &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a6fb299cf7d68ae57699fca015b7f7eba">right</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#af2c5ad8976a90884a0fadfc99d6e44e7">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aaf7a2ff910727e27d03cccd5e08a4e9e">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aee47ee4fa54a298ea6ae658e274ee5ab">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#adf39b886a31a4a0a025bef7f4426d669">LRUCache</a> (size_t <a class="el" href="a00077.html#a145d87360171ba7495783aea2e842e00">size</a>=10)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#adf39b886a31a4a0a025bef7f4426d669"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab67fbd0e31b6ec1300d2fbc8beb9e69d">~LRUCache</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab67fbd0e31b6ec1300d2fbc8beb9e69d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a145d87360171ba7495783aea2e842e00">size</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the cache.  <a href="#a145d87360171ba7495783aea2e842e00"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a28e34e985952a0f11bfc6067cfd42d40">resize</a> (size_t <a class="el" href="a00077.html#a145d87360171ba7495783aea2e842e00">size</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the size of the cache.  <a href="#a28e34e985952a0f11bfc6067cfd42d40"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#abd3a27df163200ea76eba17de52e7b14">find</a> (const K &amp;key) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find an element in the cache.  <a href="#abd3a27df163200ea76eba17de52e7b14"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a0edf6b3be23244f3f41c99c424056b72">begin</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the beginning of the cache.  <a href="#a0edf6b3be23244f3f41c99c424056b72"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ab829747610b83eb3131cda8e08159210">end</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the end of the cache.  <a href="#ab829747610b83eb3131cda8e08159210"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#adbc235a89e5af27d7ac217be10426d36">cbegin</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the beginning of the cache.  <a href="#adbc235a89e5af27d7ac217be10426d36"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aa6cedc78f33e81ad30fe6e76e2b20363">cend</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the end of the cache.  <a href="#aa6cedc78f33e81ad30fe6e76e2b20363"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">V &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#ac961cb4b8aa0bd77683f0746e9a32add">operator[]</a> (const K &amp;key)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a cached element.  <a href="#ac961cb4b8aa0bd77683f0746e9a32add"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a11377d5e3391617d897a5df265e1a9a7">insert</a> (const K &amp;key, const V &amp;value)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a value into the cache.  <a href="#a11377d5e3391617d897a5df265e1a9a7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#aff3d88a98c66640a4af8969519b1b205">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the cache.  <a href="#aff3d88a98c66640a4af8969519b1b205"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a43fd6b57d15377dbc549339a0d3e363d">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the cache on the specified output stream.  <a href="#a43fd6b57d15377dbc549339a0d3e363d"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename U, typename V&gt;<br/>
-class roboptim::Minus&lt; U, V &gt;</h3>
+<div class="textblock"><h3>template&lt;typename K, typename V&gt;<br/>
+class roboptim::LRUCache&lt; K, V &gt;</h3>
 
-<p>Subtract two RobOptim functions. </p>
+<p>LRU (Least Recently Used) cache. </p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">U</td><td>first input function type. </td></tr>
-    <tr><td class="paramname">V</td><td>second input function type. </td></tr>
+    <tr><td class="paramname">K</td><td>type for keys. </td></tr>
+    <tr><td class="paramname">V</td><td>type for values. Some of the ideas used here come from Tim Day's "LRU cache implementation in C++" (<a href="http://timday.bitbucket.org/lru.html">http://timday.bitbucket.org/lru.html</a>) </td></tr>
   </table>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ae344478e5d53643778a5c4aee576b55c"></a><!-- doxytag: member="roboptim::Minus::MinusShPtr_t" ref="ae344478e5d53643778a5c4aee576b55c" args="" -->
+<a class="anchor" id="a01c31e88fa2e6edc85f37ca890f4ff2b"></a><!-- doxytag: member="roboptim::LRUCache::const_iterator" ref="a01c31e88fa2e6edc85f37ca890f4ff2b" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K, typename V&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00077.html">Minus</a>&gt; <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#ae344478e5d53643778a5c4aee576b55c">MinusShPtr_t</a></td>
+          <td class="memname">typedef map_t::const_iterator <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a></td>
         </tr>
       </table>
 </div>
@@ -123,14 +148,95 @@ template&lt;typename U , typename V &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8b7f52fa80d2c59b7c7bc9a35a7e0031"></a><!-- doxytag: member="roboptim::Minus::parentType_t" ref="a8b7f52fa80d2c59b7c7bc9a35a7e0031" args="" -->
+<a class="anchor" id="a00425a5fdb30a0bf0bb62be02fd43f04"></a><!-- doxytag: member="roboptim::LRUCache::iterator" ref="a00425a5fdb30a0bf0bb62be02fd43f04" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K, typename V&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00097.html">detail::PromoteTrait</a>&lt;U, V&gt;::T_promote <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031">parentType_t</a></td>
+          <td class="memname">typedef map_t::iterator <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04">iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0ed66c55b2f65a742e39f575aa56917"></a><!-- doxytag: member="roboptim::LRUCache::key_t" ref="af0ed66c55b2f65a742e39f575aa56917" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef K <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#af0ed66c55b2f65a742e39f575aa56917">key_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of keys. </p>
+
+</div>
+</div>
+<a class="anchor" id="ade0b7f976a89e5678027cfb71d28dc50"></a><!-- doxytag: member="roboptim::LRUCache::keyTracker_t" ref="ade0b7f976a89e5678027cfb71d28dc50" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="a00077.html#af0ed66c55b2f65a742e39f575aa56917">key_t</a>&gt; <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#ade0b7f976a89e5678027cfb71d28dc50">keyTracker_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa382887f0e1edd1cc3091caafd638cab"></a><!-- doxytag: member="roboptim::LRUCache::map_t" ref="aa382887f0e1edd1cc3091caafd638cab" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::unordered_map&lt;<a class="el" href="a00077.html#af0ed66c55b2f65a742e39f575aa56917">key_t</a>, typename valuePool_t::iterator&gt; <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#aa382887f0e1edd1cc3091caafd638cab">map_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00078.html" title="Apply a function several times to an input vector.">Map</a> from key to iterator in the value pool. </p>
+
+</div>
+</div>
+<a class="anchor" id="af2e6ba538480cc0643fb7511046ab059"></a><!-- doxytag: member="roboptim::LRUCache::value_t" ref="af2e6ba538480cc0643fb7511046ab059" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef V <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#af2e6ba538480cc0643fb7511046ab059">value_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d20d2abcc8bc9436f0cfcf412991917"></a><!-- doxytag: member="roboptim::LRUCache::valuePool_t" ref="a2d20d2abcc8bc9436f0cfcf412991917" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00077.html#af2e6ba538480cc0643fb7511046ab059">value_t</a>&gt; <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a2d20d2abcc8bc9436f0cfcf412991917">valuePool_t</a></td>
         </tr>
       </table>
 </div>
@@ -139,43 +245,42 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac824027a41ce9d5a343d1e0faa13bb8c"></a><!-- doxytag: member="roboptim::Minus::Minus" ref="ac824027a41ce9d5a343d1e0faa13bb8c" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
+<a class="anchor" id="adf39b886a31a4a0a025bef7f4426d669"></a><!-- doxytag: member="roboptim::LRUCache::LRUCache" ref="adf39b886a31a4a0a025bef7f4426d669" args="(size_t size=10)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html">Minus</a> </td>
+          <td class="memname"><a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html">LRUCache</a> </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>10</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Constructor. </p>
+<p>Note: all the memory is allocated in the constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>maximum size of the cache. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a4eb1f38d5fb4f07cb695b431ff715f6c"></a><!-- doxytag: member="roboptim::Minus::~Minus" ref="a4eb1f38d5fb4f07cb695b431ff715f6c" args="()" -->
+<a class="anchor" id="ab67fbd0e31b6ec1300d2fbc8beb9e69d"></a><!-- doxytag: member="roboptim::LRUCache::~LRUCache" ref="ab67fbd0e31b6ec1300d2fbc8beb9e69d" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::~<a class="el" href="a00077.html">Minus</a> </td>
+          <td class="memname"><a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::~<a class="el" href="a00077.html">LRUCache</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -183,191 +288,260 @@ template&lt;typename U , typename V &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af2c5ad8976a90884a0fadfc99d6e44e7"></a><!-- doxytag: member="roboptim::Minus::impl_compute" ref="af2c5ad8976a90884a0fadfc99d6e44e7" args="(result_t &amp;result, const argument_t &amp;x) const " -->
+<a class="anchor" id="a0edf6b3be23244f3f41c99c424056b72"></a><!-- doxytag: member="roboptim::LRUCache::begin" ref="a0edf6b3be23244f3f41c99c424056b72" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#af2c5ad8976a90884a0fadfc99d6e44e7">impl_compute</a> </td>
+          <td class="memname"><a class="el" href="a00077.html">LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04">iterator</a> <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a0edf6b3be23244f3f41c99c424056b72">begin</a> </td>
           <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Iterator to the beginning of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbc235a89e5af27d7ac217be10426d36"></a><!-- doxytag: member="roboptim::LRUCache::cbegin" ref="adbc235a89e5af27d7ac217be10426d36" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00077.html">LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a> <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#adbc235a89e5af27d7ac217be10426d36">cbegin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Iterator to the beginning of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6cedc78f33e81ad30fe6e76e2b20363"></a><!-- doxytag: member="roboptim::LRUCache::cend" ref="aa6cedc78f33e81ad30fe6e76e2b20363" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00077.html">LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a> <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#aa6cedc78f33e81ad30fe6e76e2b20363">cend</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Iterator to the end of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="aff3d88a98c66640a4af8969519b1b205"></a><!-- doxytag: member="roboptim::LRUCache::clear" ref="aff3d88a98c66640a4af8969519b1b205" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#aff3d88a98c66640a4af8969519b1b205">clear</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Clear the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab829747610b83eb3131cda8e08159210"></a><!-- doxytag: member="roboptim::LRUCache::end" ref="ab829747610b83eb3131cda8e08159210" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00077.html">LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04">iterator</a> <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#ab829747610b83eb3131cda8e08159210">end</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Iterator to the end of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="abd3a27df163200ea76eba17de52e7b14"></a><!-- doxytag: member="roboptim::LRUCache::find" ref="abd3a27df163200ea76eba17de52e7b14" args="(const K &amp;key) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00077.html">LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b">const_iterator</a> <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#abd3a27df163200ea76eba17de52e7b14">find</a> </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Find an element in the cache. </p>
+
+<p>Referenced by <a class="el" href="a00029.html#ae4c9eda2c71f16a341c46412767b0ea9">roboptim::CachedFunction&lt; T &gt;::impl_compute()</a>, <a class="el" href="a00029.html#ad48b33141cfafa309c96b14af1a5f443">roboptim::CachedFunction&lt; T &gt;::impl_derivative()</a>, and <a class="el" href="a00029.html#a24dbfdd65f10b1d4f39da398f9f2f7ee">roboptim::CachedFunction&lt; T &gt;::impl_jacobian()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11377d5e3391617d897a5df265e1a9a7"></a><!-- doxytag: member="roboptim::LRUCache::insert" ref="a11377d5e3391617d897a5df265e1a9a7" args="(const K &amp;key, const V &amp;value)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a11377d5e3391617d897a5df265e1a9a7">insert</a> </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
+          <td class="paramtype">const V &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Insert a value into the cache. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>key of the element. </td></tr>
+    <tr><td class="paramname">value</td><td>value of the element. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="aaf7a2ff910727e27d03cccd5e08a4e9e"></a><!-- doxytag: member="roboptim::Minus::impl_gradient" ref="aaf7a2ff910727e27d03cccd5e08a4e9e" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
+<a class="anchor" id="ac961cb4b8aa0bd77683f0746e9a32add"></a><!-- doxytag: member="roboptim::LRUCache::operator[]" ref="ac961cb4b8aa0bd77683f0746e9a32add" args="(const K &amp;key)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K, typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#aaf7a2ff910727e27d03cccd5e08a4e9e">impl_gradient</a> </td>
+          <td class="memname">V &amp; <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::operator[] </td>
           <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Access a cached element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>key to the element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>reference to the element. </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="aee47ee4fa54a298ea6ae658e274ee5ab"></a><!-- doxytag: member="roboptim::Minus::impl_jacobian" ref="aee47ee4fa54a298ea6ae658e274ee5ab" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
+<a class="anchor" id="a43fd6b57d15377dbc549339a0d3e363d"></a><!-- doxytag: member="roboptim::LRUCache::print" ref="a43fd6b57d15377dbc549339a0d3e363d" args="(std::ostream &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#aee47ee4fa54a298ea6ae658e274ee5ab">impl_jacobian</a> </td>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a43fd6b57d15377dbc549339a0d3e363d">print</a> </td>
           <td>(</td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Display the cache on the specified output stream. </p>
+
 </div>
 </div>
-<a class="anchor" id="ad452d59bf5247d3f65c8e46154cce947"></a><!-- doxytag: member="roboptim::Minus::left" ref="ad452d59bf5247d3f65c8e46154cce947" args="() const " -->
+<a class="anchor" id="a28e34e985952a0f11bfc6067cfd42d40"></a><!-- doxytag: member="roboptim::LRUCache::resize" ref="a28e34e985952a0f11bfc6067cfd42d40" args="(size_t size)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#ad452d59bf5247d3f65c8e46154cce947">left</a> </td>
+          <td class="memname">void <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a28e34e985952a0f11bfc6067cfd42d40">resize</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Change the size of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="a145d87360171ba7495783aea2e842e00"></a><!-- doxytag: member="roboptim::LRUCache::size" ref="a145d87360171ba7495783aea2e842e00" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a00077.html">roboptim::LRUCache</a>&lt; K, V &gt;::<a class="el" href="a00077.html#a145d87360171ba7495783aea2e842e00">size</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a6c53d7372eb9f682cf70b372df297b70"></a><!-- doxytag: member="roboptim::Minus::left" ref="a6c53d7372eb9f682cf70b372df297b70" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">U&amp; <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#ad452d59bf5247d3f65c8e46154cce947">left</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a736678b418a2be8841df0558ed2395fd"></a><!-- doxytag: member="roboptim::Minus::right" ref="a736678b418a2be8841df0558ed2395fd" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const boost::shared_ptr&lt;V&gt;&amp; <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#a736678b418a2be8841df0558ed2395fd">right</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6fb299cf7d68ae57699fca015b7f7eba"></a><!-- doxytag: member="roboptim::Minus::right" ref="a6fb299cf7d68ae57699fca015b7f7eba" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V&amp; <a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#a736678b418a2be8841df0558ed2395fd">right</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ada08c22a7499f3af4279f6df1c095d63"></a><!-- doxytag: member="roboptim::Minus::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="ada08c22a7499f3af4279f6df1c095d63" args="(parentType_t)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00077.html">roboptim::Minus</a>&lt; U, V &gt;::<a class="el" href="a00077.html#ada08c22a7499f3af4279f6df1c095d63">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00077.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031">parentType_t</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Size of the cache. </p>
 
 </div>
 </div>
@@ -389,7 +563,7 @@ template&lt;typename U , typename V &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00240.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00077.html">Minus</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00077.html">LRUCache</a>      </li>
 </body>
 </html>

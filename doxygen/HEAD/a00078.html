@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::callback::Multiplexer&lt; S &gt; Class Template Reference</title>
+<title>roboptim::Map&lt; U &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -64,200 +64,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::callback::Multiplexer&lt; S &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::Map&lt; U &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00259.html">Function filters</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::callback::Multiplexer" -->
-<p>Callback multiplexer.  
+<!-- doxytag: class="roboptim::Map" -->
+<p>Apply a function several times to an input vector.  
  <a href="a00078.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/callback/multiplexer.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/filter/map.hh&gt;</code></p>
 
-<p><a href="a00324.html">List of all members.</a></p>
+<p><a href="a00284.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef S&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a37c8ffbb23e1cb8c25dc281223788be8">solver_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the solver.  <a href="#a37c8ffbb23e1cb8c25dc281223788be8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00105.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the problem.  <a href="#addc09c5f72e9a83057c2ed4999057759"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">SolverState</a>&lt; <a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the state of the solver.  <a href="#af89cb0facf75deb84e3a05b93402b9cc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00105.html#a8cb27cc8f35c120bf91513297156de88">solver_t::callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ab4e9c0b66b2cdde84febafbf7af28dd1">callback_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function type.  <a href="#ab4e9c0b66b2cdde84febafbf7af28dd1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00078.html#ab4e9c0b66b2cdde84febafbf7af28dd1">callback_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a vector of callbacks.  <a href="#aa62a2cdb76976179c27d6f3aaf7c3c39"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt; U &gt;<br class="typebreak"/>
+::T_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#aa472baf5213f2a8afc29b442073031eb">parentType_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="a00078.html">Map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a574f40013b83ac08459277e74dc8289e">MapShPtr_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ab372b78c8b69376cabc66019c68bb52b">Multiplexer</a> (<a class="el" href="a00078.html#a37c8ffbb23e1cb8c25dc281223788be8">solver_t</a> &amp;solver)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor containing no callback.  <a href="#ab372b78c8b69376cabc66019c68bb52b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a1855ea89d5ff38dcca3e529dc9193e34">Multiplexer</a> (<a class="el" href="a00078.html#a37c8ffbb23e1cb8c25dc281223788be8">solver_t</a> &amp;solver, const <a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a> &amp;<a class="el" href="a00078.html#ac68f74e953fa63c93983bc87d54616ff">callbacks</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor filling the vector of callbacks.  <a href="#a1855ea89d5ff38dcca3e529dc9193e34"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a3900a4896cbb863740e647f7a424d232">~Multiplexer</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a3900a4896cbb863740e647f7a424d232"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ac68f74e953fa63c93983bc87d54616ff">callbacks</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector of callbacks.  <a href="#ac68f74e953fa63c93983bc87d54616ff"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a13d07e667f162cacfa12d0098f84a953">callbacks</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector of callbacks.  <a href="#a13d07e667f162cacfa12d0098f84a953"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a3200fab6ab291a18cb133b026716b624">perIterationCallback</a> (const <a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a> &amp;pb, <a class="el" href="a00078.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a> &amp;state)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-callback calling multiple callbacks.  <a href="#a3200fab6ab291a18cb133b026716b624"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#abe0935b5bcc152a52b8b001ba928811e">perIterationCallbackUnsafe</a> (const <a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a> &amp;pb, <a class="el" href="a00078.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a> &amp;state)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-callback calling multiple callbacks.  <a href="#abe0935b5bcc152a52b8b001ba928811e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a5c62587c4e6d6c97262a9fc322f0f304">attach</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the multiplexer with the solver.  <a href="#a5c62587c4e6d6c97262a9fc322f0f304"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a2133bc01868edc2837aae3c4fb4ec0a1">unregister</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the multiplexer from the solver.  <a href="#a2133bc01868edc2837aae3c4fb4ec0a1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a934ae91992e7f17a02dbde5ec8e7de3c">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00078.html#aa472baf5213f2a8afc29b442073031eb">parentType_t</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a4c8f20cf07ee28545f24df00a427e7b9">Map</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00078.html#a6084518aafb074773522d069b84418b3">origin</a>, size_type repeat)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00078.html" title="Apply a function several times to an input vector.">Map</a> filter constructor.  <a href="#a4c8f20cf07ee28545f24df00a427e7b9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#af65411ba263b5776211a5edb162a89aa">~Map</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a6084518aafb074773522d069b84418b3">origin</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a323b53ffd6ed09b1460ea1c112c1b340">origin</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#ac5105e01d83e5837753b3c99d0b6ed71">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#a8f63c844358c42b4cf223dcddc5caba6">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html#aaf3d90bb7f6484f288ee797366f8f6a1">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename S&gt;<br/>
-class roboptim::callback::Multiplexer&lt; S &gt;</h3>
+<div class="textblock"><h3>template&lt;typename U&gt;<br/>
+class roboptim::Map&lt; U &gt;</h3>
 
-<p>Callback multiplexer. </p>
-<p>This class turns multiple callback functions into one. Note that callbacks are processed in the order of the vector of functions provided. Beware of conflicts between multiple callbacks.</p>
+<p>Apply a function several times to an input vector. </p>
+<p>Input: [x_0^0 x_1^0 ... x_N^0 ... x_0^M x_1^M ... x_N^M]</p>
+<p>Output: [f(x_0^0 x_1^0 ... x_N^0) ... f(x_0^M x_1^M ... x_N^M)]</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">S</td><td>solver type. </td></tr>
+    <tr><td class="paramname">U</td><td>input function type. </td></tr>
   </table>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ab4e9c0b66b2cdde84febafbf7af28dd1"></a><!-- doxytag: member="roboptim::callback::Multiplexer::callback_t" ref="ab4e9c0b66b2cdde84febafbf7af28dd1" args="" -->
+<a class="anchor" id="a574f40013b83ac08459277e74dc8289e"></a><!-- doxytag: member="roboptim::Map::MapShPtr_t" ref="a574f40013b83ac08459277e74dc8289e" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00105.html#a8cb27cc8f35c120bf91513297156de88">solver_t::callback_t</a> <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#ab4e9c0b66b2cdde84febafbf7af28dd1">callback_t</a></td>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00078.html">Map</a>&gt; <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#a574f40013b83ac08459277e74dc8289e">MapShPtr_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Callback function type. </p>
-
 </div>
 </div>
-<a class="anchor" id="aa62a2cdb76976179c27d6f3aaf7c3c39"></a><!-- doxytag: member="roboptim::callback::Multiplexer::callbacks_t" ref="aa62a2cdb76976179c27d6f3aaf7c3c39" args="" -->
+<a class="anchor" id="aa472baf5213f2a8afc29b442073031eb"></a><!-- doxytag: member="roboptim::Map::parentType_t" ref="aa472baf5213f2a8afc29b442073031eb" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00078.html#ab4e9c0b66b2cdde84febafbf7af28dd1">callback_t</a>&gt; <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#aa472baf5213f2a8afc29b442073031eb">parentType_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Type of a vector of callbacks. </p>
-
-</div>
-</div>
-<a class="anchor" id="addc09c5f72e9a83057c2ed4999057759"></a><!-- doxytag: member="roboptim::callback::Multiplexer::problem_t" ref="addc09c5f72e9a83057c2ed4999057759" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00105.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Type of the problem. </p>
-
-</div>
-</div>
-<a class="anchor" id="a37c8ffbb23e1cb8c25dc281223788be8"></a><!-- doxytag: member="roboptim::callback::Multiplexer::solver_t" ref="a37c8ffbb23e1cb8c25dc281223788be8" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef S <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#a37c8ffbb23e1cb8c25dc281223788be8">solver_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Type of the solver. </p>
-
-</div>
-</div>
-<a class="anchor" id="af89cb0facf75deb84e3a05b93402b9cc"></a><!-- doxytag: member="roboptim::callback::Multiplexer::solverState_t" ref="af89cb0facf75deb84e3a05b93402b9cc" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">SolverState</a>&lt;<a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a>&gt; <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Type of the state of the solver. </p>
 
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab372b78c8b69376cabc66019c68bb52b"></a><!-- doxytag: member="roboptim::callback::Multiplexer::Multiplexer" ref="ab372b78c8b69376cabc66019c68bb52b" args="(solver_t &amp;solver)" -->
+<a class="anchor" id="a4c8f20cf07ee28545f24df00a427e7b9"></a><!-- doxytag: member="roboptim::Map::Map" ref="a4c8f20cf07ee28545f24df00a427e7b9" args="(boost::shared_ptr&lt; U &gt; origin, size_type repeat)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html">Multiplexer</a> </td>
+          <td class="memname"><a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html">Map</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00078.html#a37c8ffbb23e1cb8c25dc281223788be8">solver_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>solver</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Default constructor containing no callback. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">solver</td><td>solver the multiplexer will attach to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>References <a class="el" href="a00078.html#a5c62587c4e6d6c97262a9fc322f0f304">roboptim::callback::Multiplexer&lt; S &gt;::attach()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1855ea89d5ff38dcca3e529dc9193e34"></a><!-- doxytag: member="roboptim::callback::Multiplexer::Multiplexer" ref="a1855ea89d5ff38dcca3e529dc9193e34" args="(solver_t &amp;solver, const callbacks_t &amp;callbacks)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html">Multiplexer</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00078.html#a37c8ffbb23e1cb8c25dc281223788be8">solver_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>solver</em>, </td>
+          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>callbacks</em>&#160;</td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>repeat</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -268,200 +167,181 @@ template&lt;typename S &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Constructor filling the vector of callbacks. </p>
+<p><a class="el" href="a00078.html" title="Apply a function several times to an input vector.">Map</a> filter constructor. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">solver</td><td>solver the multiplexer will attach to. </td></tr>
-    <tr><td class="paramname">callbacks</td><td>a vector of callbacks. </td></tr>
+    <tr><td class="paramname">origin</td><td>input function. </td></tr>
+    <tr><td class="paramname">repeat</td><td>number of times to repeat the function. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00078.html#a5c62587c4e6d6c97262a9fc322f0f304">roboptim::callback::Multiplexer&lt; S &gt;::attach()</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a3900a4896cbb863740e647f7a424d232"></a><!-- doxytag: member="roboptim::callback::Multiplexer::~Multiplexer" ref="a3900a4896cbb863740e647f7a424d232" args="()" -->
+<a class="anchor" id="af65411ba263b5776211a5edb162a89aa"></a><!-- doxytag: member="roboptim::Map::~Map" ref="af65411ba263b5776211a5edb162a89aa" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::~<a class="el" href="a00078.html">Multiplexer</a> </td>
+          <td class="memname"><a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::~<a class="el" href="a00078.html">Map</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Virtual destructor. </p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a5c62587c4e6d6c97262a9fc322f0f304"></a><!-- doxytag: member="roboptim::callback::Multiplexer::attach" ref="a5c62587c4e6d6c97262a9fc322f0f304" args="()" -->
+<a class="anchor" id="ac5105e01d83e5837753b3c99d0b6ed71"></a><!-- doxytag: member="roboptim::Map::impl_compute" ref="ac5105e01d83e5837753b3c99d0b6ed71" args="(result_t &amp;result, const argument_t &amp;x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#a5c62587c4e6d6c97262a9fc322f0f304">attach</a> </td>
+          <td class="memname">void <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#ac5105e01d83e5837753b3c99d0b6ed71">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Register the multiplexer with the solver. </p>
-
-<p>References <a class="el" href="a00255.html#gac398776c05160b474382281f0501fa7b">roboptim::bind()</a>.</p>
-
-<p>Referenced by <a class="el" href="a00078.html#ab372b78c8b69376cabc66019c68bb52b">roboptim::callback::Multiplexer&lt; S &gt;::Multiplexer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac68f74e953fa63c93983bc87d54616ff"></a><!-- doxytag: member="roboptim::callback::Multiplexer::callbacks" ref="ac68f74e953fa63c93983bc87d54616ff" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00078.html">Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a> &amp; <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#ac68f74e953fa63c93983bc87d54616ff">callbacks</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return the vector of callbacks. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>vector of callbacks. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a13d07e667f162cacfa12d0098f84a953"></a><!-- doxytag: member="roboptim::callback::Multiplexer::callbacks" ref="a13d07e667f162cacfa12d0098f84a953" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00078.html">Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#aa62a2cdb76976179c27d6f3aaf7c3c39">callbacks_t</a> &amp; <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#ac68f74e953fa63c93983bc87d54616ff">callbacks</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return the vector of callbacks. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>vector of callbacks. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3200fab6ab291a18cb133b026716b624"></a><!-- doxytag: member="roboptim::callback::Multiplexer::perIterationCallback" ref="a3200fab6ab291a18cb133b026716b624" args="(const problem_t &amp;pb, solverState_t &amp;state)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#a3200fab6ab291a18cb133b026716b624">perIterationCallback</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>pb</em>, </td>
+          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00078.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [protected]</code></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Meta-callback calling multiple callbacks. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pb</td><td>problem. </td></tr>
-    <tr><td class="paramname">state</td><td>solver state. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a class="anchor" id="abe0935b5bcc152a52b8b001ba928811e"></a><!-- doxytag: member="roboptim::callback::Multiplexer::perIterationCallbackUnsafe" ref="abe0935b5bcc152a52b8b001ba928811e" args="(const problem_t &amp;pb, solverState_t &amp;state)" -->
+<a class="anchor" id="a8f63c844358c42b4cf223dcddc5caba6"></a><!-- doxytag: member="roboptim::Map::impl_gradient" ref="a8f63c844358c42b4cf223dcddc5caba6" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#abe0935b5bcc152a52b8b001ba928811e">perIterationCallbackUnsafe</a> </td>
+          <td class="memname">void <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#a8f63c844358c42b4cf223dcddc5caba6">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00078.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>pb</em>, </td>
+          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00078.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>argument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [protected, virtual]</code></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Meta-callback calling multiple callbacks. </p>
-<p>Unsafe version that can throw exceptions.</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pb</td><td>problem. </td></tr>
-    <tr><td class="paramname">state</td><td>solver state. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a class="anchor" id="a2133bc01868edc2837aae3c4fb4ec0a1"></a><!-- doxytag: member="roboptim::callback::Multiplexer::unregister" ref="a2133bc01868edc2837aae3c4fb4ec0a1" args="()" -->
+<a class="anchor" id="aaf3d90bb7f6484f288ee797366f8f6a1"></a><!-- doxytag: member="roboptim::Map::impl_jacobian" ref="aaf3d90bb7f6484f288ee797366f8f6a1" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S &gt; </div>
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00078.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00078.html#a2133bc01868edc2837aae3c4fb4ec0a1">unregister</a> </td>
+          <td class="memname">void <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#aaf3d90bb7f6484f288ee797366f8f6a1">impl_jacobian</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [protected]</code></td>
+          <td class="paramtype">jacobian_t &amp;&#160;</td>
+          <td class="paramname"><em>jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Unregister the multiplexer from the solver. </p>
+</div>
+</div>
+<a class="anchor" id="a6084518aafb074773522d069b84418b3"></a><!-- doxytag: member="roboptim::Map::origin" ref="a6084518aafb074773522d069b84418b3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#a6084518aafb074773522d069b84418b3">origin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a323b53ffd6ed09b1460ea1c112c1b340"></a><!-- doxytag: member="roboptim::Map::origin" ref="a323b53ffd6ed09b1460ea1c112c1b340" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#a6084518aafb074773522d069b84418b3">origin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a934ae91992e7f17a02dbde5ec8e7de3c"></a><!-- doxytag: member="roboptim::Map::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a934ae91992e7f17a02dbde5ec8e7de3c" args="(parentType_t)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00078.html">roboptim::Map</a>&lt; U &gt;::<a class="el" href="a00078.html#a934ae91992e7f17a02dbde5ec8e7de3c">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00078.html#aa472baf5213f2a8afc29b442073031eb">parentType_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -483,8 +363,7 @@ template&lt;typename S &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00240.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00244.html">callback</a>      </li>
-      <li class="navelem"><a class="el" href="a00078.html">Multiplexer</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00078.html">Map</a>      </li>
 </body>
 </html>

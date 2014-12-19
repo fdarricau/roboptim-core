@@ -1,8 +1,5 @@
 var a00143 =
 [
-    [ "solver_t", "a00143.html#a926347d1adaf0ea2a6a2a50bc50a209e", null ],
-    [ "create", "a00143.html#a0a575b89f014bf2e20cb9ab341d88393", null ],
-    [ "destroy", "a00143.html#af992438f02837bfe836ba0a937747829", null ],
-    [ "getSizeOfProblem", "a00143.html#a60635b065e290b461a1e7be6b54f9cbc", null ],
-    [ "getTypeIdOfConstraintsList", "a00143.html#a25ff9384fbf0c8e416a686a67c7d1fdd", null ]
+    [ "DummyDifferentiableSparseSolverLastState", "a00244.html#a415aec27929dfc02eae5a5e612e59ef2", null ],
+    [ "DummySolverLastState", "a00244.html#a34ad703a5fff1c09628b79d9d328f28c", null ]
 ];

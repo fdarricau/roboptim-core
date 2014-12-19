@@ -1,8 +1,7 @@
 var a00107 =
 [
-    [ "problem_t", "a00107.html#ad075bea9aed21b399b4684d5c2258da7", null ],
-    [ "solver_t", "a00107.html#af7982512a4de7bfdd2e12669ea5d3d7b", null ],
-    [ "SolverFactory", "a00107.html#aadc8315a15a321eb1dcb064292d05077", null ],
-    [ "~SolverFactory", "a00107.html#a0a558a3b33d63421310b818c0577393a", null ],
-    [ "operator()", "a00107.html#ab4f632f2624c1fda7c8379b8136e5483", null ]
+    [ "Simple", "a00107.html#af284d376d832bca3c9d5e768be6942ed", null ],
+    [ "computeGradient", "a00107.html#a25df68e77acbebc52115bb1a6d019e45", null ],
+    [ "computeGradient", "a00107.html#a36159055175531adb6c84d75f8f36b9a", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00107.html#a589c0a7f4d846453adf91866789ebd7d", null ]
 ];

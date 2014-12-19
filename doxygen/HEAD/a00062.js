@@ -1,11 +1,11 @@
 var a00062 =
 [
-    [ "GenericIdentityFunction", "a00062.html#ab54d82769bc4a7bf83aad7a6ca7b26d5", null ],
-    [ "~GenericIdentityFunction", "a00062.html#ae60050ae16bed7e7d13dcfbdcf15ca65", null ],
-    [ "impl_compute", "a00062.html#ad188fa30f152f2a14c843cb27eb161e9", null ],
-    [ "impl_gradient", "a00254.html#ga41fe064db0d556f73918a7e6964edc91", null ],
-    [ "impl_gradient", "a00062.html#aed6be31ad24626d651ad6413d4b204eb", null ],
-    [ "impl_jacobian", "a00062.html#abcd9e760f668e00bfd5705db4b60ad1a", null ],
-    [ "print", "a00062.html#adc5eff6387532970e7b1e14daeb2d8af", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00062.html#a96bed4fb0ae0a69ca8c0ba546b161aaa", null ]
+    [ "argument_t", "a00062.html#a050f8ec0b678f9dfadd89368d21b3ec9", null ],
+    [ "gradient_t", "a00062.html#a980c849a750d10a91b3e577a9aea94d8", null ],
+    [ "jacobian_t", "a00062.html#a4045ada63d693b9b1475ac57b7698690", null ],
+    [ "matrix_t", "a00062.html#a6c134d447ffd0e219d15864cc94b216c", null ],
+    [ "result_t", "a00062.html#a866ef9a391daf4e4b20bd2029a67be96", null ],
+    [ "size_type", "a00062.html#ae382b9a557d9e2f5e54a54ef60acb10c", null ],
+    [ "value_type", "a00062.html#af0e69c7fd4c248106029270aef16c58e", null ],
+    [ "vector_t", "a00062.html#a480d3e5b3b2c53451fb99b97e48846c5", null ]
 ];

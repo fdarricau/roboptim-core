@@ -1,7 +1,7 @@
 var a00048 =
 [
-    [ "parent_t", "a00048.html#a111982763cc612288cf9eafdb422ff6e", null ],
-    [ "DummySolverTd", "a00048.html#a1696fdbfb1da4d482427e2365afc221a", null ],
-    [ "~DummySolverTd", "a00048.html#ae44fff1bdc0d38145c979d13f2d3f0c8", null ],
-    [ "solve", "a00048.html#ae5600583ae3db32dde947167a3bab131", null ]
+    [ "parent_t", "a00048.html#a3857347af4ffe3a2da4f19c361e11bce", null ],
+    [ "DummySolver", "a00048.html#a8ead2c500ed7fbda3daaf82c3ecf97b6", null ],
+    [ "~DummySolver", "a00048.html#ada79a77bf5b8a2c938cd2adfaf3cdcf8", null ],
+    [ "solve", "a00048.html#a3d67feee267c21554172ba5153b6d10a", null ]
 ];

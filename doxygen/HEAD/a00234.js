@@ -1,7 +1,5 @@
 var a00234 =
 [
-    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00234.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
-    [ "normalize", "a00258.html#ga03109edccbaa5f071371ee52c447ee70", null ],
-    [ "normalize", "a00258.html#gaf0f79518896936efeba27dabdce72963", null ],
-    [ "normalize", "a00258.html#ga823decd192bfbc6405e61c28947ddc4d", null ]
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS", "a00234.html#a2def6adcd8c6b13fe8be72ba4a6b41bf", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00234.html#a4e569ff9277e3bd7fc49eadf52fcc2f3", null ]
 ];

@@ -1,6 +1,9 @@
 var a00175 =
 [
-    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00175.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
-    [ "operator<<", "a00258.html#ga754766ba098561274be740474369e1ba", null ],
-    [ "operator<<", "a00248.html#aa5714b11301afc8bc1ee4d544eafac2f", null ]
+    [ "MATPLOTLIB_UNARY_COMMAND", "a00175.html#ada98b8f63c02be17bdbf654bc529d0bd", null ],
+    [ "MATPLOTLIB_UNARY_COMMAND_VAR", "a00175.html#ae91cb430ac819bcd54672228ac6094cd", null ],
+    [ "comment", "a00262.html#ga1263290fead3bbefebb52ad9acba0236", null ],
+    [ "import", "a00262.html#ga39b68128dabb457499f493b7f17d3413", null ],
+    [ "import", "a00262.html#ga7f5c136cb79bd9bb01b3681e9f3b693e", null ],
+    [ "set", "a00262.html#ga7cdf3f4f9a0ad3a8a3428375389c1332", null ]
 ];

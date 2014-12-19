@@ -80,10 +80,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00166.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00170.html">roboptim/core/io.hh</a>&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00175.html">roboptim/core/visualization/matplotlib.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00172.html">roboptim/core/visualization/matplotlib-commands.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00179.html">roboptim/core/visualization/matplotlib.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00176.html">roboptim/core/visualization/matplotlib-commands.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 <span class="keyword">using namespace </span>roboptim::visualization;
@@ -96,17 +96,17 @@ BOOST_AUTO_TEST_CASE (visualization_matplotlib_simple)
     output = retrievePattern (<span class="stringliteral">&quot;visualization-matplotlib-simple&quot;</span>);
 
   <span class="keyword">using namespace </span>roboptim::visualization::matplotlib;
-  <a name="_a0"></a><a class="code" href="a00076.html" title="matplotlib script">Matplotlib</a> matplotlib = Matplotlib::make_matplotlib (<span class="keyword">false</span>);
+  <a name="_a0"></a><a class="code" href="a00079.html" title="matplotlib script">Matplotlib</a> matplotlib = Matplotlib::make_matplotlib (<span class="keyword">false</span>);
 
   <span class="comment">// Display nothing, generate just some valid matplotlib commands.</span>
   (*output)
     &lt;&lt; (matplotlib
   &lt;&lt; <span class="keyword">set</span> (<span class="stringliteral">&quot;foo&quot;</span>, <span class="stringliteral">&quot;42&quot;</span>)
-  &lt;&lt; <a name="a1"></a><a class="code" href="a00258.html#ga108c0cb6161fb8813817a7b7a1ac980d" title="Make a Gnuplot comment.">comment</a> (<span class="stringliteral">&quot;Hello, world!\nThis is a three-line comment!\nAmazing!&quot;</span>)
+  &lt;&lt; <a name="a1"></a><a class="code" href="a00262.html#ga108c0cb6161fb8813817a7b7a1ac980d" title="Make a Gnuplot comment.">comment</a> (<span class="stringliteral">&quot;Hello, world!\nThis is a three-line comment!\nAmazing!&quot;</span>)
   &lt;&lt; <span class="keyword">import</span> (<span class="stringliteral">&quot;foo&quot;</span>)
   &lt;&lt; <span class="keyword">import</span> (<span class="stringliteral">&quot;foo&quot;</span>, <span class="stringliteral">&quot;bar&quot;</span>)
-  &lt;&lt; <a name="a2"></a><a class="code" href="a00258.html#ga064c7f29eb271392e24cbff1699e34c2">figure</a> ()
-  &lt;&lt; <a name="a3"></a><a class="code" href="a00258.html#gaf90f5364d8c3597b8909ba99083fc23f" title="Make a Gnuplot show command.">show</a> ()
+  &lt;&lt; <a name="a2"></a><a class="code" href="a00262.html#ga064c7f29eb271392e24cbff1699e34c2">figure</a> ()
+  &lt;&lt; <a name="a3"></a><a class="code" href="a00262.html#gaf90f5364d8c3597b8909ba99083fc23f" title="Make a Gnuplot show command.">show</a> ()
   );
 
   <span class="comment">// Test clear function.</span>

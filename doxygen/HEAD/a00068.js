@@ -1,17 +1,16 @@
 var a00068 =
 [
-    [ "argument_t", "a00068.html#a872361ab48c70d7ea6c946963007503a", null ],
-    [ "gradient_t", "a00068.html#a6d42700d59e8d7889fbfb90ddd450193", null ],
-    [ "jacobian_t", "a00068.html#a9d15de34e7fe72534b9cdeb81cabc313", null ],
-    [ "jacobianSize_t", "a00068.html#adcd7c268f3c9bf3a378c6b496ea9894b", null ],
-    [ "parent_t", "a00068.html#ad971f607bed919f3e6b1aef48d144945", null ],
-    [ "result_t", "a00068.html#ab551ca8427c40fe7f0133590b0a99ea7", null ],
-    [ "size_type", "a00068.html#a27e35814d825272183fb02149f5b4b32", null ],
-    [ "value_t", "a00068.html#a1f04759b9e57c6298e3a91d47c377570", null ],
-    [ "GenericSumOfC1Squares", "a00068.html#a06492c620c9395b3ce8b27811db24155", null ],
-    [ "GenericSumOfC1Squares", "a00068.html#ac9eb8d225c89b2fb482be9367a271e0c", null ],
-    [ "~GenericSumOfC1Squares", "a00068.html#a1a3eb8bc23a2fdf87b06f38f6c1fad25", null ],
-    [ "baseFunction", "a00068.html#adb62136d2d933844f7310a19c930f98d", null ],
-    [ "impl_compute", "a00068.html#adcbe7f4250c9d10f08e3d6c30c3aceb7", null ],
-    [ "impl_gradient", "a00068.html#ac7c9ad3f6e948037bad6f6b7b0d7a499", null ]
+    [ "result_t", "a00068.html#acd6988bec0b7bda9b8565232d32d1bae", null ],
+    [ "solutions", "a00068.html#a12c31c6bd2e018b05a71d51dd5b34846", null ],
+    [ "GenericSolver", "a00068.html#ac73eb90d375eebe2580be8ad275bbf39", null ],
+    [ "GenericSolver", "a00068.html#a73789e83216bf0ef32a3f123088f04b4", null ],
+    [ "~GenericSolver", "a00068.html#a86170d03b3066285f5c47bfc78819571", null ],
+    [ "getMinimum", "a00068.html#a3f01ea84c377efc66cd55bc38f8676ad", null ],
+    [ "minimum", "a00068.html#aef2460331a80efc404356e9b68269b8c", null ],
+    [ "minimumType", "a00068.html#a2426a7c827ce0c46c77ac29ad1d7f846", null ],
+    [ "print", "a00068.html#a06ac6c38696f931bc1333d974ef25d03", null ],
+    [ "reset", "a00068.html#a16884b058070f8fb6759c6c194665cb7", null ],
+    [ "solve", "a00068.html#a4573db8138895e5dc5eee8880e02e928", null ],
+    [ "logger", "a00068.html#a7fbfdfbf962a90aace9fd42e92e0a428", null ],
+    [ "result_", "a00068.html#ab36ece190971122f7111d7e92c4e66cf", null ]
 ];

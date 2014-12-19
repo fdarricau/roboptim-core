@@ -80,21 +80,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00166.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00170.html">roboptim/core/io.hh</a>&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00175.html">roboptim/core/visualization/matplotlib.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00172.html">roboptim/core/visualization/matplotlib-commands.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00173.html">roboptim/core/visualization/matplotlib-function.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00179.html">roboptim/core/visualization/matplotlib.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00176.html">roboptim/core/visualization/matplotlib-commands.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00177.html">roboptim/core/visualization/matplotlib-function.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 <span class="keyword">using namespace </span>roboptim::visualization;
 
 
 <span class="comment">// Define f(x) = x * x</span>
-<span class="keyword">struct </span>Square : <span class="keyword">public</span> <a name="_a0"></a><a class="code" href="a00058.html" title="Define an abstract mathematical function ( ).">Function</a>
+<span class="keyword">struct </span>Square : <span class="keyword">public</span> <a name="_a0"></a><a class="code" href="a00059.html" title="Define an abstract mathematical function ( ).">Function</a>
 {
   <span class="keyword">explicit</span> Square ()
-    : <a name="a1"></a><a class="code" href="a00240.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x * x&quot;</span>)
+    : <a name="a1"></a><a class="code" href="a00244.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x * x&quot;</span>)
   {
   }
 
@@ -106,10 +106,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 };
 
 <span class="comment">// Define a function that displays a circle.</span>
-<span class="keyword">struct </span>Circle : <span class="keyword">public</span> <a class="code" href="a00058.html" title="Define an abstract mathematical function ( ).">Function</a>
+<span class="keyword">struct </span>Circle : <span class="keyword">public</span> <a class="code" href="a00059.html" title="Define an abstract mathematical function ( ).">Function</a>
 {
   <span class="keyword">explicit</span> Circle (<span class="keywordtype">double</span> r = 1.)
-    : <a class="code" href="a00058.html" title="Define an abstract mathematical function ( ).">Function</a> (1, 2, <span class="stringliteral">&quot;{sin (x) * r; cos (x) * r}&quot;</span>),
+    : <a class="code" href="a00059.html" title="Define an abstract mathematical function ( ).">Function</a> (1, 2, <span class="stringliteral">&quot;{sin (x) * r; cos (x) * r}&quot;</span>),
       r_ (r)
   {
   }
@@ -125,10 +125,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 };
 
 <span class="comment">// Define a function that displays a cubic and a quartic monomial.</span>
-<span class="keyword">struct </span>Poly : <span class="keyword">public</span> <a class="code" href="a00058.html" title="Define an abstract mathematical function ( ).">Function</a>
+<span class="keyword">struct </span>Poly : <span class="keyword">public</span> <a class="code" href="a00059.html" title="Define an abstract mathematical function ( ).">Function</a>
 {
   <span class="keyword">explicit</span> Poly ()
-    : <a class="code" href="a00058.html" title="Define an abstract mathematical function ( ).">Function</a> (1, 2, <span class="stringliteral">&quot;{x^3; x^4}&quot;</span>)
+    : <a class="code" href="a00059.html" title="Define an abstract mathematical function ( ).">Function</a> (1, 2, <span class="stringliteral">&quot;{x^3; x^4}&quot;</span>)
   {
   }
 
@@ -148,23 +148,23 @@ BOOST_AUTO_TEST_CASE (visualization_matplotlib_function)
     output = retrievePattern (<span class="stringliteral">&quot;visualization-matplotlib-function&quot;</span>);
 
   <span class="keyword">using namespace </span>roboptim::visualization::matplotlib;
-  <a name="_a2"></a><a class="code" href="a00076.html" title="matplotlib script">Matplotlib</a> matplotlib = Matplotlib::make_matplotlib ();
+  <a name="_a2"></a><a class="code" href="a00079.html" title="matplotlib script">Matplotlib</a> matplotlib = Matplotlib::make_matplotlib ();
 
   Square square;
-  <a class="code" href="a00258.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalS (-10., 10., 0.01);
+  <a class="code" href="a00262.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalS (-10., 10., 0.01);
 
   Circle circle;
-  <a class="code" href="a00258.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalC (0., 2 * M_PI, 0.01);
+  <a class="code" href="a00262.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalC (0., 2 * M_PI, 0.01);
 
   Poly poly;
-  <a class="code" href="a00258.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalP (-1., 1., 0.01);
+  <a class="code" href="a00262.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalP (-1., 1., 0.01);
 
   (*output)
     &lt;&lt; (matplotlib
-  &lt;&lt; <a name="a3"></a><a class="code" href="a00258.html#ga108c0cb6161fb8813817a7b7a1ac980d" title="Make a Gnuplot comment.">comment</a> (<span class="stringliteral">&quot;Hello, world (complex)!&quot;</span>)
-  &lt;&lt; <a name="a4"></a><a class="code" href="a00258.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (square, intervalS)
-  &lt;&lt; <a class="code" href="a00258.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (circle, intervalC)
-  &lt;&lt; <a class="code" href="a00258.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (poly, intervalP)
+  &lt;&lt; <a name="a3"></a><a class="code" href="a00262.html#ga108c0cb6161fb8813817a7b7a1ac980d" title="Make a Gnuplot comment.">comment</a> (<span class="stringliteral">&quot;Hello, world (complex)!&quot;</span>)
+  &lt;&lt; <a name="a4"></a><a class="code" href="a00262.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (square, intervalS)
+  &lt;&lt; <a class="code" href="a00262.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (circle, intervalC)
+  &lt;&lt; <a class="code" href="a00262.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (poly, intervalP)
   );
 
   std::cout &lt;&lt; output-&gt;str () &lt;&lt; std::endl;

@@ -80,10 +80,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;boost/mpl/vector.hpp&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00166.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00125.html">roboptim/core/function/constant.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00134.html">roboptim/core/differentiable-function.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00195.html">roboptim/core/problem.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00170.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00129.html">roboptim/core/function/constant.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00138.html">roboptim/core/differentiable-function.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00199.html">roboptim/core/problem.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
@@ -97,22 +97,22 @@ BOOST_FIXTURE_TEST_SUITE (core, TestSuiteConfiguration)
 
 BOOST_AUTO_TEST_CASE (problem_copy_constructor)
 {
-  <span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00091.html">Problem</a>&lt;<a name="a1"></a><a class="code" href="a00240.html#a1fe6728680de2e1a17e250717269fe22" title="Dense differentiable function.">DifferentiableFunction</a>,
+  <span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00094.html">Problem</a>&lt;<a name="a1"></a><a class="code" href="a00244.html#a1fe6728680de2e1a17e250717269fe22" title="Dense differentiable function.">DifferentiableFunction</a>,
       boost::mpl::vector&lt;LinearFunction, DifferentiableFunction&gt; &gt;
     problemSrc_t;
-  <span class="keyword">typedef</span> <a class="code" href="a00091.html">Problem&lt;Function, boost::mpl::vector&lt;Function&gt;</a> &gt; problemDst_t;
-  <span class="keyword">typedef</span> <a class="code" href="a00091.html">Problem</a>&lt;<a name="a2"></a><a class="code" href="a00240.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a>,
+  <span class="keyword">typedef</span> <a class="code" href="a00094.html">Problem&lt;Function, boost::mpl::vector&lt;Function&gt;</a> &gt; problemDst_t;
+  <span class="keyword">typedef</span> <a class="code" href="a00094.html">Problem</a>&lt;<a name="a2"></a><a class="code" href="a00244.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a>,
       boost::mpl::vector&lt;QuadraticFunction, DifferentiableFunction&gt; &gt;
     ambiguousProblemDst_t;
 
-  <a class="code" href="a00058.html#a76763e91e51e9cddf579d52091dce746" title="Basic vector type.">ConstantFunction::vector_t</a> v (1);
+  <a class="code" href="a00059.html#a76763e91e51e9cddf579d52091dce746" title="Basic vector type.">ConstantFunction::vector_t</a> v (1);
   v.setZero ();
 
-  <a name="_a3"></a><a class="code" href="a00054.html" title="Constant function.">ConstantFunction</a> f (v);
+  <a name="_a3"></a><a class="code" href="a00055.html" title="Constant function.">ConstantFunction</a> f (v);
 
   problemSrc_t pbSrc (f);
 
-  <a class="code" href="a00058.html#a9cfc57490f307d1d3ce069fb7284e97a" title="Type of a vector of function argument names.">ConstantFunction::names_t</a> names (1);
+  <a class="code" href="a00059.html#a9cfc57490f307d1d3ce069fb7284e97a" title="Type of a vector of function argument names.">ConstantFunction::names_t</a> names (1);
   names[0] = <span class="stringliteral">&quot;x&quot;</span>;
   pbSrc.argumentNames () = names;
 
@@ -121,7 +121,7 @@ BOOST_AUTO_TEST_CASE (problem_copy_constructor)
   problemSrc_t::intervals_t intervals (1);
   problemSrc_t::scales_t scales (1, 1);
   <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; intervals.size (); ++i)
-    intervals[i] = <a name="a4"></a><a class="code" href="a00058.html#ade4022feaa2a7616b1a144dfde58661e" title="Construct an infinite interval.">Function::makeInfiniteInterval</a> ();
+    intervals[i] = <a name="a4"></a><a class="code" href="a00059.html#ade4022feaa2a7616b1a144dfde58661e" title="Construct an infinite interval.">Function::makeInfiniteInterval</a> ();
 
   <span class="comment">// Add ConstantFunction constraint.</span>
   pbSrc.addConstraint (cstr, intervals, scales);

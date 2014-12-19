@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::LogJacobianConstraint&lt; P &gt; Struct Template Reference</title>
+<title>roboptim::visualization::matplotlib::Import Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,226 +63,131 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::LogJacobianConstraint&lt; P &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::visualization::matplotlib::Import Class Reference<div class="ingroups"><a class="el" href="a00262.html">Visualization</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::LogJacobianConstraint" -->
-<p><code>#include &lt;roboptim/core/optimization-logger.hxx&gt;</code></p>
+<!-- doxytag: class="roboptim::visualization::matplotlib::Import" -->
+<p>matplotlib import.  
+ <a href="a00073.html#details">More...</a></p>
 
-<p><a href="a00344.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/core/visualization/matplotlib-commands.hh&gt;</code></p>
+
+<p><a href="a00357.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef P&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a81fc882c5a4cd9b7dafe32c246277a46">problem_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the problem.  <a href="#a81fc882c5a4cd9b7dafe32c246277a46"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-problem_t::function_t::traits_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function traits.  <a href="#a7ee372d93dc3a68e78c1d434ad556905"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00055.html">GenericDifferentiableFunction</a><br class="typebreak"/>
-&lt; <a class="el" href="a00073.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of differentiable functions.  <a href="#a02677fab92ae55a7000391bd9a04ed23"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00058.html#a8de5689756f172c3e68d26ce213a812d">differentiableFunction_t::argument_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="#a5c3b8004bd8d141b63230b7face4449c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef problem_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a8d8ca5968fad8205116dda3f171d73b1">size_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="#a8d8ca5968fad8205116dda3f171d73b1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00055.html#a87eb6981a9e7e658bb45ced35914d938">differentiableFunction_t::jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#abbeb60092977d57c29e444ca403d8640">jacobian_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian type.  <a href="#abbeb60092977d57c29e444ca403d8640"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a6cdb213763ff5845b7728e6bc2e8208e">LogJacobianConstraint</a> (const <a class="el" href="a00073.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a> &amp;x, const boost::filesystem::path &amp;constraintPath)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::enable_if<br class="typebreak"/>
-&lt; boost::is_base_of<br class="typebreak"/>
-&lt; <a class="el" href="a00073.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U &gt;<br class="typebreak"/>
- &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00073.html#a6f00e3ff90f703822dfeee662a5cdd71">operator()</a> (const boost::shared_ptr&lt; U &gt; &amp;constraint) const </td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::disable_if<br class="typebreak"/>
-&lt; boost::is_base_of<br class="typebreak"/>
-&lt; <a class="el" href="a00073.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U &gt;<br class="typebreak"/>
- &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00073.html#a9b7228b8c96ee3ee9376f6e19fcdda3b">operator()</a> (const boost::shared_ptr&lt; U &gt; &amp;) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ae8c72eb632d4046d7bf89e877ee4da7b">Import</a> (const std::string &amp;package)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a Python package.  <a href="#ae8c72eb632d4046d7bf89e877ee4da7b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ab836b0eb7bbff4f67f233436383d2d26">Import</a> (const std::string &amp;from, const std::string &amp;packages)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a Python package.  <a href="#ab836b0eb7bbff4f67f233436383d2d26"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#aad0bfde5142daf2d08ed9a0c5080e1e5">~Import</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00073.html" title="matplotlib import.">Import</a> destructor.  <a href="#aad0bfde5142daf2d08ed9a0c5080e1e5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#a70c298d4be24bf7c71390d672552a927">command</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the import command.  <a href="#a70c298d4be24bf7c71390d672552a927"></a><br/></td></tr>
 </table>
-<h3>template&lt;typename P&gt;<br/>
- struct roboptim::detail::LogJacobianConstraint&lt; P &gt;</h3>
-
-<hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a5c3b8004bd8d141b63230b7face4449c"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::argument_t" ref="a5c3b8004bd8d141b63230b7face4449c" args="" -->
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>matplotlib import. </p>
+<p>This class represents a Python import command. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae8c72eb632d4046d7bf89e877ee4da7b"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::Import" ref="ae8c72eb632d4046d7bf89e877ee4da7b" args="(const std::string &amp;package)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00058.html#a8de5689756f172c3e68d26ce213a812d">differentiableFunction_t::argument_t</a> <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Argument type. </p>
-
-</div>
-</div>
-<a class="anchor" id="a02677fab92ae55a7000391bd9a04ed23"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::differentiableFunction_t" ref="a02677fab92ae55a7000391bd9a04ed23" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00055.html">GenericDifferentiableFunction</a>&lt;<a class="el" href="a00073.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a>&gt; <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Type of differentiable functions. </p>
-
-</div>
-</div>
-<a class="anchor" id="abbeb60092977d57c29e444ca403d8640"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::jacobian_t" ref="abbeb60092977d57c29e444ca403d8640" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00055.html#a87eb6981a9e7e658bb45ced35914d938">differentiableFunction_t::jacobian_t</a> <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html#abbeb60092977d57c29e444ca403d8640">jacobian_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Jacobian type. </p>
-
-</div>
-</div>
-<a class="anchor" id="a81fc882c5a4cd9b7dafe32c246277a46"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::problem_t" ref="a81fc882c5a4cd9b7dafe32c246277a46" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef P <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html#a81fc882c5a4cd9b7dafe32c246277a46">problem_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Type of the problem. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8d8ca5968fad8205116dda3f171d73b1"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::size_type" ref="a8d8ca5968fad8205116dda3f171d73b1" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef problem_t::size_type <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html#a8d8ca5968fad8205116dda3f171d73b1">size_type</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Size type. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7ee372d93dc3a68e78c1d434ad556905"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::traits_t" ref="a7ee372d93dc3a68e78c1d434ad556905" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef problem_t::function_t::traits_t <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Function traits. </p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6cdb213763ff5845b7728e6bc2e8208e"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::LogJacobianConstraint" ref="a6cdb213763ff5845b7728e6bc2e8208e" args="(const argument_t &amp;x, const boost::filesystem::path &amp;constraintPath)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00073.html">LogJacobianConstraint</a> </td>
+          <td class="memname"><a class="el" href="a00073.html#ae8c72eb632d4046d7bf89e877ee4da7b">roboptim::visualization::matplotlib::Import::Import</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00073.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>package</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Construct from a Python package. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packages</td><td>packages to import (separated by commas). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab836b0eb7bbff4f67f233436383d2d26"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::Import" ref="ab836b0eb7bbff4f67f233436383d2d26" args="(const std::string &amp;from, const std::string &amp;packages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00073.html#ae8c72eb632d4046d7bf89e877ee4da7b">roboptim::visualization::matplotlib::Import::Import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>constraintPath</em>&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>packages</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [inline]</code></td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Construct from a Python package. </p>
+<p>"from-import" version. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Python module. </td></tr>
+    <tr><td class="paramname">packages</td><td>packages to import (separated by commas). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aad0bfde5142daf2d08ed9a0c5080e1e5"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::~Import" ref="aad0bfde5142daf2d08ed9a0c5080e1e5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00073.html#aad0bfde5142daf2d08ed9a0c5080e1e5">roboptim::visualization::matplotlib::Import::~Import</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00073.html" title="matplotlib import.">Import</a> destructor. </p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a6f00e3ff90f703822dfeee662a5cdd71"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::operator()" ref="a6f00e3ff90f703822dfeee662a5cdd71" args="(const boost::shared_ptr&lt; U &gt; &amp;constraint) const " -->
+<a class="anchor" id="a70c298d4be24bf7c71390d672552a927"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::command" ref="a70c298d4be24bf7c71390d672552a927" args="() const " -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::enable_if&lt;boost::is_base_of&lt;<a class="el" href="a00073.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U&gt; &gt;::type <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::operator() </td>
+          <td class="memname">const std::string&amp; <a class="el" href="a00073.html#a70c298d4be24bf7c71390d672552a927">roboptim::visualization::matplotlib::Import::command</a> </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>constraint</em></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9b7228b8c96ee3ee9376f6e19fcdda3b"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::operator()" ref="a9b7228b8c96ee3ee9376f6e19fcdda3b" args="(const boost::shared_ptr&lt; U &gt; &amp;) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename P &gt; </div>
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::disable_if&lt;boost::is_base_of&lt;<a class="el" href="a00073.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U&gt; &gt;::type <a class="el" href="a00073.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Return the import command. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>import command. </dd></dl>
 
 </div>
 </div>
@@ -304,8 +209,9 @@ template&lt;typename U &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00240.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00245.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00073.html">LogJacobianConstraint</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00252.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00255.html">matplotlib</a>      </li>
+      <li class="navelem"><a class="el" href="a00073.html">Import</a>      </li>
 </body>
 </html>

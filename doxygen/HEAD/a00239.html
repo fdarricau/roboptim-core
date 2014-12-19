@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Eigen Namespace Reference</title>
+<title>util.hxx File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -17,9 +17,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -41,8 +41,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -61,44 +61,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Eigen Namespace Reference</div>  </div>
+<div class="title">util.hxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<div class="textblock"><code>#include &lt;<a class="el" href="a00138.html">roboptim/core/differentiable-function.hh</a>&gt;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html">roboptim</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
+<br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">roboptim::detail</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a8bfc97eecda942cab62110845cfb8a2e">hash_value</a> (const <a class="el" href="a00058.html#a8de5689756f172c3e68d26ce213a812d">roboptim::Function::argument_t</a> &amp;x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash function for argument vectors.  <a href="#a8bfc97eecda942cab62110845cfb8a2e"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a81de9d321de7e4aaccd11060a2d61643">roboptim::detail::jacobian_from_gradients</a> (typename DifferentiableFunction::matrix_t &amp;jac, const std::vector&lt; const T * &gt; &amp;c, const DifferentiableFunction::vector_t &amp;x)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#a6950b140fa3344f40395d549821d738c">roboptim::operator&lt;&lt;</a> (std::ostream &amp;, const std::vector&lt; T &gt; &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a vector.  <a href="#a6950b140fa3344f40395d549821d738c"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#a60f421259ace431168bc735b2e0ba023">roboptim::operator&lt;&lt;</a> (std::ostream &amp;, const std::pair&lt; T1, T2 &gt; &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a pair.  <a href="#a60f421259ace431168bc735b2e0ba023"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#a4bcd8b74fe875ec19837dc78308ddd78">roboptim::operator&lt;&lt;</a> (std::ostream &amp;, const std::map&lt; T1, T2 &gt; &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a map.  <a href="#a4bcd8b74fe875ec19837dc78308ddd78"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#a77056f38462908511453bafb27f9cb76">roboptim::operator&lt;&lt;</a> (std::ostream &amp;, const Eigen::MatrixBase&lt; T &gt; &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display an <a class="el" href="a00243.html">Eigen</a> object with the appropriate IOFormat.  <a href="#a77056f38462908511453bafb27f9cb76"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename DerivedA , typename DerivedB &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3">roboptim::allclose</a> (const Eigen::DenseBase&lt; DerivedA &gt; &amp;a, const Eigen::DenseBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare dense vectors (matrices) using both relative and absolute tolerances.  <a href="#abf0a2c6465667b5f8cc0c9ab9c5d1fe3"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename DerivedA , typename DerivedB &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#a07401e39f06cf997c6d263a2aa9afd01">roboptim::allclose</a> (const Eigen::SparseMatrixBase&lt; DerivedA &gt; &amp;a, const Eigen::SparseMatrixBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare sparse vectors (matrices) using both relative and absolute tolerances.  <a href="#a07401e39f06cf997c6d263a2aa9afd01"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#a2788770572cf84afe25607661cd5c37f">roboptim::copySparseBlock</a> (U &amp;matrix, const U &amp;block, Function::size_type startRow, Function::size_type startCol, bool compress=false)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a sparse block into a sparse matrix.  <a href="#a2788770572cf84afe25607661cd5c37f"></a><br/></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a8bfc97eecda942cab62110845cfb8a2e"></a><!-- doxytag: member="Eigen::hash_value" ref="a8bfc97eecda942cab62110845cfb8a2e" args="(const roboptim::Function::argument_t &amp;x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="a00239.html#a8bfc97eecda942cab62110845cfb8a2e">Eigen::hash_value</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00058.html#a8de5689756f172c3e68d26ce213a812d">roboptim::Function::argument_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Hash function for argument vectors. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>argument vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>hash. </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -117,6 +119,6 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00239.html">Eigen</a>      </li>
+      <li class="navelem"><a class="el" href="a00239.html">util.hxx</a>      </li>
 </body>
 </html>

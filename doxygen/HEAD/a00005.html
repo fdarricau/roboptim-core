@@ -81,31 +81,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &lt;boost/mpl/list.hpp&gt;</span>
 <span class="preprocessor">#include &lt;boost/test/test_case_template.hpp&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00166.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00192.html">roboptim/core/function/polynomial.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00170.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00196.html">roboptim/core/function/polynomial.hh</a>&gt;</span>
 
 <span class="preprocessor">#include &quot;shared-tests/fixture.hh&quot;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
 
-<span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a0"></a><a class="code" href="a00049.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
-        <a name="_a1"></a><a class="code" href="a00050.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
+<span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a0"></a><a class="code" href="a00050.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
+        <a name="_a1"></a><a class="code" href="a00051.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
 
 BOOST_FIXTURE_TEST_SUITE (core, TestSuiteConfiguration)
 
 BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
 {
   <span class="comment">// Test for degree 0 polynomial</span>
-  <span class="keyword">typename</span> <a name="_a2"></a><a class="code" href="a00088.html" title="Polynomial function.">Polynomial&lt;T&gt;::vector_t</a> coefficients (1);
+  <span class="keyword">typename</span> <a name="_a2"></a><a class="code" href="a00091.html" title="Polynomial function.">Polynomial&lt;T&gt;::vector_t</a> coefficients (1);
   coefficients[0] = 45;
   boost::shared_ptr&lt;Polynomial&lt;T&gt; &gt; fct =
     boost::make_shared&lt;Polynomial&lt;T&gt; &gt; (coefficients);
   std::cout &lt;&lt; (*fct) &lt;&lt; std::endl;
 
-  <span class="keyword">typename</span> <a class="code" href="a00088.html" title="Polynomial function.">Polynomial&lt;T&gt;::argument_t</a> x (1);
+  <span class="keyword">typename</span> <a class="code" href="a00091.html" title="Polynomial function.">Polynomial&lt;T&gt;::argument_t</a> x (1);
   x[0] = 0;
-  <span class="keyword">typename</span> <a class="code" href="a00088.html" title="Polynomial function.">Polynomial&lt;T&gt;::result_t</a> y (1);
+  <span class="keyword">typename</span> <a class="code" href="a00091.html" title="Polynomial function.">Polynomial&lt;T&gt;::result_t</a> y (1);
   y[0] = 45;
   BOOST_CHECK_EQUAL ((*fct) (x), y);
 
@@ -171,7 +171,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
       &lt;&lt; <span class="stringliteral">&quot;Evaluate:&quot;</span> &lt;&lt; std::endl
       &lt;&lt; (*fct) (x) &lt;&lt; std::endl
       &lt;&lt; <span class="stringliteral">&quot;Gradient:&quot;</span> &lt;&lt; std::endl
-      &lt;&lt; fct-&gt;<a name="a3"></a><a class="code" href="a00055.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> (x, 0) &lt;&lt; std::endl
+      &lt;&lt; fct-&gt;<a name="a3"></a><a class="code" href="a00056.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> (x, 0) &lt;&lt; std::endl
       &lt;&lt; <span class="stringliteral">&quot;Jacobian:&quot;</span> &lt;&lt; std::endl
       &lt;&lt; fct-&gt;jacobian (x) &lt;&lt; std::endl
       &lt;&lt; <span class="stringliteral">&quot;Hessian:&quot;</span> &lt;&lt; std::endl
@@ -179,7 +179,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
 
   <span class="comment">// Test exceptions</span>
   coefficients.resize (0);
-  BOOST_CHECK_THROW (fct = boost::make_shared&lt;<a class="code" href="a00088.html" title="Polynomial function.">Polynomial&lt;T&gt;</a> &gt; (coefficients),
+  BOOST_CHECK_THROW (fct = boost::make_shared&lt;<a class="code" href="a00091.html" title="Polynomial function.">Polynomial&lt;T&gt;</a> &gt; (coefficients),
                      std::runtime_error);
 }
 

@@ -80,16 +80,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00166.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00204.html">roboptim/core/result.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00202.html">roboptim/core/result-with-warnings.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00170.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00208.html">roboptim/core/result.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00206.html">roboptim/core/result-with-warnings.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
 <span class="comment">// Define a simple function.</span>
-<span class="keyword">struct </span>F : <span class="keyword">public</span> <a name="_a0"></a><a class="code" href="a00058.html" title="Define an abstract mathematical function ( ).">Function</a>
+<span class="keyword">struct </span>F : <span class="keyword">public</span> <a name="_a0"></a><a class="code" href="a00059.html" title="Define an abstract mathematical function ( ).">Function</a>
 {
-  F () : <a name="a1"></a><a class="code" href="a00240.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x&quot;</span>)
+  F () : <a name="a1"></a><a class="code" href="a00244.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x&quot;</span>)
   {}
 
   <span class="keywordtype">void</span> impl_compute (result_t&amp; res,
@@ -109,7 +109,7 @@ BOOST_AUTO_TEST_CASE (result)
     output = retrievePattern (<span class="stringliteral">&quot;result&quot;</span>);
 
   <span class="comment">// Instantiate some results.</span>
-  <a name="_a2"></a><a class="code" href="a00098.html" title="Represents the solution of an optimization problem.">Result</a> result (3, 8);
+  <a name="_a2"></a><a class="code" href="a00101.html" title="Represents the solution of an optimization problem.">Result</a> result (3, 8);
   F f;
   F::size_type c_size = 4;
   result.constraints.resize (c_size);
@@ -121,8 +121,8 @@ BOOST_AUTO_TEST_CASE (result)
   assert (result.value.size () == 8);
   assert (result.lambda.size () == c_size);
 
-  <a class="code" href="a00098.html" title="Represents the solution of an optimization problem.">Result</a> result2 (result);
-  <a class="code" href="a00098.html" title="Represents the solution of an optimization problem.">Result</a> result3 = result;
+  <a class="code" href="a00101.html" title="Represents the solution of an optimization problem.">Result</a> result2 (result);
+  <a class="code" href="a00101.html" title="Represents the solution of an optimization problem.">Result</a> result3 = result;
 
   (*output) &lt;&lt; result &lt;&lt; std::endl;
 

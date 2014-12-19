@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt; Class Template Reference</title>
+<title>roboptim::detail::EvaluateConstraintViolation&lt; P &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,57 +63,132 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::detail::EvaluateConstraintViolation&lt; P &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::finiteDifferenceGradientPolicies::FivePointsRule" --><!-- doxytag: inherits="roboptim::finiteDifferenceGradientPolicies::Policy" -->
-<p>Precise finite difference gradient computation.  
- <a href="a00053.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::detail::EvaluateConstraintViolation" -->
+<p><code>#include &lt;roboptim/core/optimization-logger.hxx&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/finite-difference-gradient.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00053.png" usemap="#roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;_map" name="roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;_map">
-<area href="a00087.html" title="Interface for the finite difference gradient policies." alt="roboptim::finiteDifferenceGradientPolicies::Policy&lt; T &gt;" shape="rect" coords="0,0,366,24"/>
-</map>
- </div></div>
-
-<p><a href="a00349.html">List of all members.</a></p>
+<p><a href="a00347.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a63530c370e23c26988f0727e540e24d4">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::intervalsVect_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a4c077cbda6ba69621d402908b5b1c243">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00055.html">GenericDifferentiableFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#ab5c1fd9815a0277bb395459236cb3f1a">FivePointsRule</a> (const <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt; &amp;adaptee)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a792e1b658b1b7f7c35eaaf264cc170f8">computeGradient</a> (value_type epsilon, gradient_t &amp;gradient, const argument_t &amp;argument, size_type idFunction, argument_t &amp;xEps) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a94bc30582e8145b11f0ce5471ae6a7cb">compute_deriv</a> (typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::size_type j, double h, double &amp;result, double &amp;round, double &amp;trunc, const typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::argument_t &amp;argument, typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::size_type idFunction, typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::argument_t &amp;xEps) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm from the Gnu Scientific Library.  <a href="#a94bc30582e8145b11f0ce5471ae6a7cb"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00053.html#a37dc5eb30571a98a3cf1895798b1df6d">computeGradient</a> (value_type epsilon, gradient_t &amp;gradient, const argument_t &amp;argument, size_type idFunction, argument_t &amp;xEps) const</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a306dbff7446a9f1252d32d1ff67cd1f0">EvaluateConstraintViolation</a> (const std::vector&lt; <a class="el" href="a00053.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a> &gt; &amp;constraints, const <a class="el" href="a00053.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a> &amp;bounds)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#aecd68350a1eb5e9999d0d27f9f02723d">computeViolation</a> (const <a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a> &amp;x, const <a class="el" href="a00053.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a> &amp;x_ul) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a40d8c34b08bf85f2f65f1d12a221dde7">uniformNorm</a> () const </td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;</h3>
+<h3>template&lt;typename P&gt;<br/>
+ struct roboptim::detail::EvaluateConstraintViolation&lt; P &gt;</h3>
 
-<p>Precise finite difference gradient computation. </p>
-<p>Finite difference is computed using five-points stencil (i.e. <img class="formulaInl" alt="$\{x-2h, x-h, x, x+h, x+2h\}$" src="form_13.png"/>). </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab5c1fd9815a0277bb395459236cb3f1a"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::FivePointsRule::FivePointsRule" ref="ab5c1fd9815a0277bb395459236cb3f1a" args="(const GenericFunction&lt; T &gt; &amp;adaptee)" -->
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="aa1fe89a5855ff977bbece5d78f90a5d2"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::interval_t" ref="aa1fe89a5855ff977bbece5d78f90a5d2" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00053.html">roboptim::finiteDifferenceGradientPolicies::FivePointsRule</a>&lt; T &gt;::<a class="el" href="a00053.html">FivePointsRule</a> </td>
+          <td class="memname">typedef P::interval_t <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8047bc98d54e46144b3f522dd6812d4c"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::intervalsVect_t" ref="a8047bc98d54e46144b3f522dd6812d4c" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P::intervalsVect_t <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63530c370e23c26988f0727e540e24d4"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::size_type" ref="a63530c370e23c26988f0727e540e24d4" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P::size_type <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#a63530c370e23c26988f0727e540e24d4">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a640d8344231b239f17a20392517c1d68"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::value_type" ref="a640d8344231b239f17a20392517c1d68" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P::value_type <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0264a3b65ffb6e4ab0753116dbba61c5"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::vector_t" ref="a0264a3b65ffb6e4ab0753116dbba61c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P::vector_t <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a306dbff7446a9f1252d32d1ff67cd1f0"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::EvaluateConstraintViolation" ref="a306dbff7446a9f1252d32d1ff67cd1f0" args="(const std::vector&lt; vector_t &gt; &amp;constraints, const intervalsVect_t &amp;bounds)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html">EvaluateConstraintViolation</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>adaptee</em></td><td>)</td>
-          <td><code> [inline, explicit]</code></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a00053.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>constraints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00053.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -122,189 +197,54 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a94bc30582e8145b11f0ce5471ae6a7cb"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::FivePointsRule::compute_deriv" ref="a94bc30582e8145b11f0ce5471ae6a7cb" args="(typename GenericFunction&lt; T &gt;::size_type j, double h, double &amp;result, double &amp;round, double &amp;trunc, const typename GenericFunction&lt; T &gt;::argument_t &amp;argument, typename GenericFunction&lt; T &gt;::size_type idFunction, typename GenericFunction&lt; T &gt;::argument_t &amp;xEps) const " -->
+<a class="anchor" id="aecd68350a1eb5e9999d0d27f9f02723d"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::computeViolation" ref="aecd68350a1eb5e9999d0d27f9f02723d" args="(const value_type &amp;x, const interval_t &amp;x_ul) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00053.html">roboptim::finiteDifferenceGradientPolicies::FivePointsRule</a>&lt; T &gt;::<a class="el" href="a00053.html#a94bc30582e8145b11f0ce5471ae6a7cb">compute_deriv</a> </td>
+          <td class="memname"><a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a> <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#aecd68350a1eb5e9999d0d27f9f02723d">computeViolation</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::size_type&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
+          <td class="paramtype">const <a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>round</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>trunc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::argument_t &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::size_type&#160;</td>
-          <td class="paramname"><em>idFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename <a class="el" href="a00058.html">GenericFunction</a>&lt; T &gt;::argument_t &amp;&#160;</td>
-          <td class="paramname"><em>xEps</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00053.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>x_ul</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Algorithm from the Gnu Scientific Library. </p>
+<p>Referenced by <a class="el" href="a00053.html#a40d8c34b08bf85f2f65f1d12a221dde7">roboptim::detail::EvaluateConstraintViolation&lt; P &gt;::uniformNorm()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a792e1b658b1b7f7c35eaaf264cc170f8"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::FivePointsRule::computeGradient" ref="a792e1b658b1b7f7c35eaaf264cc170f8" args="(value_type epsilon, gradient_t &amp;gradient, const argument_t &amp;argument, size_type idFunction, argument_t &amp;xEps) const " -->
+<a class="anchor" id="a40d8c34b08bf85f2f65f1d12a221dde7"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::uniformNorm" ref="a40d8c34b08bf85f2f65f1d12a221dde7" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00053.html">roboptim::finiteDifferenceGradientPolicies::FivePointsRule</a>&lt; T &gt;::<a class="el" href="a00053.html#a792e1b658b1b7f7c35eaaf264cc170f8">computeGradient</a> </td>
+          <td class="memname"><a class="el" href="a00053.html#a640d8344231b239f17a20392517c1d68">value_type</a> <a class="el" href="a00053.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00053.html#a40d8c34b08bf85f2f65f1d12a221dde7">uniformNorm</a> </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
-          <td class="paramname"><em>epsilon</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>idFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">argument_t &amp;&#160;</td>
-          <td class="paramname"><em>xEps</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="a00087.html#a7e8c6a925ad96735d662995decc66491">roboptim::finiteDifferenceGradientPolicies::Policy&lt; T &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a37dc5eb30571a98a3cf1895798b1df6d"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::FivePointsRule::computeGradient" ref="a37dc5eb30571a98a3cf1895798b1df6d" args="(value_type epsilon, gradient_t &amp;gradient, const argument_t &amp;argument, size_type idFunction, argument_t &amp;xEps) const" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00053.html">roboptim::finiteDifferenceGradientPolicies::FivePointsRule</a>&lt; <a class="el" href="a00050.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00053.html#a792e1b658b1b7f7c35eaaf264cc170f8">computeGradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
-          <td class="paramname"><em>epsilon</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>idFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">argument_t &amp;&#160;</td>
-          <td class="paramname"><em>xEps</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="a00087.html#a7e8c6a925ad96735d662995decc66491">roboptim::finiteDifferenceGradientPolicies::Policy&lt; T &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c077cbda6ba69621d402908b5b1c243"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::FivePointsRule::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a4c077cbda6ba69621d402908b5b1c243" args="(GenericDifferentiableFunction&lt; T &gt;)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00053.html">roboptim::finiteDifferenceGradientPolicies::FivePointsRule</a>&lt; T &gt;::<a class="el" href="a00053.html#a4c077cbda6ba69621d402908b5b1c243">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00055.html">GenericDifferentiableFunction</a>&lt; T &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="a00087.html#af62d50124971caeadae570717fbf1740">roboptim::finiteDifferenceGradientPolicies::Policy&lt; T &gt;</a>.</p>
+<p>References <a class="el" href="a00053.html#aecd68350a1eb5e9999d0d27f9f02723d">roboptim::detail::EvaluateConstraintViolation&lt; P &gt;::computeViolation()</a>.</p>
 
 </div>
 </div>
@@ -326,8 +266,8 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00240.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00247.html">finiteDifferenceGradientPolicies</a>      </li>
-      <li class="navelem"><a class="el" href="a00053.html">FivePointsRule</a>      </li>
+      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00249.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00053.html">EvaluateConstraintViolation</a>      </li>
 </body>
 </html>

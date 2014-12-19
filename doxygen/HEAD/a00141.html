@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>dummy-td.cc File Reference</title>
+<title>dummy-d-sparse-laststate.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -61,57 +61,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">dummy-td.cc File Reference</div>  </div>
+<div class="title">dummy-d-sparse-laststate.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;debug.hh&quot;</code><br/>
 <code>#include &lt;typeinfo&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00149.html">roboptim/core/function.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00195.html">roboptim/core/problem.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00142.html">roboptim/core/plugin/dummy-td.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00153.html">roboptim/core/function.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00199.html">roboptim/core/problem.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00143.html">roboptim/core/plugin/dummy-laststate.hh</a>&quot;</code><br/>
 </div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
-<br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00048.html#a111982763cc612288cf9eafdb422ff6e">DummySolverTd::parent_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a9a7157c7f730c89881de1b6122cc2337">solver_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00057.html#a63f3a8b1ebcc44f3655882d84ad9bc76">DummyDifferentiableSparseSolverLastState::parent_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a60635b065e290b461a1e7be6b54f9cbc">getSizeOfProblem</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a25ff9384fbf0c8e416a686a67c7d1fdd">getTypeIdOfConstraintsList</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> <a class="el" href="a00137.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#ae278fcaa02a1ccd24801edf5e6a4bd23">create</a> (const DummySolverTd::problem_t &amp;pb)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#af992438f02837bfe836ba0a937747829">destroy</a> (<a class="el" href="a00137.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a60635b065e290b461a1e7be6b54f9cbc">getSizeOfProblem</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#ac19e43ce0aec95e0349d94f62dce2b12">getTypeIdOfConstraintsList</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> <a class="el" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a31e09ac3fc31bbcf3b2a833ebff4bf87">create</a> (const <a class="el" href="a00057.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">DummyDifferentiableSparseSolverLastState::problem_t</a> &amp;pb)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#af992438f02837bfe836ba0a937747829">destroy</a> (<a class="el" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> *p)</td></tr>
 </table>
 <hr/><h2>Typedef Documentation</h2>
-<a class="anchor" id="a9a7157c7f730c89881de1b6122cc2337"></a><!-- doxytag: member="dummy&#45;td.cc::solver_t" ref="a9a7157c7f730c89881de1b6122cc2337" args="" -->
+<a class="anchor" id="a8280e1cea7b0916b6ca6b1fc759804d7"></a><!-- doxytag: member="dummy&#45;d&#45;sparse&#45;laststate.cc::solver_t" ref="a8280e1cea7b0916b6ca6b1fc759804d7" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00048.html#a111982763cc612288cf9eafdb422ff6e">DummySolverTd::parent_t</a> <a class="el" href="a00137.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00057.html#a63f3a8b1ebcc44f3655882d84ad9bc76">DummyDifferentiableSparseSolverLastState::parent_t</a> <a class="el" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00007.html#a1">numeric-linear-function.cc</a>, and <a class="el" href="a00008.html#a1">numeric-quadratic-function.cc</a>.</dd>
+</dl>
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ae278fcaa02a1ccd24801edf5e6a4bd23"></a><!-- doxytag: member="dummy&#45;td.cc::create" ref="ae278fcaa02a1ccd24801edf5e6a4bd23" args="(const DummySolverTd::problem_t &amp;pb)" -->
+<a class="anchor" id="a31e09ac3fc31bbcf3b2a833ebff4bf87"></a><!-- doxytag: member="dummy&#45;d&#45;sparse&#45;laststate.cc::create" ref="a31e09ac3fc31bbcf3b2a833ebff4bf87" args="(const DummyDifferentiableSparseSolverLastState::problem_t &amp;pb)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> <a class="el" href="a00137.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> * <a class="el" href="a00143.html#a0a575b89f014bf2e20cb9ab341d88393">create</a> </td>
+          <td class="memname"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> <a class="el" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> * <a class="el" href="a00147.html#a0a575b89f014bf2e20cb9ab341d88393">create</a> </td>
           <td>(</td>
-          <td class="paramtype">const DummySolverTd::problem_t &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00057.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">DummyDifferentiableSparseSolverLastState::problem_t</a> &amp;&#160;</td>
           <td class="paramname"><em>pb</em></td><td>)</td>
           <td></td>
         </tr>
@@ -121,14 +117,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af992438f02837bfe836ba0a937747829"></a><!-- doxytag: member="dummy&#45;td.cc::destroy" ref="af992438f02837bfe836ba0a937747829" args="(solver_t *p)" -->
+<a class="anchor" id="af992438f02837bfe836ba0a937747829"></a><!-- doxytag: member="dummy&#45;d&#45;sparse&#45;laststate.cc::destroy" ref="af992438f02837bfe836ba0a937747829" args="(solver_t *p)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> void <a class="el" href="a00143.html#af992438f02837bfe836ba0a937747829">destroy</a> </td>
+          <td class="memname"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> void <a class="el" href="a00147.html#af992438f02837bfe836ba0a937747829">destroy</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00137.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00141.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -138,12 +134,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a60635b065e290b461a1e7be6b54f9cbc"></a><!-- doxytag: member="dummy&#45;td.cc::getSizeOfProblem" ref="a60635b065e290b461a1e7be6b54f9cbc" args="()" -->
+<a class="anchor" id="a60635b065e290b461a1e7be6b54f9cbc"></a><!-- doxytag: member="dummy&#45;d&#45;sparse&#45;laststate.cc::getSizeOfProblem" ref="a60635b065e290b461a1e7be6b54f9cbc" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> std::size_t <a class="el" href="a00143.html#a60635b065e290b461a1e7be6b54f9cbc">getSizeOfProblem</a> </td>
+          <td class="memname"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> std::size_t <a class="el" href="a00147.html#a60635b065e290b461a1e7be6b54f9cbc">getSizeOfProblem</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -152,14 +148,16 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Referenced by <a class="el" href="a00111.html#aadc8315a15a321eb1dcb064292d05077">roboptim::SolverFactory&lt; T &gt;::SolverFactory()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a25ff9384fbf0c8e416a686a67c7d1fdd"></a><!-- doxytag: member="dummy&#45;td.cc::getTypeIdOfConstraintsList" ref="a25ff9384fbf0c8e416a686a67c7d1fdd" args="()" -->
+<a class="anchor" id="ac19e43ce0aec95e0349d94f62dce2b12"></a><!-- doxytag: member="dummy&#45;d&#45;sparse&#45;laststate.cc::getTypeIdOfConstraintsList" ref="ac19e43ce0aec95e0349d94f62dce2b12" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00194.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> const char* <a class="el" href="a00143.html#a25ff9384fbf0c8e416a686a67c7d1fdd">getTypeIdOfConstraintsList</a> </td>
+          <td class="memname"><a class="el" href="a00198.html#a123c5e8741ec2f621543a4fc2edec484">ROBOPTIM_DLLEXPORT</a> const char * <a class="el" href="a00147.html#a25ff9384fbf0c8e416a686a67c7d1fdd">getTypeIdOfConstraintsList</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -167,6 +165,8 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00111.html#aadc8315a15a321eb1dcb064292d05077">roboptim::SolverFactory&lt; T &gt;::SolverFactory()</a>.</p>
 
 </div>
 </div>
@@ -188,6 +188,6 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00141.html">dummy-td.cc</a>      </li>
+      <li class="navelem"><a class="el" href="a00141.html">dummy-d-sparse-laststate.cc</a>      </li>
 </body>
 </html>
