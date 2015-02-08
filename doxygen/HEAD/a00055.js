@@ -1,11 +1,15 @@
 var a00055 =
 [
-    [ "GenericConstantFunction", "a00055.html#a9f9dae33c9657528e0a82410cb161817", null ],
-    [ "GenericConstantFunction", "a00055.html#a31cb64dc0c788b9c3c8f71a591c20f17", null ],
-    [ "~GenericConstantFunction", "a00055.html#aab88e6da3308d2ca7b8b58ac6bd87504", null ],
-    [ "impl_compute", "a00055.html#afa384a6db99a3d7c8c5fddb3e8cb92c3", null ],
-    [ "impl_gradient", "a00055.html#a6d30bac1095a5fa14db29ab113dc4502", null ],
-    [ "impl_jacobian", "a00055.html#af3c5004a7d90783c0ff2548e63be9d32", null ],
-    [ "print", "a00055.html#ac98c86704dc8443933a50ad664cca533", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00055.html#addaf70df2c7d3dbf77ef6e53658d656d", null ]
+    [ "callback_t", "a00055.html#a596d9aeff97f202e6dd69bfffccffbdc", null ],
+    [ "function_t", "a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e", null ],
+    [ "functionList_t", "a00055.html#adb1137ff70b2bd5716cd822d17b8709f", null ],
+    [ "functionTypeList_t", "a00055.html#a417c5745a8a1270bf755887643a5ed6a", null ],
+    [ "pool_t", "a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0", null ],
+    [ "FunctionPool", "a00055.html#ad74746a49723e6f2a0ea5ddf8f4adad8", null ],
+    [ "~FunctionPool", "a00055.html#ad528238170b3b3a31da3a0c77c4691bf", null ],
+    [ "impl_compute", "a00055.html#a7beafaef4267c311f6bd015109954a4c", null ],
+    [ "impl_gradient", "a00055.html#a1972d0b5c0cbe1315474250b0de2857f", null ],
+    [ "impl_jacobian", "a00055.html#a9dcea07b0d4efbce79279a128906e6b4", null ],
+    [ "print", "a00055.html#a9f349b1f442566e1f7321bc2a41470ad", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00055.html#a873aca96f047860dd26324aa61b3816b", null ]
 ];

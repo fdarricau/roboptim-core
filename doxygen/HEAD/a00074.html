@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::list_converter&lt; CLIST &gt; Struct Template Reference</title>
+<title>roboptim::visualization::matplotlib::Import Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -62,28 +62,136 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::list_converter&lt; CLIST &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::visualization::matplotlib::Import Class Reference<div class="ingroups"><a class="el" href="a00266.html">Visualization</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::list_converter" -->
-<p>Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.).  
+<!-- doxytag: class="roboptim::visualization::matplotlib::Import" -->
+<p>matplotlib import.  
  <a href="a00074.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename CLIST&gt;<br/>
-struct roboptim::detail::list_converter&lt; CLIST &gt;</h3>
+<p><code>#include &lt;roboptim/core/visualization/matplotlib-commands.hh&gt;</code></p>
 
-<p>Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.). </p>
-<p>In the case of boost::mpl::vector, this ensures a normalized representation of the vector (boost::mpl::vector converted to boost::mpl::v_item) and orders the constraints in a proper way. This makes the use of typeid comparison possible.</p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">CLIST</td><td>vector of types </td></tr>
+<p><a href="a00362.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ae8c72eb632d4046d7bf89e877ee4da7b">Import</a> (const std::string &amp;package)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a Python package.  <a href="#ae8c72eb632d4046d7bf89e877ee4da7b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ab836b0eb7bbff4f67f233436383d2d26">Import</a> (const std::string &amp;from, const std::string &amp;packages)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a Python package.  <a href="#ab836b0eb7bbff4f67f233436383d2d26"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#aad0bfde5142daf2d08ed9a0c5080e1e5">~Import</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00074.html" title="matplotlib import.">Import</a> destructor.  <a href="#aad0bfde5142daf2d08ed9a0c5080e1e5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#a70c298d4be24bf7c71390d672552a927">command</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the import command.  <a href="#a70c298d4be24bf7c71390d672552a927"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>matplotlib import. </p>
+<p>This class represents a Python import command. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae8c72eb632d4046d7bf89e877ee4da7b"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::Import" ref="ae8c72eb632d4046d7bf89e877ee4da7b" args="(const std::string &amp;package)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00074.html#ae8c72eb632d4046d7bf89e877ee4da7b">roboptim::visualization::matplotlib::Import::Import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>package</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Construct from a Python package. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packages</td><td>packages to import (separated by commas). </td></tr>
   </table>
   </dd>
 </dl>
-</div></div><!-- contents -->
+
+</div>
+</div>
+<a class="anchor" id="ab836b0eb7bbff4f67f233436383d2d26"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::Import" ref="ab836b0eb7bbff4f67f233436383d2d26" args="(const std::string &amp;from, const std::string &amp;packages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00074.html#ae8c72eb632d4046d7bf89e877ee4da7b">roboptim::visualization::matplotlib::Import::Import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>packages</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Construct from a Python package. </p>
+<p>"from-import" version. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Python module. </td></tr>
+    <tr><td class="paramname">packages</td><td>packages to import (separated by commas). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aad0bfde5142daf2d08ed9a0c5080e1e5"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::~Import" ref="aad0bfde5142daf2d08ed9a0c5080e1e5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00074.html#aad0bfde5142daf2d08ed9a0c5080e1e5">roboptim::visualization::matplotlib::Import::~Import</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00074.html" title="matplotlib import.">Import</a> destructor. </p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a70c298d4be24bf7c71390d672552a927"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Import::command" ref="a70c298d4be24bf7c71390d672552a927" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; <a class="el" href="a00074.html#a70c298d4be24bf7c71390d672552a927">roboptim::visualization::matplotlib::Import::command</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the import command. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>import command. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -101,8 +209,9 @@ struct roboptim::detail::list_converter&lt; CLIST &gt;</h3>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00249.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00074.html">list_converter</a>      </li>
+      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00256.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00259.html">matplotlib</a>      </li>
+      <li class="navelem"><a class="el" href="a00074.html">Import</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::GenericConstantFunction&lt; T &gt; Class Template Reference</title>
+<title>roboptim::FunctionPool&lt; F, FLIST &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,324 +63,339 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericConstantFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00258.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::FunctionPool&lt; F, FLIST &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00261.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::GenericConstantFunction" --><!-- doxytag: inherits="roboptim::GenericLinearFunction" -->
-<p>Constant function.  
+<!-- doxytag: class="roboptim::FunctionPool" -->
+<p>A pool of functions that will be processed together.  
  <a href="a00055.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/function/constant.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::GenericConstantFunction&lt; T &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00055.png" usemap="#roboptim::GenericConstantFunction&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::GenericConstantFunction&lt; T &gt;_map" name="roboptim::GenericConstantFunction&lt; T &gt;_map">
-<area href="a00064.html" title="Define an abstract linear function." alt="roboptim::GenericLinearFunction&lt; T &gt;" shape="rect" coords="0,224,300,248"/>
-<area href="a00067.html" title="Define an abstract quadratic function." alt="roboptim::GenericQuadraticFunction&lt; T &gt;" shape="rect" coords="0,168,300,192"/>
-<area href="a00070.html" title="Define an abstract function which is twice-derivable ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,300,136"/>
-<area href="a00056.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,56,300,80"/>
-<area href="a00059.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="0,0,300,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;roboptim/core/function-pool.hh&gt;</code></p>
 
-<p><a href="a00295.html">List of all members.</a></p>
+<p><a href="a00304.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type of the pool.  <a href="#a05d47d0df6ccbcdac5628a4a4795dbb0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00075.html">detail::list_converter</a><br class="typebreak"/>
+&lt; FLIST &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00107.html">detail::shared_ptr_variant</a><br class="typebreak"/>
+&lt; <a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the functions in the pool.  <a href="#ae1ff53cc9a921842e0deb55a7d4a572e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">List of functions that will populate the pool.  <a href="#adb1137ff70b2bd5716cd822d17b8709f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; F &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the callback function (where the computation happens).  <a href="#a596d9aeff97f202e6dd69bfffccffbdc"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#addaf70df2c7d3dbf77ef6e53658d656d">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00064.html">GenericLinearFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a9f9dae33c9657528e0a82410cb161817">GenericConstantFunction</a> (const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;offset)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a constant function.  <a href="#a9f9dae33c9657528e0a82410cb161817"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a31cb64dc0c788b9c3c8f71a591c20f17">GenericConstantFunction</a> (<a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> input_size, const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;offset)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a constant function.  <a href="#a31cb64dc0c788b9c3c8f71a591c20f17"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aab88e6da3308d2ca7b8b58ac6bd87504">~GenericConstantFunction</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ac98c86704dc8443933a50ad664cca533">print</a> (std::ostream &amp;o) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ac98c86704dc8443933a50ad664cca533"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#afa384a6db99a3d7c8c5fddb3e8cb92c3">impl_compute</a> (<a class="el" href="a00059.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#afa384a6db99a3d7c8c5fddb3e8cb92c3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a6d30bac1095a5fa14db29ab113dc4502">impl_gradient</a> (<a class="el" href="a00056.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00056.html#a0d0772c3e1ea6ff70c2909ceaf776169">gradient</a>, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;, <a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>=0) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#a6d30bac1095a5fa14db29ab113dc4502"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#af3c5004a7d90783c0ff2548e63be9d32">impl_jacobian</a> (<a class="el" href="a00056.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;<a class="el" href="a00056.html#a18879d9ec115089c02e685a020a11c4d">jacobian</a>, const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian evaluation.  <a href="#af3c5004a7d90783c0ff2548e63be9d32"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a873aca96f047860dd26324aa61b3816b">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ad74746a49723e6f2a0ea5ddf8f4adad8">FunctionPool</a> (const <a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a> callback, const <a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a> &amp;functions, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> constructor.  <a href="#ad74746a49723e6f2a0ea5ddf8f4adad8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ad528238170b3b3a31da3a0c77c4691bf">~FunctionPool</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ad528238170b3b3a31da3a0c77c4691bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a7beafaef4267c311f6bd015109954a4c">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a1972d0b5c0cbe1315474250b0de2857f">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a9dcea07b0d4efbce79279a128906e6b4">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a9f349b1f442566e1f7321bc2a41470ad">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriden print function for pools.  <a href="#a9f349b1f442566e1f7321bc2a41470ad"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::GenericConstantFunction&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;typename F, typename FLIST&gt;<br/>
+class roboptim::FunctionPool&lt; F, FLIST &gt;</h3>
 
-<p>Constant function. </p>
-<p>Implement a constant function using the formula: </p>
-<p class="formulaDsp">
-<img class="formulaDsp" alt="\[f(x) = offset\]" src="form_14.png"/>
-</p>
-<p> where <img class="formulaInl" alt="$offset$" src="form_15.png"/> is set when the class is instantiated. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00009.html#_a3">problem-cc.cc</a>.</dd>
-</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9f9dae33c9657528e0a82410cb161817"></a><!-- doxytag: member="roboptim::GenericConstantFunction::GenericConstantFunction" ref="a9f9dae33c9657528e0a82410cb161817" args="(const vector_t &amp;offset)" -->
+<p>A pool of functions that will be processed together. </p>
+<p>This class provides a way to regroup functions that depend on the same "computation engine", for instance a simulator that generates some data, then each function of the pool can simply read the computed data (which could be done in parallel).</p>
+<p>TODO: the actual type of the <a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> should depend on the list of constraints that are supported. We could imagine using a metaprogramming version of LCA (lowest common ancestor) to find the Function type that will best match the list. In hybrid scenarios where we have both differentiable and non-differentiable functions, two pools sharing the same callback should probably be used. For now, we will rely on a user-provided function type.</p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">F</td><td>type of the pool. </td></tr>
+    <tr><td class="paramname">FLIST</td><td>list of valid function types. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a596d9aeff97f202e6dd69bfffccffbdc"></a><!-- doxytag: member="roboptim::FunctionPool::callback_t" ref="a596d9aeff97f202e6dd69bfffccffbdc" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html">GenericConstantFunction</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="memname">typedef boost::shared_ptr&lt;F&gt; <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Build a constant function. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td>constant function offset </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Type of the callback function (where the computation happens). </p>
 
 </div>
 </div>
-<a class="anchor" id="a31cb64dc0c788b9c3c8f71a591c20f17"></a><!-- doxytag: member="roboptim::GenericConstantFunction::GenericConstantFunction" ref="a31cb64dc0c788b9c3c8f71a591c20f17" args="(size_type input_size, const vector_t &amp;offset)" -->
+<a class="anchor" id="ae1ff53cc9a921842e0deb55a7d4a572e"></a><!-- doxytag: member="roboptim::FunctionPool::function_t" ref="ae1ff53cc9a921842e0deb55a7d4a572e" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html">GenericConstantFunction</a> </td>
+          <td class="memname">typedef <a class="el" href="a00107.html">detail::shared_ptr_variant</a>&lt;<a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a>&gt;::type <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of the functions in the pool. </p>
+
+</div>
+</div>
+<a class="anchor" id="adb1137ff70b2bd5716cd822d17b8709f"></a><!-- doxytag: member="roboptim::FunctionPool::functionList_t" ref="adb1137ff70b2bd5716cd822d17b8709f" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename FLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a>&gt; <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>List of functions that will populate the pool. </p>
+
+</div>
+</div>
+<a class="anchor" id="a417c5745a8a1270bf755887643a5ed6a"></a><!-- doxytag: member="roboptim::FunctionPool::functionTypeList_t" ref="a417c5745a8a1270bf755887643a5ed6a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename FLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00075.html">detail::list_converter</a>&lt;FLIST&gt;::type <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05d47d0df6ccbcdac5628a4a4795dbb0"></a><!-- doxytag: member="roboptim::FunctionPool::pool_t" ref="a05d47d0df6ccbcdac5628a4a4795dbb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename FLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef F <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Function type of the pool. </p>
+<p>Note: this will be set by LCA called on the function type list. </p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad74746a49723e6f2a0ea5ddf8f4adad8"></a><!-- doxytag: member="roboptim::FunctionPool::FunctionPool" ref="ad74746a49723e6f2a0ea5ddf8f4adad8" args="(const callback_t callback, const functionList_t &amp;functions, const std::string &amp;name=&quot;&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename FLIST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html">FunctionPool</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>input_size</em>, </td>
+          <td class="paramtype">const <a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00059.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>functions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [inline]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Build a constant function. </p>
+<p><a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> constructor. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">input_size</td><td>input size of the function </td></tr>
-    <tr><td class="paramname">offset</td><td>constant function offset </td></tr>
+    <tr><td class="paramname">callback</td><td>callback function for the engine. </td></tr>
+    <tr><td class="paramname">functions</td><td>functions of the pool. </td></tr>
+    <tr><td class="paramname">name</td><td>name of the pool. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aab88e6da3308d2ca7b8b58ac6bd87504"></a><!-- doxytag: member="roboptim::GenericConstantFunction::~GenericConstantFunction" ref="aab88e6da3308d2ca7b8b58ac6bd87504" args="()" -->
+<a class="anchor" id="ad528238170b3b3a31da3a0c77c4691bf"></a><!-- doxytag: member="roboptim::FunctionPool::~FunctionPool" ref="ad528238170b3b3a31da3a0c77c4691bf" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::~<a class="el" href="a00055.html">GenericConstantFunction</a> </td>
+          <td class="memname"><a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::~<a class="el" href="a00055.html">FunctionPool</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Virtual destructor. </p>
+
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="afa384a6db99a3d7c8c5fddb3e8cb92c3"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_compute" ref="afa384a6db99a3d7c8c5fddb3e8cb92c3" args="(result_t &amp;result, const argument_t &amp;) const " -->
+<a class="anchor" id="a7beafaef4267c311f6bd015109954a4c"></a><!-- doxytag: member="roboptim::FunctionPool::impl_compute" ref="a7beafaef4267c311f6bd015109954a4c" args="(result_t &amp;result, const argument_t &amp;x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html#afa384a6db99a3d7c8c5fddb3e8cb92c3">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a7beafaef4267c311f6bd015109954a4c">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00059.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;&#160;</td>
+          <td class="paramtype">result_t &amp;&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>&#160;</td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Function evaluation. </p>
-<p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00059.html#a58f0bde147e54bbeb8df944ef194f9ae" title="Evaluate the function at a specified point.">operator()(result_t&amp;, const argument_t&amp;) const</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00059.html#a19fb6005aabfae3862429de2c736ab6e">roboptim::GenericFunction&lt; T &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a6d30bac1095a5fa14db29ab113dc4502"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_gradient" ref="a6d30bac1095a5fa14db29ab113dc4502" args="(gradient_t &amp;gradient, const argument_t &amp;, size_type=0) const " -->
+<a class="anchor" id="a1972d0b5c0cbe1315474250b0de2857f"></a><!-- doxytag: member="roboptim::FunctionPool::impl_gradient" ref="a1972d0b5c0cbe1315474250b0de2857f" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html#a6d30bac1095a5fa14db29ab113dc4502">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a1972d0b5c0cbe1315474250b0de2857f">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00056.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;&#160;</td>
+          <td class="paramtype">gradient_t &amp;&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00059.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
+          <td class="paramtype">size_type&#160;</td>
           <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gradient evaluation. </p>
-<p>Compute the gradient, has to be implemented in concrete classes. The gradient is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00056.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gradient</td><td>gradient will be store in this argument </td></tr>
-    <tr><td class="paramname">argument</td><td>point where the gradient will be computed </td></tr>
-    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00056.html#a84657c4eb2f67ea3bbaf49462f54fb68">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="af3c5004a7d90783c0ff2548e63be9d32"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_jacobian" ref="af3c5004a7d90783c0ff2548e63be9d32" args="(jacobian_t &amp;jacobian, const argument_t &amp;) const " -->
+<a class="anchor" id="a9dcea07b0d4efbce79279a128906e6b4"></a><!-- doxytag: member="roboptim::FunctionPool::impl_jacobian" ref="a9dcea07b0d4efbce79279a128906e6b4" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html#af3c5004a7d90783c0ff2548e63be9d32">impl_jacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a9dcea07b0d4efbce79279a128906e6b4">impl_jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00056.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;&#160;</td>
+          <td class="paramtype">jacobian_t &amp;&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype">const argument_t &amp;&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Jacobian evaluation. </p>
-<p>Computes the jacobian, can be overridden by concrete classes. The default behavior is to compute the jacobian from the gradient. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00056.html#a18879d9ec115089c02e685a020a11c4d" title="Computes the jacobian.">jacobian</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jacobian</td><td>jacobian will be store in this argument </td></tr>
-    <tr><td class="paramname">arg</td><td>point where the jacobian will be computed </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
-
-<p>Reimplemented from <a class="el" href="a00056.html#a5aa21359d6844bc4c21280cbd1155d22">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ac98c86704dc8443933a50ad664cca533"></a><!-- doxytag: member="roboptim::GenericConstantFunction::print" ref="ac98c86704dc8443933a50ad664cca533" args="(std::ostream &amp;o) const " -->
+<a class="anchor" id="a9f349b1f442566e1f7321bc2a41470ad"></a><!-- doxytag: member="roboptim::FunctionPool::print" ref="a9f349b1f442566e1f7321bc2a41470ad" args="(std::ostream &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::ostream&amp; <a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html#ac98c86704dc8443933a50ad664cca533">print</a> </td>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a9f349b1f442566e1f7321bc2a41470ad">print</a> </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Display the function on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+<p>Overriden print function for pools. </p>
 
-<p>Reimplemented from <a class="el" href="a00064.html#a00e124bc18548130332a1f5ceacf70c5">roboptim::GenericLinearFunction&lt; T &gt;</a>.</p>
-
-<p>References <a class="el" href="a00244.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00244.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00244.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
+<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, and <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="addaf70df2c7d3dbf77ef6e53658d656d"></a><!-- doxytag: member="roboptim::GenericConstantFunction::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="addaf70df2c7d3dbf77ef6e53658d656d" args="(GenericLinearFunction&lt; T &gt;)" -->
+<a class="anchor" id="a873aca96f047860dd26324aa61b3816b"></a><!-- doxytag: member="roboptim::FunctionPool::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a873aca96f047860dd26324aa61b3816b" args="(pool_t)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00055.html#addaf70df2c7d3dbf77ef6e53658d656d">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td class="memname"><a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a873aca96f047860dd26324aa61b3816b">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00064.html">GenericLinearFunction</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -408,7 +423,7 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00055.html">GenericConstantFunction</a>      </li>
+      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00055.html">FunctionPool</a>      </li>
 </body>
 </html>

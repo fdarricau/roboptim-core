@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>multiplexer.hh File Reference</title>
+<title>matplotlib.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -62,27 +62,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Defines</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">multiplexer.hh File Reference</div>  </div>
+<div class="title">matplotlib.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00154.html">roboptim/core/fwd.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00220.html">roboptim/core/solver-state.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00183.html">roboptim/core/callback/multiplexer.hxx</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="a00234.html">roboptim/core/sys.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00133.html">roboptim/core/debug.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00156.html">roboptim/core/function.hh</a>&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;Eigen/Core&gt;</code><br/>
+<code>#include &lt;Eigen/Sparse&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00158.html">roboptim/core/visualization/fwd.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00241.html">roboptim/core/visualization/util.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00179.html">roboptim/core/visualization/matplotlib-commands.hh</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html">roboptim::callback::Multiplexer&lt; S &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback multiplexer.  <a href="a00081.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html">roboptim::visualization::Matplotlib</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">matplotlib script  <a href="a00080.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">roboptim::callback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html">roboptim::visualization</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Graphical visualization. </p>
+<br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html#a77e6db63e071b40535df9ee30f2acfd7">EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET</a></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Matplotlib &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga754766ba098561274be740474369e1ba">roboptim::visualization::operator&lt;&lt;</a> (Matplotlib &amp;ml, T t)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle matplotlib command insertion.  <a href="a00266.html#ga754766ba098561274be740474369e1ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html#aa5714b11301afc8bc1ee4d544eafac2f">roboptim::visualization::operator&lt;&lt;</a> (std::ostream &amp;, const Matplotlib &amp;ml)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle matplotlib script display.  <a href="#aa5714b11301afc8bc1ee4d544eafac2f"></a><br/></td></tr>
 </table>
+<hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a77e6db63e071b40535df9ee30f2acfd7"></a><!-- doxytag: member="matplotlib.hh::EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET" ref="a77e6db63e071b40535df9ee30f2acfd7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="a00241.html#a77e6db63e071b40535df9ee30f2acfd7">EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -101,6 +134,6 @@ Namespaces</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00182.html">multiplexer.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00182.html">matplotlib.hh</a>      </li>
 </body>
 </html>

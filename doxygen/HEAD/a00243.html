@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Eigen Namespace Reference</title>
+<title>utility.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -17,9 +17,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -41,8 +41,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -61,44 +61,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">Eigen Namespace Reference</div>  </div>
+<div class="title">utility.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#a8bfc97eecda942cab62110845cfb8a2e">hash_value</a> (const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">roboptim::Function::argument_t</a> &amp;x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash function for argument vectors.  <a href="#a8bfc97eecda942cab62110845cfb8a2e"></a><br/></td></tr>
+<div class="textblock"><code>#include &lt;boost/mpl/assert.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/back_inserter.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/copy.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/count_if.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/fold.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/greater.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/logical.hpp&gt;</code><br/>
+<code>#include &lt;boost/mpl/transform.hpp&gt;</code><br/>
+<code>#include &lt;boost/variant.hpp&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
+<code>#include &lt;boost/type_traits/is_base_of.hpp&gt;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html">roboptim::detail::add_shared_ptr&lt; CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a types list into a types list of shared pointers.  <a href="a00020.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html">roboptim::detail::shared_ptr_variant&lt; CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Boost.Variant of shared pointers from the static constraints types list.  <a href="a00107.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">roboptim::detail::list_converter&lt; CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.).  <a href="a00075.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html">roboptim::detail::contains_base_of&lt; Sequence, Type &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a sequence of types contains a base of a given type.  <a href="a00037.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim::detail::get_descendant&lt; Type1, Type2 &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the descendant among two relatives.  <a href="a00072.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html">roboptim::detail::check_constraint_type&lt; C, CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether C is a valid constraint type in CLIST.  <a href="a00032.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html">roboptim::detail::cast_constraint_type&lt; C, CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the constraint type of CLIST that best match C.  <a href="a00030.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html">roboptim::detail::derives_from_function&lt; F &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the function types derives from Function or SparseFunction.  <a href="a00047.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html">roboptim::detail::list_derives_from_function&lt; CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether all the constraints derive from Function or SparseFunction.  <a href="a00076.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html">roboptim::detail::ConvertConstraint&lt; CLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a constraint to a proper type.  <a href="a00038.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html">roboptim::detail::ConvertConstraintVariant&lt; P &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a constraint from a Boost.Variant to an adequate constraint type depending on the problem's constraints type.  <a href="a00039.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">roboptim</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
+<br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">roboptim::detail</a></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a8bfc97eecda942cab62110845cfb8a2e"></a><!-- doxytag: member="Eigen::hash_value" ref="a8bfc97eecda942cab62110845cfb8a2e" args="(const roboptim::Function::argument_t &amp;x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="a00243.html#a8bfc97eecda942cab62110845cfb8a2e">Eigen::hash_value</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00059.html#a8de5689756f172c3e68d26ce213a812d">roboptim::Function::argument_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Hash function for argument vectors. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>argument vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>hash. </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -117,6 +128,6 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00243.html">Eigen</a>      </li>
+      <li class="navelem"><a class="el" href="a00243.html">utility.hh</a>      </li>
 </body>
 </html>

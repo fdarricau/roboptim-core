@@ -1,23 +1,12 @@
 var a00077 =
 [
-    [ "const_iterator", "a00077.html#a01c31e88fa2e6edc85f37ca890f4ff2b", null ],
-    [ "iterator", "a00077.html#a00425a5fdb30a0bf0bb62be02fd43f04", null ],
-    [ "key_t", "a00077.html#af0ed66c55b2f65a742e39f575aa56917", null ],
-    [ "keyTracker_t", "a00077.html#ade0b7f976a89e5678027cfb71d28dc50", null ],
-    [ "map_t", "a00077.html#aa382887f0e1edd1cc3091caafd638cab", null ],
-    [ "value_t", "a00077.html#af2e6ba538480cc0643fb7511046ab059", null ],
-    [ "valuePool_t", "a00077.html#a2d20d2abcc8bc9436f0cfcf412991917", null ],
-    [ "LRUCache", "a00077.html#adf39b886a31a4a0a025bef7f4426d669", null ],
-    [ "~LRUCache", "a00077.html#ab67fbd0e31b6ec1300d2fbc8beb9e69d", null ],
-    [ "begin", "a00077.html#a0edf6b3be23244f3f41c99c424056b72", null ],
-    [ "cbegin", "a00077.html#adbc235a89e5af27d7ac217be10426d36", null ],
-    [ "cend", "a00077.html#aa6cedc78f33e81ad30fe6e76e2b20363", null ],
-    [ "clear", "a00077.html#aff3d88a98c66640a4af8969519b1b205", null ],
-    [ "end", "a00077.html#ab829747610b83eb3131cda8e08159210", null ],
-    [ "find", "a00077.html#abd3a27df163200ea76eba17de52e7b14", null ],
-    [ "insert", "a00077.html#a11377d5e3391617d897a5df265e1a9a7", null ],
-    [ "operator[]", "a00077.html#ac961cb4b8aa0bd77683f0746e9a32add", null ],
-    [ "print", "a00077.html#a43fd6b57d15377dbc549339a0d3e363d", null ],
-    [ "resize", "a00077.html#a28e34e985952a0f11bfc6067cfd42d40", null ],
-    [ "size", "a00077.html#a145d87360171ba7495783aea2e842e00", null ]
+    [ "argument_t", "a00077.html#a5c3b8004bd8d141b63230b7face4449c", null ],
+    [ "differentiableFunction_t", "a00077.html#a02677fab92ae55a7000391bd9a04ed23", null ],
+    [ "jacobian_t", "a00077.html#abbeb60092977d57c29e444ca403d8640", null ],
+    [ "problem_t", "a00077.html#a81fc882c5a4cd9b7dafe32c246277a46", null ],
+    [ "size_type", "a00077.html#a8d8ca5968fad8205116dda3f171d73b1", null ],
+    [ "traits_t", "a00077.html#a7ee372d93dc3a68e78c1d434ad556905", null ],
+    [ "LogJacobianConstraint", "a00077.html#a6cdb213763ff5845b7728e6bc2e8208e", null ],
+    [ "operator()", "a00077.html#a6f00e3ff90f703822dfeee662a5cdd71", null ],
+    [ "operator()", "a00077.html#a9b7228b8c96ee3ee9376f6e19fcdda3b", null ]
 ];

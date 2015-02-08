@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>util.hh File Reference</title>
+<title>twice-differentiable-function.hxx File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -61,56 +61,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Defines</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">util.hh File Reference</div>  </div>
+<div class="title">twice-differentiable-function.hxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00231.html">roboptim/core/sys.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00132.html">roboptim/core/debug.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00153.html">roboptim/core/function.hh</a>&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;Eigen/Core&gt;</code><br/>
-<code>#include &lt;Eigen/Sparse&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00155.html">roboptim/core/visualization/fwd.hh</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;boost/algorithm/string/replace.hpp&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00172.html">roboptim/core/indent.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00240.html">roboptim/core/util.hh</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">roboptim::visualization</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Graphical visualization. </p>
-<br/></td></tr>
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#a77e6db63e071b40535df9ee30f2acfd7">EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET</a></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#ga03109edccbaa5f071371ee52c447ee70">roboptim::visualization::normalize</a> (const double &amp;x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize floating point number output.  <a href="a00262.html#ga03109edccbaa5f071371ee52c447ee70"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#gaf0f79518896936efeba27dabdce72963">roboptim::visualization::normalize</a> (const Eigen::MatrixXd &amp;x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalize to each element of a matrix.  <a href="a00262.html#gaf0f79518896936efeba27dabdce72963"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#ga823decd192bfbc6405e61c28947ddc4d">roboptim::visualization::normalize</a> (const T &amp;x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalize to each element of a container.  <a href="a00262.html#ga823decd192bfbc6405e61c28947ddc4d"></a><br/></td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a77e6db63e071b40535df9ee30f2acfd7"></a><!-- doxytag: member="visualization/util.hh::EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET" ref="a77e6db63e071b40535df9ee30f2acfd7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00238.html#a77e6db63e071b40535df9ee30f2acfd7">EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -129,6 +94,6 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00238.html">util.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00238.html">twice-differentiable-function.hxx</a>      </li>
 </body>
 </html>

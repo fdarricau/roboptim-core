@@ -1,5 +1,5 @@
 var a00180 =
 [
-    [ "minus", "a00259.html#ga50b429f2b86fb7a9d63333e4686ca688", null ],
-    [ "operator-", "a00259.html#gafb698191cd075127b51cc64130d1b1d3", null ]
+    [ "discreteInterval_t", "a00266.html#gac1d12393050610f8e70843e70183259f", null ],
+    [ "plot", "a00266.html#ga7a1939a1db1b12c576e85859b728458c", null ]
 ];

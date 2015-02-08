@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::list_derives_from_function&lt; CLIST &gt; Struct Template Reference</title>
+<title>roboptim::detail::list_converter&lt; CLIST &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,22 +63,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">roboptim::detail::list_derives_from_function&lt; CLIST &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::detail::list_converter&lt; CLIST &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::list_derives_from_function" -->
-<p>Checks whether all the constraints derive from Function or SparseFunction.  
+<!-- doxytag: class="roboptim::detail::list_converter" -->
+<p>Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.).  
  <a href="a00075.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename CLIST&gt;<br/>
-struct roboptim::detail::list_derives_from_function&lt; CLIST &gt;</h3>
+struct roboptim::detail::list_converter&lt; CLIST &gt;</h3>
 
-<p>Checks whether all the constraints derive from Function or SparseFunction. </p>
+<p>Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.). </p>
+<p>In the case of boost::mpl::vector, this ensures a normalized representation of the vector (boost::mpl::vector converted to boost::mpl::v_item) and orders the constraints in a proper way. This makes the use of typeid comparison possible.</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">CLIST</td><td>a vector of constraint types. </td></tr>
+    <tr><td class="paramname">CLIST</td><td>vector of types </td></tr>
   </table>
   </dd>
 </dl>
@@ -100,8 +101,8 @@ struct roboptim::detail::list_derives_from_function&lt; CLIST &gt;</h3>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00244.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00249.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00075.html">list_derives_from_function</a>      </li>
+      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00253.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">list_converter</a>      </li>
 </body>
 </html>
