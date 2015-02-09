@@ -323,15 +323,15 @@ V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00247.html#a67f53906aa3085cb9d1bf44f5515349e">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="a00027.html">BadJacobian</a>&lt; T &gt; &amp;f)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle exception display.  <a href="#a67f53906aa3085cb9d1bf44f5515349e"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#ga7b974ed3d440aab33b573448ff332552">checkGradient</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, const typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a gradient is valid.  <a href="a00262.html#ga7b974ed3d440aab33b573448ff332552"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#ga243acdc164ebcb9129d073149f02e7ec">checkGradient</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::const_argument_ref x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a gradient is valid.  <a href="a00262.html#ga243acdc164ebcb9129d073149f02e7ec"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#gae0a448fba694779126c4406d23f02bf1">checkGradientAndThrow</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, const typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw (BadGradient&lt;T&gt;)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#ga8844d92b51c9518ec394ad7b6b6bcd7a">checkGradientAndThrow</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::const_argument_ref x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw (BadGradient&lt;T&gt;)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#gaa32250244db065fae2e23e779ae6cf12">checkJacobian</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, const typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a Jacobian is valid.  <a href="a00262.html#gaa32250244db065fae2e23e779ae6cf12"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#gaa79713104bed214820abec2b998d3dba">checkJacobian</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::const_argument_ref x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a Jacobian is valid.  <a href="a00262.html#gaa79713104bed214820abec2b998d3dba"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#ga516899da0b771c79abe8a23a5028d8ea">checkJacobianAndThrow</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, const typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw (BadJacobian&lt;T&gt;)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00262.html#ga44f24c28a17ec94e68bded5d92a9d40a">checkJacobianAndThrow</a> (const <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::const_argument_ref x, typename <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw (BadJacobian&lt;T&gt;)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00261.html#gac1811528dd1c9cc4c233c14bf5ed6e81">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="a00060.html">GenericFunction</a>&lt; T &gt; &amp;f)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle function display.  <a href="a00261.html#gac1811528dd1c9cc4c233c14bf5ed6e81"></a><br/></td></tr>
@@ -391,18 +391,16 @@ V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display an <a class="el" href="a00246.html">Eigen</a> object with the appropriate IOFormat.  <a href="#a77056f38462908511453bafb27f9cb76"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> <br class="typebreak"/>
 <a class="el" href="a00061.html">GenericFunctionTraits</a><br class="typebreak"/>
-&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html#a01aa8def0fdb53b33781f867b4c31d8a">sparse_to_dense</a> (const <a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::matrix_t &amp;)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a sparse matrix into a dense matrix.  <a href="#a01aa8def0fdb53b33781f867b4c31d8a"></a><br/></td></tr>
+&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html#afd78f2c9e9f13163183da639019c6f05">sparse_to_dense</a> (<a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::const_matrix_ref m)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a sparse matrix into a dense matrix.  <a href="#afd78f2c9e9f13163183da639019c6f05"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> <br class="typebreak"/>
 <a class="el" href="a00061.html">GenericFunctionTraits</a><br class="typebreak"/>
-&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html#af4a1126d1b76d53b4b013b9bd60340d2">sparse_to_dense</a> (const <a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::gradient_t &amp;v)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a sparse vector into a dense vector.  <a href="#af4a1126d1b76d53b4b013b9bd60340d2"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename DerivedA , typename DerivedB &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00247.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3">allclose</a> (const Eigen::DenseBase&lt; DerivedA &gt; &amp;a, const Eigen::DenseBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare dense vectors (matrices) using both relative and absolute tolerances.  <a href="#abf0a2c6465667b5f8cc0c9ab9c5d1fe3"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename DerivedA , typename DerivedB &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00247.html#a07401e39f06cf997c6d263a2aa9afd01">allclose</a> (const Eigen::SparseMatrixBase&lt; DerivedA &gt; &amp;a, const Eigen::SparseMatrixBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare sparse vectors (matrices) using both relative and absolute tolerances.  <a href="#a07401e39f06cf997c6d263a2aa9afd01"></a><br/></td></tr>
+&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html#ad88a3cbb485670804344f0ed6a42dfe7">sparse_to_dense</a> (<a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::const_gradient_ref v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a sparse vector into a dense vector.  <a href="#ad88a3cbb485670804344f0ed6a42dfe7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html#a553b9a5a35bb96778d0f07cedf0a3bb6">allclose</a> (const Eigen::SparseMatrix&lt; double &gt; &amp;a, const Eigen::SparseMatrix&lt; double &gt; &amp;b, double rtol=Eigen::NumTraits&lt; double &gt;::dummy_precision(), double atol=Eigen::NumTraits&lt; double &gt;::epsilon())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare sparse vectors (matrices) using both relative and absolute tolerances.  <a href="#a553b9a5a35bb96778d0f07cedf0a3bb6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html#ae044018ab08f8cebb5e7e9b3a0a409eb">allclose</a> (const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;a, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;b, double rtol=Eigen::NumTraits&lt; double &gt;::dummy_precision(), double atol=Eigen::NumTraits&lt; double &gt;::epsilon())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare dense vectors (matrices) using both relative and absolute tolerances.  <a href="#ae044018ab08f8cebb5e7e9b3a0a409eb"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00247.html#a2788770572cf84afe25607661cd5c37f">copySparseBlock</a> (U &amp;matrix, const U &amp;block, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> startRow, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> startCol, bool compress=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a sparse block into a sparse matrix.  <a href="#a2788770572cf84afe25607661cd5c37f"></a><br/></td></tr>
@@ -680,82 +678,33 @@ Variables</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="abf0a2c6465667b5f8cc0c9ab9c5d1fe3"></a><!-- doxytag: member="roboptim::allclose" ref="abf0a2c6465667b5f8cc0c9ab9c5d1fe3" args="(const Eigen::DenseBase&lt; DerivedA &gt; &amp;a, const Eigen::DenseBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())" -->
+<a class="anchor" id="a553b9a5a35bb96778d0f07cedf0a3bb6"></a><!-- doxytag: member="roboptim::allclose" ref="a553b9a5a35bb96778d0f07cedf0a3bb6" args="(const Eigen::SparseMatrix&lt; double &gt; &amp;a, const Eigen::SparseMatrix&lt; double &gt; &amp;b, double rtol=Eigen::NumTraits&lt; double &gt;::dummy_precision(), double atol=Eigen::NumTraits&lt; double &gt;::epsilon())" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename DerivedA , typename DerivedB &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00247.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3">roboptim::allclose</a> </td>
+          <td class="memname">bool <a class="el" href="a00247.html#a553b9a5a35bb96778d0f07cedf0a3bb6">roboptim::allclose</a> </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::DenseBase&lt; DerivedA &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::SparseMatrix&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::DenseBase&lt; DerivedB &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::SparseMatrix&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::dummy_precision&#160;()</code>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;double&gt;::dummy_precision&#160;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::epsilon&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Compare dense vectors (matrices) using both relative and absolute tolerances. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a href="http://stackoverflow.com/a/15052131/1043187">http://stackoverflow.com/a/15052131/1043187</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00007.html#a11">numeric-linear-function.cc</a>, and <a class="el" href="a00008.html#a8">numeric-quadratic-function.cc</a>.</dd>
-</dl>
-<p>Referenced by <a class="el" href="a00262.html#ga7b974ed3d440aab33b573448ff332552">checkGradient()</a>, and <a class="el" href="a00262.html#gaa32250244db065fae2e23e779ae6cf12">checkJacobian()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a07401e39f06cf997c6d263a2aa9afd01"></a><!-- doxytag: member="roboptim::allclose" ref="a07401e39f06cf997c6d263a2aa9afd01" args="(const Eigen::SparseMatrixBase&lt; DerivedA &gt; &amp;a, const Eigen::SparseMatrixBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename DerivedA , typename DerivedB &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a00247.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3">roboptim::allclose</a> </td>
-          <td>(</td>
-          <td class="paramtype">const Eigen::SparseMatrixBase&lt; DerivedA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Eigen::SparseMatrixBase&lt; DerivedB &gt; &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::dummy_precision&#160;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::epsilon&#160;()</code>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;double&gt;::epsilon&#160;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -767,6 +716,51 @@ template&lt;typename DerivedA , typename DerivedB &gt; </div>
 <div class="memdoc">
 
 <p>Compare sparse vectors (matrices) using both relative and absolute tolerances. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a href="http://stackoverflow.com/a/15052131/1043187">http://stackoverflow.com/a/15052131/1043187</a> </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00007.html#a11">numeric-linear-function.cc</a>, and <a class="el" href="a00008.html#a8">numeric-quadratic-function.cc</a>.</dd>
+</dl>
+<p>Referenced by <a class="el" href="a00262.html#ga243acdc164ebcb9129d073149f02e7ec">checkGradient()</a>, and <a class="el" href="a00262.html#gaa79713104bed214820abec2b998d3dba">checkJacobian()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae044018ab08f8cebb5e7e9b3a0a409eb"></a><!-- doxytag: member="roboptim::allclose" ref="ae044018ab08f8cebb5e7e9b3a0a409eb" args="(const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;a, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;b, double rtol=Eigen::NumTraits&lt; double &gt;::dummy_precision(), double atol=Eigen::NumTraits&lt; double &gt;::epsilon())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00247.html#a553b9a5a35bb96778d0f07cedf0a3bb6">roboptim::allclose</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;double&gt;::dummy_precision&#160;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;double&gt;::epsilon&#160;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Compare dense vectors (matrices) using both relative and absolute tolerances. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://stackoverflow.com/a/15052131/1043187">http://stackoverflow.com/a/15052131/1043187</a> </dd></dl>
 
 </div>
@@ -1428,14 +1422,14 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a01aa8def0fdb53b33781f867b4c31d8a"></a><!-- doxytag: member="roboptim::sparse_to_dense" ref="a01aa8def0fdb53b33781f867b4c31d8a" args="(const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t &amp;)" -->
+<a class="anchor" id="afd78f2c9e9f13163183da639019c6f05"></a><!-- doxytag: member="roboptim::sparse_to_dense" ref="afd78f2c9e9f13163183da639019c6f05" args="(GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_matrix_ref m)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::matrix_t <a class="el" href="a00247.html#a01aa8def0fdb53b33781f867b4c31d8a">roboptim::sparse_to_dense</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::matrix_t <a class="el" href="a00247.html#afd78f2c9e9f13163183da639019c6f05">roboptim::sparse_to_dense</a> </td>
           <td>(</td>
-          <td class="paramtype">const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t &amp;&#160;</td>
+          <td class="paramtype">GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_matrix_ref&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1448,14 +1442,14 @@ template&lt;typename F &gt; </div>
 </dl>
 </div>
 </div>
-<a class="anchor" id="af4a1126d1b76d53b4b013b9bd60340d2"></a><!-- doxytag: member="roboptim::sparse_to_dense" ref="af4a1126d1b76d53b4b013b9bd60340d2" args="(const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::gradient_t &amp;v)" -->
+<a class="anchor" id="ad88a3cbb485670804344f0ed6a42dfe7"></a><!-- doxytag: member="roboptim::sparse_to_dense" ref="ad88a3cbb485670804344f0ed6a42dfe7" args="(GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_gradient_ref v)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::vector_t <a class="el" href="a00247.html#a01aa8def0fdb53b33781f867b4c31d8a">roboptim::sparse_to_dense</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">GenericFunctionTraits</a>&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;::vector_t <a class="el" href="a00247.html#afd78f2c9e9f13163183da639019c6f05">roboptim::sparse_to_dense</a> </td>
           <td>(</td>
-          <td class="paramtype">const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::gradient_t &amp;&#160;</td>
+          <td class="paramtype">GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_gradient_ref&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>

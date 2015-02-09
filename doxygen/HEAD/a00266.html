@@ -57,7 +57,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Visualization</div>  </div>
 </div><!--header-->
@@ -111,23 +112,21 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#gabecfe2b1ab67fa65ea2fa8f9de592d0a">roboptim::visualization::gnuplot::help</a> (const char *topic=&quot;&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a> help command.  <a href="#gabecfe2b1ab67fa65ea2fa8f9de592d0a"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga892fef0581371b322b075135b9348f74">roboptim::visualization::gnuplot::plot_jac</a> (const GenericDifferentiableFunction&lt; T &gt; &amp;f, const typename GenericDifferentiableFunction&lt; T &gt;::argument_t &amp;arg)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the Jacobian structure with <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a>.  <a href="#ga892fef0581371b322b075135b9348f74"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga82eb26a5bc780a491723b256fd0e3ff9">roboptim::visualization::gnuplot::plot_jac</a> (const GenericDifferentiableFunction&lt; T &gt; &amp;f, typename GenericDifferentiableFunction&lt; T &gt;::const_argument_ref arg)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the Jacobian structure with <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a>.  <a href="#ga82eb26a5bc780a491723b256fd0e3ff9"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga8697553b2bd7673bec00d45090969a6b">roboptim::visualization::gnuplot::plot_jac</a> (const DifferentiableFunction &amp;f, const DifferentiableFunction::argument_t &amp;arg)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga6089434a4bb7b902af79ee92fbfea1ea">roboptim::visualization::gnuplot::plot_jac</a> (const DifferentiableFunction &amp;f, DifferentiableFunction::const_argument_ref arg)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga2d65957a63de6ff08e9a338b519ac320">roboptim::visualization::gnuplot::plot_jac</a> (const DifferentiableSparseFunction &amp;f, const DifferentiableSparseFunction::argument_t &amp;arg)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#gaa1f821ed4194ecba54db36327af0fd13">roboptim::visualization::gnuplot::plot_jac</a> (const DifferentiableSparseFunction &amp;f, DifferentiableSparseFunction::const_argument_ref arg)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga7a1939a1db1b12c576e85859b728458c">roboptim::visualization::gnuplot::plot</a> (const GenericFunction&lt; T &gt; &amp;f, discreteInterval_t interval)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a 1D function with <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a>.  <a href="#ga7a1939a1db1b12c576e85859b728458c"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga0dba01288d4436dfa417d3dfd5520c27">roboptim::visualization::gnuplot::plot_xy</a> (const GenericFunction&lt; T &gt; &amp;f, discreteInterval_t interval)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot a 2D function with <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a>.  <a href="#ga0dba01288d4436dfa417d3dfd5520c27"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ga40c69971a140078c622852953fb092b3">roboptim::visualization::gnuplot::plot_mat</a> (const GenericFunctionTraits&lt; EigenMatrixDense &gt;::matrix_t &amp;mat)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the structure of a matrix with <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a>.  <a href="#ga40c69971a140078c622852953fb092b3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ga156782554154a4064795107504821778">roboptim::visualization::gnuplot::plot_mat</a> (const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t &amp;mat)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">Command&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga762c6f8a6573db7dfa3bf9a27b63ad90">roboptim::visualization::gnuplot::plot_mat</a> (const typename GenericFunctionTraits&lt; T &gt;::matrix_t &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#gadcb1b5fd0907ef64ce8b6b5aaff42db6">roboptim::visualization::gnuplot::plot_mat</a> (GenericFunctionTraits&lt; EigenMatrixDense &gt;::const_matrix_ref mat)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot the structure of a matrix with <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a>.  <a href="#gadcb1b5fd0907ef64ce8b6b5aaff42db6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ga22b3284ccb0b83b4dccef09f4ce53cab">roboptim::visualization::gnuplot::plot_mat</a> (GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_matrix_ref mat)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">Gnuplot &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga22576c0708e8fe4af42060ff87bfad20">roboptim::visualization::operator&lt;&lt;</a> (Gnuplot &amp;gp, T t)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle <a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a> command insertion.  <a href="#ga22576c0708e8fe4af42060ff87bfad20"></a><br/></td></tr>
@@ -142,8 +141,8 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle matplotlib command insertion.  <a href="#ga754766ba098561274be740474369e1ba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ga03109edccbaa5f071371ee52c447ee70">roboptim::visualization::normalize</a> (const double &amp;x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize floating point number output.  <a href="#ga03109edccbaa5f071371ee52c447ee70"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#gaf0f79518896936efeba27dabdce72963">roboptim::visualization::normalize</a> (const Eigen::MatrixXd &amp;x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalize to each element of a matrix.  <a href="#gaf0f79518896936efeba27dabdce72963"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Function::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ga0a17851ba14ac1c925eaa14b355518b3">roboptim::visualization::normalize</a> (Function::const_matrix_ref x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalize to each element of a matrix.  <a href="#ga0a17851ba14ac1c925eaa14b355518b3"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ga823decd192bfbc6405e61c28947ddc4d">roboptim::visualization::normalize</a> (const T &amp;x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalize to each element of a container.  <a href="#ga823decd192bfbc6405e61c28947ddc4d"></a><br/></td></tr>
@@ -151,6 +150,9 @@ Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a matplotlib comment.  <a href="#ga1263290fead3bbefebb52ad9acba0236"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ga7cdf3f4f9a0ad3a8a3428375389c1332">roboptim::visualization::matplotlib::set</a> (const char *var, const char *value)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a matplotlib set command.  <a href="#ga7cdf3f4f9a0ad3a8a3428375389c1332"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#gabc8e5c002378981e9c06e741d221cffd">roboptim::visualization::gnuplot::plot_mat</a> (typename GenericFunctionTraits&lt; T &gt;::const_matrix_ref)</td></tr>
 </table>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="ga1c2bbde67ed2275a6def58e1cea970f3"></a><!-- doxytag: member="roboptim::visualization::gnuplot::discreteInterval_t" ref="ga1c2bbde67ed2275a6def58e1cea970f3" args="" -->
@@ -428,18 +430,18 @@ template&lt;typename T &gt; </div>
 <p>Normalize floating point number output. </p>
 <p>Normalization is done on all displayed floating point numbers to get a consistent output. </p>
 
-<p>Referenced by <a class="el" href="a00258.html#adb2224ca300cd683bf5229fd2cee7d01">roboptim::visualization::gnuplot::detail::dense_matrix_to_gnuplot()</a>, <a class="el" href="a00266.html#gaf0f79518896936efeba27dabdce72963">roboptim::visualization::normalize()</a>, <a class="el" href="a00266.html#ga7a1939a1db1b12c576e85859b728458c">roboptim::visualization::gnuplot::plot()</a>, and <a class="el" href="a00266.html#ga0dba01288d4436dfa417d3dfd5520c27">roboptim::visualization::gnuplot::plot_xy()</a>.</p>
+<p>Referenced by <a class="el" href="a00258.html#abf27b2e0087da6e9ec89b10bbdef8c4e">roboptim::visualization::gnuplot::detail::dense_matrix_to_gnuplot()</a>, <a class="el" href="a00266.html#ga0a17851ba14ac1c925eaa14b355518b3">roboptim::visualization::normalize()</a>, <a class="el" href="a00266.html#ga7a1939a1db1b12c576e85859b728458c">roboptim::visualization::gnuplot::plot()</a>, and <a class="el" href="a00266.html#ga0dba01288d4436dfa417d3dfd5520c27">roboptim::visualization::gnuplot::plot_xy()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaf0f79518896936efeba27dabdce72963"></a><!-- doxytag: member="roboptim::visualization::normalize" ref="gaf0f79518896936efeba27dabdce72963" args="(const Eigen::MatrixXd &amp;x)" -->
+<a class="anchor" id="ga0a17851ba14ac1c925eaa14b355518b3"></a><!-- doxytag: member="roboptim::visualization::normalize" ref="ga0a17851ba14ac1c925eaa14b355518b3" args="(Function::const_matrix_ref x)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::MatrixXd <a class="el" href="a00266.html#ga03109edccbaa5f071371ee52c447ee70">roboptim::visualization::normalize</a> </td>
+          <td class="memname">Function::matrix_t <a class="el" href="a00266.html#ga03109edccbaa5f071371ee52c447ee70">roboptim::visualization::normalize</a> </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramtype">Function::const_matrix_ref&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -621,14 +623,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga892fef0581371b322b075135b9348f74"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_jac" ref="ga892fef0581371b322b075135b9348f74" args="(const GenericDifferentiableFunction&lt; T &gt; &amp;f, const typename GenericDifferentiableFunction&lt; T &gt;::argument_t &amp;arg)" -->
+<a class="anchor" id="ga82eb26a5bc780a491723b256fd0e3ff9"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_jac" ref="ga82eb26a5bc780a491723b256fd0e3ff9" args="(const GenericDifferentiableFunction&lt; T &gt; &amp;f, typename GenericDifferentiableFunction&lt; T &gt;::const_argument_ref arg)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Command <a class="el" href="a00266.html#ga892fef0581371b322b075135b9348f74">roboptim::visualization::gnuplot::plot_jac</a> </td>
+          <td class="memname">Command <a class="el" href="a00266.html#ga82eb26a5bc780a491723b256fd0e3ff9">roboptim::visualization::gnuplot::plot_jac</a> </td>
           <td>(</td>
           <td class="paramtype">const GenericDifferentiableFunction&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -636,7 +638,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename GenericDifferentiableFunction&lt; T &gt;::argument_t &amp;&#160;</td>
+          <td class="paramtype">typename GenericDifferentiableFunction&lt; T &gt;::const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
@@ -663,14 +665,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga8697553b2bd7673bec00d45090969a6b"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_jac" ref="ga8697553b2bd7673bec00d45090969a6b" args="(const DifferentiableFunction &amp;f, const DifferentiableFunction::argument_t &amp;arg)" -->
+<a class="anchor" id="ga6089434a4bb7b902af79ee92fbfea1ea"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_jac" ref="ga6089434a4bb7b902af79ee92fbfea1ea" args="(const DifferentiableFunction &amp;f, DifferentiableFunction::const_argument_ref arg)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Command <a class="el" href="a00266.html#ga892fef0581371b322b075135b9348f74">roboptim::visualization::gnuplot::plot_jac</a> </td>
+          <td class="memname">Command <a class="el" href="a00266.html#ga82eb26a5bc780a491723b256fd0e3ff9">roboptim::visualization::gnuplot::plot_jac</a> </td>
           <td>(</td>
           <td class="paramtype">const DifferentiableFunction &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -678,7 +680,7 @@ template&lt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DifferentiableFunction::argument_t &amp;&#160;</td>
+          <td class="paramtype">DifferentiableFunction::const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
@@ -690,18 +692,18 @@ template&lt;&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00258.html#a6efa66dcc23edbd627ec2a66a14414f8">roboptim::visualization::gnuplot::detail::dense_jacobian_to_gnuplot()</a>, <a class="el" href="a00060.html#af1cb0698b851bc755145c31ea711b240">roboptim::GenericFunction&lt; T &gt;::getName()</a>, and <a class="el" href="a00057.html#a18879d9ec115089c02e685a020a11c4d">roboptim::GenericDifferentiableFunction&lt; T &gt;::jacobian()</a>.</p>
+<p>References <a class="el" href="a00258.html#a00f78445b522347c5914f58bb68c80a0">roboptim::visualization::gnuplot::detail::dense_jacobian_to_gnuplot()</a>, <a class="el" href="a00060.html#af1cb0698b851bc755145c31ea711b240">roboptim::GenericFunction&lt; T &gt;::getName()</a>, and <a class="el" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c">roboptim::GenericDifferentiableFunction&lt; T &gt;::jacobian()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga2d65957a63de6ff08e9a338b519ac320"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_jac" ref="ga2d65957a63de6ff08e9a338b519ac320" args="(const DifferentiableSparseFunction &amp;f, const DifferentiableSparseFunction::argument_t &amp;arg)" -->
+<a class="anchor" id="gaa1f821ed4194ecba54db36327af0fd13"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_jac" ref="gaa1f821ed4194ecba54db36327af0fd13" args="(const DifferentiableSparseFunction &amp;f, DifferentiableSparseFunction::const_argument_ref arg)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Command <a class="el" href="a00266.html#ga892fef0581371b322b075135b9348f74">roboptim::visualization::gnuplot::plot_jac</a> </td>
+          <td class="memname">Command <a class="el" href="a00266.html#ga82eb26a5bc780a491723b256fd0e3ff9">roboptim::visualization::gnuplot::plot_jac</a> </td>
           <td>(</td>
           <td class="paramtype">const DifferentiableSparseFunction &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -709,7 +711,7 @@ template&lt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DifferentiableSparseFunction::argument_t &amp;&#160;</td>
+          <td class="paramtype">DifferentiableSparseFunction::const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
@@ -721,18 +723,18 @@ template&lt;&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00060.html#af1cb0698b851bc755145c31ea711b240">roboptim::GenericFunction&lt; T &gt;::getName()</a>, <a class="el" href="a00057.html#a18879d9ec115089c02e685a020a11c4d">roboptim::GenericDifferentiableFunction&lt; T &gt;::jacobian()</a>, and <a class="el" href="a00258.html#a556cf30724feeec8aa2ab21ca3800105">roboptim::visualization::gnuplot::detail::sparse_jacobian_to_gnuplot()</a>.</p>
+<p>References <a class="el" href="a00060.html#af1cb0698b851bc755145c31ea711b240">roboptim::GenericFunction&lt; T &gt;::getName()</a>, <a class="el" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c">roboptim::GenericDifferentiableFunction&lt; T &gt;::jacobian()</a>, and <a class="el" href="a00258.html#a406862b4cef98a34eca862ce87b99aa5">roboptim::visualization::gnuplot::detail::sparse_jacobian_to_gnuplot()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga40c69971a140078c622852953fb092b3"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_mat" ref="ga40c69971a140078c622852953fb092b3" args="(const GenericFunctionTraits&lt; EigenMatrixDense &gt;::matrix_t &amp;mat)" -->
+<a class="anchor" id="gadcb1b5fd0907ef64ce8b6b5aaff42db6"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_mat" ref="gadcb1b5fd0907ef64ce8b6b5aaff42db6" args="(GenericFunctionTraits&lt; EigenMatrixDense &gt;::const_matrix_ref mat)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Command <a class="el" href="a00266.html#ga40c69971a140078c622852953fb092b3">roboptim::visualization::gnuplot::plot_mat</a> </td>
+          <td class="memname"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command <a class="el" href="a00266.html#gabc8e5c002378981e9c06e741d221cffd">roboptim::visualization::gnuplot::plot_mat</a> </td>
           <td>(</td>
-          <td class="paramtype">const GenericFunctionTraits&lt; EigenMatrixDense &gt;::matrix_t &amp;&#160;</td>
+          <td class="paramtype">GenericFunctionTraits&lt; EigenMatrixDense &gt;::const_matrix_ref&#160;</td>
           <td class="paramname"><em>mat</em></td><td>)</td>
           <td></td>
         </tr>
@@ -752,42 +754,17 @@ template&lt;&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a> command. </dd></dl>
 
-<p>References <a class="el" href="a00258.html#adb2224ca300cd683bf5229fd2cee7d01">roboptim::visualization::gnuplot::detail::dense_matrix_to_gnuplot()</a>.</p>
-
-<p>Referenced by <a class="el" href="a00258.html#a6efa66dcc23edbd627ec2a66a14414f8">roboptim::visualization::gnuplot::detail::dense_jacobian_to_gnuplot()</a>, and <a class="el" href="a00258.html#a556cf30724feeec8aa2ab21ca3800105">roboptim::visualization::gnuplot::detail::sparse_jacobian_to_gnuplot()</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ga156782554154a4064795107504821778"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_mat" ref="ga156782554154a4064795107504821778" args="(const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t &amp;mat)" -->
+<a class="anchor" id="ga22b3284ccb0b83b4dccef09f4ce53cab"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_mat" ref="ga22b3284ccb0b83b4dccef09f4ce53cab" args="(GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_matrix_ref mat)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Command <a class="el" href="a00266.html#ga40c69971a140078c622852953fb092b3">roboptim::visualization::gnuplot::plot_mat</a> </td>
+          <td class="memname"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command <a class="el" href="a00266.html#gabc8e5c002378981e9c06e741d221cffd">roboptim::visualization::gnuplot::plot_mat</a> </td>
           <td>(</td>
-          <td class="paramtype">const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t &amp;&#160;</td>
+          <td class="paramtype">GenericFunctionTraits&lt; EigenMatrixSparse &gt;::const_matrix_ref&#160;</td>
           <td class="paramname"><em>mat</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00258.html#a1303f8764337206a0b83e3bd5508bc46">roboptim::visualization::gnuplot::detail::sparse_matrix_to_gnuplot()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga762c6f8a6573db7dfa3bf9a27b63ad90"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_mat" ref="ga762c6f8a6573db7dfa3bf9a27b63ad90" args="(const typename GenericFunctionTraits&lt; T &gt;::matrix_t &amp;)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">Command <a class="el" href="a00266.html#ga40c69971a140078c622852953fb092b3">roboptim::visualization::gnuplot::plot_mat</a> </td>
-          <td>(</td>
-          <td class="paramtype">const typename GenericFunctionTraits&lt; T &gt;::matrix_t &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1101,6 +1078,22 @@ template&lt;typename T &gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="a00073.html" title="Gnuplot script.">Gnuplot</a> command </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#a17">finite-difference-gradient.cc</a>, and <a class="el" href="a00012.html#a6">visualization-gnuplot-function.cc</a>.</dd>
 </dl>
+</div>
+</div>
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="gabc8e5c002378981e9c06e741d221cffd"></a><!-- doxytag: member="roboptim::visualization::gnuplot::plot_mat" ref="gabc8e5c002378981e9c06e741d221cffd" args="(typename GenericFunctionTraits&lt; T &gt;::const_matrix_ref)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Command <a class="el" href="a00266.html#gabc8e5c002378981e9c06e741d221cffd">roboptim::visualization::gnuplot::plot_mat</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00258.html#a00f78445b522347c5914f58bb68c80a0">roboptim::visualization::gnuplot::detail::dense_jacobian_to_gnuplot()</a>, and <a class="el" href="a00258.html#a406862b4cef98a34eca862ce87b99aa5">roboptim::visualization::gnuplot::detail::sparse_jacobian_to_gnuplot()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

@@ -100,11 +100,12 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import result type.  <a href="#a650dd3199ebc63021f83ab30b603d982"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef F::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import argument type.  <a href="#af4bb1d815e33a2fbb81165604d48e32a"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import argument types.  <a href="#af4bb1d815e33a2fbb81165604d48e32a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef F::const_argument_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aa09793c665b51d543e7533ccb19d6864">operator()</a> (const <a class="el" href="a00089.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a> &amp;argument) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#aa09793c665b51d543e7533ccb19d6864"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aa743716ae487e979498571784038240b">operator()</a> (<a class="el" href="a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a> argument) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#aa743716ae487e979498571784038240b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00089.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#aa11a87582936a2ce58f853f6ea4541d8">inputSize</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input size (i.e.  <a href="#aa11a87582936a2ce58f853f6ea4541d8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00089.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a067147c8d9a6cfe99f46820a41d08aeb">functionInputSize</a> () const </td></tr>
@@ -118,8 +119,8 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a0cb8331de8f0fdc4ad395446b191fc81">ParametrizedFunction</a> (<a class="el" href="a00089.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00089.html#aa11a87582936a2ce58f853f6ea4541d8">inputSize</a>, <a class="el" href="a00089.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00089.html#a067147c8d9a6cfe99f46820a41d08aeb">functionInputSize</a>, <a class="el" href="a00089.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00089.html#af15dfa5e7e9e13e7f5d4720091a7d28f">functionOutputSize</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#a0cb8331de8f0fdc4ad395446b191fc81"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#af4e8e1ee202ade5a6ec8d66fd497fe29">~ParametrizedFunction</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a491315022b13f12523b583b2699b965e">impl_compute</a> (const <a class="el" href="a00089.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a> &amp;argument) const =0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a491315022b13f12523b583b2699b965e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html#a51e63e20af1027306aa09b86bb968a7e">impl_compute</a> (<a class="el" href="a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a> argument) const =0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a51e63e20af1027306aa09b86bb968a7e"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename F&gt;<br/>
@@ -152,9 +153,26 @@ template&lt;typename F&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Import argument type. </p>
+<p>Import argument types. </p>
 
 <p>Reimplemented in <a class="el" href="a00041.html#a051f9b319c32ebf642211d595e660261">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b689ddb53cba72b6fe79c550c3bef3e"></a><!-- doxytag: member="roboptim::ParametrizedFunction::const_argument_ref" ref="a5b689ddb53cba72b6fe79c550c3bef3e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef F::const_argument_ref <a class="el" href="a00089.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="a00041.html#a16c703d1ad2ddf7306e6bd1843ec001e">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
 
 </div>
 </div>
@@ -360,20 +378,20 @@ template&lt;typename F &gt; </div>
 <p>result's vector size).</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output size </dd></dl>
 
-<p>Referenced by <a class="el" href="a00041.html#a906b1b5a4a4f3ec58bea6b1223a83de1">roboptim::DerivableParametrizedFunction&lt; F &gt;::impl_jacobian()</a>, and <a class="el" href="a00041.html#ae4a3296aedba67d66e12bca6c8ed0f1e">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobianSize()</a>.</p>
+<p>Referenced by <a class="el" href="a00041.html#a6be4fba122ca755b09ca35534b0e4820">roboptim::DerivableParametrizedFunction&lt; F &gt;::impl_jacobian()</a>, and <a class="el" href="a00041.html#ae4a3296aedba67d66e12bca6c8ed0f1e">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobianSize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a491315022b13f12523b583b2699b965e"></a><!-- doxytag: member="roboptim::ParametrizedFunction::impl_compute" ref="a491315022b13f12523b583b2699b965e" args="(const argument_t &amp;argument) const =0" -->
+<a class="anchor" id="a51e63e20af1027306aa09b86bb968a7e"></a><!-- doxytag: member="roboptim::ParametrizedFunction::impl_compute" ref="a51e63e20af1027306aa09b86bb968a7e" args="(const_argument_ref argument) const =0" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename F&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a> <a class="el" href="a00089.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00089.html#a491315022b13f12523b583b2699b965e">impl_compute</a> </td>
+          <td class="memname">virtual <a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a> <a class="el" href="a00089.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00089.html#a51e63e20af1027306aa09b86bb968a7e">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00089.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a>&#160;</td>
           <td class="paramname"><em>argument</em></td><td>)</td>
           <td> const<code> [protected, pure virtual]</code></td>
         </tr>
@@ -383,7 +401,7 @@ template&lt;typename F&gt; </div>
 
 <p>Function evaluation. </p>
 <p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00089.html#aa09793c665b51d543e7533ccb19d6864" title="Evaluate the function at a specified point.">operator()(const argument_t&amp;) const </a>instead. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00089.html#aa743716ae487e979498571784038240b" title="Evaluate the function at a specified point.">operator()(const_argument_ref) const </a>instead. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
@@ -413,11 +431,11 @@ template&lt;typename F &gt; </div>
 <p>argument's vector size).</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>input size </dd></dl>
 
-<p>Referenced by <a class="el" href="a00041.html#a410fe28abefd645359a4c15b371eeb7c">roboptim::DerivableParametrizedFunction&lt; F &gt;::gradient()</a>, <a class="el" href="a00041.html#a313708158dabab24b7d2525a89b2813f">roboptim::DerivableParametrizedFunction&lt; F &gt;::gradientSize()</a>, <a class="el" href="a00041.html#a906b1b5a4a4f3ec58bea6b1223a83de1">roboptim::DerivableParametrizedFunction&lt; F &gt;::impl_jacobian()</a>, <a class="el" href="a00041.html#a3cd4e1a8f667c7c362a8bc7f0039500c">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobian()</a>, and <a class="el" href="a00041.html#ae4a3296aedba67d66e12bca6c8ed0f1e">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobianSize()</a>.</p>
+<p>Referenced by <a class="el" href="a00041.html#a10dc769892383f64ae8076e0781c5cd4">roboptim::DerivableParametrizedFunction&lt; F &gt;::gradient()</a>, <a class="el" href="a00041.html#a313708158dabab24b7d2525a89b2813f">roboptim::DerivableParametrizedFunction&lt; F &gt;::gradientSize()</a>, <a class="el" href="a00041.html#a6be4fba122ca755b09ca35534b0e4820">roboptim::DerivableParametrizedFunction&lt; F &gt;::impl_jacobian()</a>, <a class="el" href="a00041.html#acf03fae161b01bb3389c6b04dee682ef">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobian()</a>, and <a class="el" href="a00041.html#ae4a3296aedba67d66e12bca6c8ed0f1e">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobianSize()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa09793c665b51d543e7533ccb19d6864"></a><!-- doxytag: member="roboptim::ParametrizedFunction::operator()" ref="aa09793c665b51d543e7533ccb19d6864" args="(const argument_t &amp;argument) const " -->
+<a class="anchor" id="aa743716ae487e979498571784038240b"></a><!-- doxytag: member="roboptim::ParametrizedFunction::operator()" ref="aa743716ae487e979498571784038240b" args="(const_argument_ref argument) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -426,7 +444,7 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00089.html">ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00089.html#a650dd3199ebc63021f83ab30b603d982">result_t</a> <a class="el" href="a00089.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00089.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a>&#160;</td>
           <td class="paramname"><em>argument</em></td><td>)</td>
           <td> const</td>
         </tr>

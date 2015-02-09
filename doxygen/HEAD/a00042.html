@@ -80,14 +80,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00061.html">GenericFunctionTraits</a><br class="typebreak"/>
-&lt; typename U::traits_t &gt;<br class="typebreak"/>
-::<a class="el" href="a00042.html#af912e785dd7900da9c316b94f180fb54">gradient_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#af912e785dd7900da9c316b94f180fb54">gradient_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient type.  <a href="#af912e785dd7900da9c316b94f180fb54"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00061.html">GenericFunctionTraits</a><br class="typebreak"/>
-&lt; typename U::traits_t &gt;<br class="typebreak"/>
-::<a class="el" href="a00042.html#a056d399c8eba982af5fb67e229270f61">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a056d399c8eba982af5fb67e229270f61">jacobian_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian type.  <a href="#a056d399c8eba982af5fb67e229270f61"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef DerivativeParent&lt; U &gt;<br class="typebreak"/>
+::result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a1d88c319dd2fa86439a86fd0c6a7da1a">parentType_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; size_type, <br class="typebreak"/>
 size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a773278e0955e248c1d8929c2d09c693d">jacobianSize_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian size type (pair of values).  <a href="#a773278e0955e248c1d8929c2d09c693d"></a><br/></td></tr>
@@ -95,7 +89,7 @@ size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 &lt; <a class="el" href="a00042.html">Derivative</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#ac31bb4fcfc3f627982f26d53329d18e4">DerivativeShPtr_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a868c02ac18892c201784ad3c99f0c452">ROBOPTIM_FUNCTION_FWD_TYPEDEFS_</a> (typename DerivativeParent&lt; U &gt;::result_t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a9f8b668834dfeb2bb913a455bbacd3b6">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; typename U::traits_t &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a8c77526d5667849224840b254fd9a2f9">Derivative</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00042.html#a2d8a0a49a99ccd4a4140b96e12195d9c">origin</a>, size_type variableId)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00042.html" title="Return the derivative of a function w.r.t.">Derivative</a> filter constructor.  <a href="#a8c77526d5667849224840b254fd9a2f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#ae9bbb544ebacd592160d3753e4dde603">~Derivative</a> ()</td></tr>
@@ -103,8 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#aaf51f143b5c6881e69b99fb9e481b63c">origin</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a188587d64e1b4761f7bcc50d8152ae1d">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a47fe87876955583a608440b5ea44ba41">impl_gradient</a> (<a class="el" href="a00042.html#af912e785dd7900da9c316b94f180fb54">gradient_t</a> &amp;gradient, const argument_t &amp;x, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a4e055e1ef1401b1230c857f77d3eec42">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html#a61ab160ffd4612f2d8d158da31ceca8c">impl_gradient</a> (gradient_ref gradient, const_argument_ref x, size_type functionId=0) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U&gt;<br/>
@@ -135,40 +129,6 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af912e785dd7900da9c316b94f180fb54"></a><!-- doxytag: member="roboptim::Derivative::gradient_t" ref="af912e785dd7900da9c316b94f180fb54" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00061.html">GenericFunctionTraits</a>&lt;typename U::traits_t&gt;::<a class="el" href="a00042.html#af912e785dd7900da9c316b94f180fb54">gradient_t</a> <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#af912e785dd7900da9c316b94f180fb54">gradient_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gradient type. </p>
-
-</div>
-</div>
-<a class="anchor" id="a056d399c8eba982af5fb67e229270f61"></a><!-- doxytag: member="roboptim::Derivative::jacobian_t" ref="a056d399c8eba982af5fb67e229270f61" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00061.html">GenericFunctionTraits</a>&lt;typename U::traits_t&gt;::<a class="el" href="a00042.html#a056d399c8eba982af5fb67e229270f61">jacobian_t</a> <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a056d399c8eba982af5fb67e229270f61">jacobian_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Jacobian type. </p>
-
-</div>
-</div>
 <a class="anchor" id="a773278e0955e248c1d8929c2d09c693d"></a><!-- doxytag: member="roboptim::Derivative::jacobianSize_t" ref="a773278e0955e248c1d8929c2d09c693d" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -183,6 +143,21 @@ template&lt;typename U &gt; </div>
 <div class="memdoc">
 
 <p>Jacobian size type (pair of values). </p>
+
+</div>
+</div>
+<a class="anchor" id="a1d88c319dd2fa86439a86fd0c6a7da1a"></a><!-- doxytag: member="roboptim::Derivative::parentType_t" ref="a1d88c319dd2fa86439a86fd0c6a7da1a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef DerivativeParent&lt;U&gt;::result_t <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a1d88c319dd2fa86439a86fd0c6a7da1a">parentType_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -244,22 +219,22 @@ template&lt;typename U &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a188587d64e1b4761f7bcc50d8152ae1d"></a><!-- doxytag: member="roboptim::Derivative::impl_compute" ref="a188587d64e1b4761f7bcc50d8152ae1d" args="(result_t &amp;result, const argument_t &amp;x) const " -->
+<a class="anchor" id="a4e055e1ef1401b1230c857f77d3eec42"></a><!-- doxytag: member="roboptim::Derivative::impl_compute" ref="a4e055e1ef1401b1230c857f77d3eec42" args="(result_ref result, const_argument_ref x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a188587d64e1b4761f7bcc50d8152ae1d">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a4e055e1ef1401b1230c857f77d3eec42">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramtype">result_ref&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -273,22 +248,22 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a47fe87876955583a608440b5ea44ba41"></a><!-- doxytag: member="roboptim::Derivative::impl_gradient" ref="a47fe87876955583a608440b5ea44ba41" args="(gradient_t &amp;gradient, const argument_t &amp;x, size_type functionId=0) const " -->
+<a class="anchor" id="a61ab160ffd4612f2d8d158da31ceca8c"></a><!-- doxytag: member="roboptim::Derivative::impl_gradient" ref="a61ab160ffd4612f2d8d158da31ceca8c" args="(gradient_ref gradient, const_argument_ref x, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a47fe87876955583a608440b5ea44ba41">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a61ab160ffd4612f2d8d158da31ceca8c">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00042.html#af912e785dd7900da9c316b94f180fb54">gradient_t</a> &amp;&#160;</td>
+          <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -344,16 +319,16 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a868c02ac18892c201784ad3c99f0c452"></a><!-- doxytag: member="roboptim::Derivative::ROBOPTIM_FUNCTION_FWD_TYPEDEFS_" ref="a868c02ac18892c201784ad3c99f0c452" args="(typename DerivativeParent&lt; U &gt;::result_t)" -->
+<a class="anchor" id="a9f8b668834dfeb2bb913a455bbacd3b6"></a><!-- doxytag: member="roboptim::Derivative::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a9f8b668834dfeb2bb913a455bbacd3b6" args="(GenericDifferentiableFunction&lt; typename U::traits_t &gt;)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a868c02ac18892c201784ad3c99f0c452">ROBOPTIM_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td class="memname"><a class="el" href="a00042.html">roboptim::Derivative</a>&lt; U &gt;::<a class="el" href="a00042.html#a9f8b668834dfeb2bb913a455bbacd3b6">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
           <td>(</td>
-          <td class="paramtype">typename DerivativeParent&lt; U &gt;::result_t&#160;</td>
+          <td class="paramtype"><a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; typename U::traits_t &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

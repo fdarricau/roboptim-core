@@ -1,5 +1,6 @@
 var a00096 =
 [
+    [ "argument_t", "a00264.html#gacb605f5f66cb80239ccfcc3d73d2fc8e", null ],
     [ "constraintsList_t", "a00264.html#ga9bcfdbfb54421341ac458447f29dded0", null ],
     [ "function_t", "a00264.html#ga7aea22d30d62c71d6e97078a45cfcb79", null ],
     [ "interval_t", "a00264.html#ga448280ebf68055294e2e402202e9af8a", null ],
@@ -7,7 +8,7 @@ var a00096 =
     [ "names_t", "a00264.html#ga5f47ddde952ed583da686357d23083e4", null ],
     [ "scales_t", "a00264.html#gae99cdf43b9e6e469068890e150f2af81", null ],
     [ "size_type", "a00264.html#ga800dda9345ba312198769ad066cfb4d3", null ],
-    [ "startingPoint_t", "a00264.html#gabee31d1ddc6ceb56d98fd38a7efdb678", null ],
+    [ "startingPoint_t", "a00264.html#ga6867ebdef2c7569a9b99e5000dbe049f", null ],
     [ "value_type", "a00264.html#ga39720e9fd5bb9e9e9978625388a87203", null ],
     [ "vector_t", "a00264.html#ga2a21cd94c35336aa100e6c2aaa007c36", null ],
     [ "Problem", "a00264.html#gadcca92e64b652ed01d3b277105e9a503", null ],

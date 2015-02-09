@@ -93,10 +93,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#acb3099be9c39be49e8b9497071ee6619">Policy</a> (const <a class="el" href="a00060.html">GenericFunction</a>&lt; T &gt; &amp;adaptee)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a06bcca9fb5616927cd28834f4ad156b6">~Policy</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a06bcca9fb5616927cd28834f4ad156b6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a7e8c6a925ad96735d662995decc66491">computeGradient</a> (value_type epsilon, gradient_t &amp;gradient, const argument_t &amp;argument, size_type idFunction, argument_t &amp;xEps) const =0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#ab6069cccd76c801edf6b9097faa1c613">computeJacobian</a> (value_type epsilon, jacobian_t &amp;jacobian, const argument_t &amp;argument, argument_t &amp;xEps) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#ab4b0ec314e44cddf2a719764a7059bca">computeGradient</a> (value_type epsilon, gradient_ref gradient, const_argument_ref argument, size_type idFunction, argument_ref xEps) const =0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a59292ba39ede372fa78b14f6f1fabaa8">computeJacobian</a> (value_type epsilon, jacobian_ref jacobian, const_argument_ref argument, argument_ref xEps) const </td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00091.html#a9bb576ba60413b023e8b3f31e79ce5c9">computeJacobian</a> (value_type epsilon, jacobian_t &amp;jacobian, const argument_t &amp;argument, argument_t &amp;xEps) const</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00091.html#ab5425e8a0254a168b4a51306fca0f376">computeJacobian</a> (value_type epsilon, jacobian_ref jacobian, const_argument_ref argument, argument_ref xEps) const</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00060.html">GenericFunction</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a33fa24969277dd190a73d07811e3cff0">adaptee_</a></td></tr>
@@ -147,14 +147,14 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a7e8c6a925ad96735d662995decc66491"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::Policy::computeGradient" ref="a7e8c6a925ad96735d662995decc66491" args="(value_type epsilon, gradient_t &amp;gradient, const argument_t &amp;argument, size_type idFunction, argument_t &amp;xEps) const =0" -->
+<a class="anchor" id="ab4b0ec314e44cddf2a719764a7059bca"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::Policy::computeGradient" ref="ab4b0ec314e44cddf2a719764a7059bca" args="(value_type epsilon, gradient_ref gradient, const_argument_ref argument, size_type idFunction, argument_ref xEps) const =0" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a00091.html">roboptim::finiteDifferenceGradientPolicies::Policy</a>&lt; T &gt;::<a class="el" href="a00091.html#a7e8c6a925ad96735d662995decc66491">computeGradient</a> </td>
+          <td class="memname">virtual void <a class="el" href="a00091.html">roboptim::finiteDifferenceGradientPolicies::Policy</a>&lt; T &gt;::<a class="el" href="a00091.html#ab4b0ec314e44cddf2a719764a7059bca">computeGradient</a> </td>
           <td>(</td>
           <td class="paramtype">value_type&#160;</td>
           <td class="paramname"><em>epsilon</em>, </td>
@@ -162,13 +162,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
@@ -180,7 +180,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">argument_t &amp;&#160;</td>
+          <td class="paramtype">argument_ref&#160;</td>
           <td class="paramname"><em>xEps</em>&#160;</td>
         </tr>
         <tr>
@@ -192,18 +192,18 @@ template&lt;typename T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="a00054.html#a37dc5eb30571a98a3cf1895798b1df6d">roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;</a>, <a class="el" href="a00108.html#a36159055175531adb6c84d75f8f36b9a">roboptim::finiteDifferenceGradientPolicies::Simple&lt; T &gt;</a>, <a class="el" href="a00054.html#a792e1b658b1b7f7c35eaaf264cc170f8">roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;</a>, and <a class="el" href="a00108.html#a25df68e77acbebc52115bb1a6d019e45">roboptim::finiteDifferenceGradientPolicies::Simple&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="a00054.html#a988d3646fbe09cda5d6df026d894fec4">roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;</a>, <a class="el" href="a00108.html#a691aeef4b20ee0c6facc126168d6c140">roboptim::finiteDifferenceGradientPolicies::Simple&lt; T &gt;</a>, <a class="el" href="a00054.html#a8010120e272f8699e6c066d098217613">roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;</a>, and <a class="el" href="a00108.html#a588b478c5cb78d973c164c4d33e8bc3e">roboptim::finiteDifferenceGradientPolicies::Simple&lt; T &gt;</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab6069cccd76c801edf6b9097faa1c613"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::Policy::computeJacobian" ref="ab6069cccd76c801edf6b9097faa1c613" args="(value_type epsilon, jacobian_t &amp;jacobian, const argument_t &amp;argument, argument_t &amp;xEps) const " -->
+<a class="anchor" id="a59292ba39ede372fa78b14f6f1fabaa8"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::Policy::computeJacobian" ref="a59292ba39ede372fa78b14f6f1fabaa8" args="(value_type epsilon, jacobian_ref jacobian, const_argument_ref argument, argument_ref xEps) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00091.html">roboptim::finiteDifferenceGradientPolicies::Policy</a>&lt; T &gt;::<a class="el" href="a00091.html#ab6069cccd76c801edf6b9097faa1c613">computeJacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00091.html">roboptim::finiteDifferenceGradientPolicies::Policy</a>&lt; T &gt;::<a class="el" href="a00091.html#a59292ba39ede372fa78b14f6f1fabaa8">computeJacobian</a> </td>
           <td>(</td>
           <td class="paramtype">value_type&#160;</td>
           <td class="paramname"><em>epsilon</em>, </td>
@@ -211,19 +211,19 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">argument_t &amp;&#160;</td>
+          <td class="paramtype">argument_ref&#160;</td>
           <td class="paramname"><em>xEps</em>&#160;</td>
         </tr>
         <tr>
@@ -237,14 +237,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9bb576ba60413b023e8b3f31e79ce5c9"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::Policy::computeJacobian" ref="a9bb576ba60413b023e8b3f31e79ce5c9" args="(value_type epsilon, jacobian_t &amp;jacobian, const argument_t &amp;argument, argument_t &amp;xEps) const" -->
+<a class="anchor" id="ab5425e8a0254a168b4a51306fca0f376"></a><!-- doxytag: member="roboptim::finiteDifferenceGradientPolicies::Policy::computeJacobian" ref="ab5425e8a0254a168b4a51306fca0f376" args="(value_type epsilon, jacobian_ref jacobian, const_argument_ref argument, argument_ref xEps) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00091.html">roboptim::finiteDifferenceGradientPolicies::Policy</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00091.html#ab6069cccd76c801edf6b9097faa1c613">computeJacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00091.html">roboptim::finiteDifferenceGradientPolicies::Policy</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00091.html#a59292ba39ede372fa78b14f6f1fabaa8">computeJacobian</a> </td>
           <td>(</td>
           <td class="paramtype">value_type&#160;</td>
           <td class="paramname"><em>epsilon</em>, </td>
@@ -252,19 +252,19 @@ template&lt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">argument_t &amp;&#160;</td>
+          <td class="paramtype">argument_ref&#160;</td>
           <td class="paramname"><em>xEps</em>&#160;</td>
         </tr>
         <tr>

@@ -7,9 +7,9 @@ var a00055 =
     [ "pool_t", "a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0", null ],
     [ "FunctionPool", "a00055.html#ad74746a49723e6f2a0ea5ddf8f4adad8", null ],
     [ "~FunctionPool", "a00055.html#ad528238170b3b3a31da3a0c77c4691bf", null ],
-    [ "impl_compute", "a00055.html#a7beafaef4267c311f6bd015109954a4c", null ],
-    [ "impl_gradient", "a00055.html#a1972d0b5c0cbe1315474250b0de2857f", null ],
-    [ "impl_jacobian", "a00055.html#a9dcea07b0d4efbce79279a128906e6b4", null ],
+    [ "impl_compute", "a00055.html#a2abfedba18b10cf2d99b4c571349ff14", null ],
+    [ "impl_gradient", "a00055.html#a71800c1d9a3e3dc67e577fe97f44f12d", null ],
+    [ "impl_jacobian", "a00055.html#a2aba032ac229b88c508a59e7f2aa1928", null ],
     [ "print", "a00055.html#a9f349b1f442566e1f7321bc2a41470ad", null ],
     [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00055.html#a873aca96f047860dd26324aa61b3816b", null ]
 ];

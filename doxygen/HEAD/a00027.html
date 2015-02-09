@@ -82,13 +82,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1a6b0d428a0f18e912d58a365f30cc65">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a27359c085d10c9b200b09480861abe60">BadJacobian</a> (const vector_t &amp;x, const jacobian_t &amp;analyticalJacobian, const jacobian_t &amp;finiteDifferenceJacobian, const value_type &amp;threshold)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a27359c085d10c9b200b09480861abe60"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a55bcece908699e021e8385beda8ecde2">BadJacobian</a> (const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a55bcece908699e021e8385beda8ecde2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a426326464926492fb64c0afd2aeac521">~BadJacobian</a> ()  throw ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a0aa8811534e91780a653700d33e866e0">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the exception on the specified output stream.  <a href="#a0aa8811534e91780a653700d33e866e0"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00027.html#a0c446cdfeeaf7cb69dd80b7f73250ff8">BadJacobian</a> (const vector_t &amp;x, const jacobian_t &amp;analyticalJacobian, const jacobian_t &amp;finiteDifferenceJacobian, const value_type &amp;threshold)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00027.html#aa44364253696684fefa34d8169853c07">BadJacobian</a> (const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ae11afa252b4e25f252ada67120017988">x_</a></td></tr>
@@ -112,7 +112,7 @@ class roboptim::BadJacobian&lt; T &gt;</h3>
 <p>Exception thrown when a Jacobian check fails. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#_a13">finite-difference-gradient.cc</a>.</dd>
 </dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a27359c085d10c9b200b09480861abe60"></a><!-- doxytag: member="roboptim::BadJacobian::BadJacobian" ref="a27359c085d10c9b200b09480861abe60" args="(const vector_t &amp;x, const jacobian_t &amp;analyticalJacobian, const jacobian_t &amp;finiteDifferenceJacobian, const value_type &amp;threshold)" -->
+<a class="anchor" id="a55bcece908699e021e8385beda8ecde2"></a><!-- doxytag: member="roboptim::BadJacobian::BadJacobian" ref="a55bcece908699e021e8385beda8ecde2" args="(const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -121,19 +121,19 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; T &gt;::<a class="el" href="a00027.html">BadJacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">const vector_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const jacobian_t &amp;&#160;</td>
+          <td class="paramtype">const_jacobian_ref&#160;</td>
           <td class="paramname"><em>analyticalJacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const jacobian_t &amp;&#160;</td>
+          <td class="paramtype">const_jacobian_ref&#160;</td>
           <td class="paramname"><em>finiteDifferenceJacobian</em>, </td>
         </tr>
         <tr>
@@ -175,7 +175,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0c446cdfeeaf7cb69dd80b7f73250ff8"></a><!-- doxytag: member="roboptim::BadJacobian::BadJacobian" ref="a0c446cdfeeaf7cb69dd80b7f73250ff8" args="(const vector_t &amp;x, const jacobian_t &amp;analyticalJacobian, const jacobian_t &amp;finiteDifferenceJacobian, const value_type &amp;threshold)" -->
+<a class="anchor" id="aa44364253696684fefa34d8169853c07"></a><!-- doxytag: member="roboptim::BadJacobian::BadJacobian" ref="aa44364253696684fefa34d8169853c07" args="(const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -184,19 +184,19 @@ template&lt;&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00027.html">BadJacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">const vector_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const jacobian_t &amp;&#160;</td>
+          <td class="paramtype">const_jacobian_ref&#160;</td>
           <td class="paramname"><em>analyticalJacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const jacobian_t &amp;&#160;</td>
+          <td class="paramtype">const_jacobian_ref&#160;</td>
           <td class="paramname"><em>finiteDifferenceJacobian</em>, </td>
         </tr>
         <tr>
@@ -243,7 +243,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
 
-<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00247.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00154.html#ac14c610d38433b2977fbc10789c523eb">x_</a>.</p>
+<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00247.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00154.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ template&lt;typename T&gt; </div>
 
 <p>Maximum error. </p>
 
-<p>Referenced by <a class="el" href="a00027.html#a27359c085d10c9b200b09480861abe60">roboptim::BadJacobian&lt; T &gt;::BadJacobian()</a>.</p>
+<p>Referenced by <a class="el" href="a00027.html#a55bcece908699e021e8385beda8ecde2">roboptim::BadJacobian&lt; T &gt;::BadJacobian()</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ template&lt;typename T&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00027.html#a27359c085d10c9b200b09480861abe60">roboptim::BadJacobian&lt; T &gt;::BadJacobian()</a>.</p>
+<p>Referenced by <a class="el" href="a00027.html#a55bcece908699e021e8385beda8ecde2">roboptim::BadJacobian&lt; T &gt;::BadJacobian()</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ template&lt;typename T&gt; </div>
 
 <p>Components containing the maximum error. </p>
 
-<p>Referenced by <a class="el" href="a00027.html#a27359c085d10c9b200b09480861abe60">roboptim::BadJacobian&lt; T &gt;::BadJacobian()</a>.</p>
+<p>Referenced by <a class="el" href="a00027.html#a55bcece908699e021e8385beda8ecde2">roboptim::BadJacobian&lt; T &gt;::BadJacobian()</a>.</p>
 
 </div>
 </div>

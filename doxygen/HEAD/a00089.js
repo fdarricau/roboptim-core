@@ -1,6 +1,7 @@
 var a00089 =
 [
     [ "argument_t", "a00089.html#af4bb1d815e33a2fbb81165604d48e32a", null ],
+    [ "const_argument_ref", "a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e", null ],
     [ "matrix_t", "a00089.html#ae1ae1137efff66af2fc84c967a2e64e5", null ],
     [ "result_t", "a00089.html#a650dd3199ebc63021f83ab30b603d982", null ],
     [ "size_type", "a00089.html#ac88a1cbae53587c432cb346982c9302d", null ],
@@ -10,8 +11,8 @@ var a00089 =
     [ "~ParametrizedFunction", "a00089.html#af4e8e1ee202ade5a6ec8d66fd497fe29", null ],
     [ "functionInputSize", "a00089.html#a067147c8d9a6cfe99f46820a41d08aeb", null ],
     [ "functionOutputSize", "a00089.html#af15dfa5e7e9e13e7f5d4720091a7d28f", null ],
-    [ "impl_compute", "a00089.html#a491315022b13f12523b583b2699b965e", null ],
+    [ "impl_compute", "a00089.html#a51e63e20af1027306aa09b86bb968a7e", null ],
     [ "inputSize", "a00089.html#aa11a87582936a2ce58f853f6ea4541d8", null ],
-    [ "operator()", "a00089.html#aa09793c665b51d543e7533ccb19d6864", null ],
+    [ "operator()", "a00089.html#aa743716ae487e979498571784038240b", null ],
     [ "print", "a00089.html#a7769a5ffb197cd0009a27c6e12d40888", null ]
 ];

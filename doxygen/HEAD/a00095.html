@@ -90,12 +90,15 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import function's value_type type.  <a href="a00264.html#gac4d8783eb3cce4fb35902ef5b91635fd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gaaf9afed23707274cd5f4515ddea8e72a">vector_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="a00264.html#gaaf9afed23707274cd5f4515ddea8e72a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9">argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac3031ce28dcf76501a038c37beeb5a0b">size_type</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="a00264.html#gac3031ce28dcf76501a038c37beeb5a0b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00264.html#ga75dded03cc5626abe20a183b91f59855">constraint_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints are represented as a vector of constraints.  <a href="a00264.html#ga9087fb924dcb6579d1a15eab76b8526d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional&lt; <a class="el" href="a00264.html#gaaf9afed23707274cd5f4515ddea8e72a">vector_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">startingPoint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="a00264.html#gac7dd58ab9bad60d0dad5eeb94dfe1966"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional<br class="typebreak"/>
+&lt; <a class="el" href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9">argument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval type (e.g. for bounds).  <a href="a00264.html#ga380a03c110b72daf32f237271c9132fb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a></td></tr>
@@ -149,9 +152,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga35eb1490bb9b1cad4357553f60bf7959">scalesVector</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints scales vector.  <a href="a00264.html#ga35eb1490bb9b1cad4357553f60bf7959"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Starting point (initial guess).</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00264.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac8049404b830aa3ef0e5b72c8975a849">startingPoint</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac8049404b830aa3ef0e5b72c8975a849">startingPoint</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial guess.  <a href="a00264.html#gac8049404b830aa3ef0e5b72c8975a849"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga41794d906c0d101dbb635f19f2c7e6c0">startingPoint</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga41794d906c0d101dbb635f19f2c7e6c0">startingPoint</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial guess.  <a href="a00264.html#ga41794d906c0d101dbb635f19f2c7e6c0"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>

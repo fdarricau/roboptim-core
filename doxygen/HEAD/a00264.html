@@ -97,10 +97,13 @@ Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga39720e9fd5bb9e9e9978625388a87203">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::value_type</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga2a21cd94c35336aa100e6c2aaa007c36">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::vector_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="#ga2a21cd94c35336aa100e6c2aaa007c36"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gacb605f5f66cb80239ccfcc3d73d2fc8e">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="#gacb605f5f66cb80239ccfcc3d73d2fc8e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga800dda9345ba312198769ad066cfb4d3">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::size_type</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="#ga800dda9345ba312198769ad066cfb4d3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional&lt; vector_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gabee31d1ddc6ceb56d98fd38a7efdb678">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::startingPoint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="#gabee31d1ddc6ceb56d98fd38a7efdb678"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional<br class="typebreak"/>
+&lt; argument_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga6867ebdef2c7569a9b99e5000dbe049f">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::startingPoint_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="#ga6867ebdef2c7569a9b99e5000dbe049f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga448280ebf68055294e2e402202e9af8a">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::interval_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gae655b225fa5efccdd2a2eb4c8e8462e6">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::intervals_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gae99cdf43b9e6e469068890e150f2af81">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::scales_t</a></td></tr>
@@ -120,12 +123,15 @@ detail::shared_ptr_variant<br class="typebreak"/>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import function's value_type type.  <a href="#gac4d8783eb3cce4fb35902ef5b91635fd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gaaf9afed23707274cd5f4515ddea8e72a">roboptim::Problem&lt; F, CLIST &gt;::vector_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="#gaaf9afed23707274cd5f4515ddea8e72a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9">roboptim::Problem&lt; F, CLIST &gt;::argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="#ga31eec097ccd217fa1ab8396386027fb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac3031ce28dcf76501a038c37beeb5a0b">roboptim::Problem&lt; F, CLIST &gt;::size_type</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="#gac3031ce28dcf76501a038c37beeb5a0b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; constraint_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga9087fb924dcb6579d1a15eab76b8526d">roboptim::Problem&lt; F, CLIST &gt;::constraints_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints are represented as a vector of constraints.  <a href="#ga9087fb924dcb6579d1a15eab76b8526d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional&lt; vector_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac7dd58ab9bad60d0dad5eeb94dfe1966">roboptim::Problem&lt; F, CLIST &gt;::startingPoint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="#gac7dd58ab9bad60d0dad5eeb94dfe1966"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional<br class="typebreak"/>
+&lt; argument_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">roboptim::Problem&lt; F, CLIST &gt;::startingPoint_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="#ga54cc9f9c4a2ce51572af2c2e106076d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga380a03c110b72daf32f237271c9132fb">roboptim::Problem&lt; F, CLIST &gt;::interval_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval type (e.g. for bounds).  <a href="#ga380a03c110b72daf32f237271c9132fb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">roboptim::Problem&lt; F, CLIST &gt;::intervals_t</a></td></tr>
@@ -279,6 +285,40 @@ Starting point (initial guess).</h2></td></tr>
   </dd>
 </dl>
 <hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="gacb605f5f66cb80239ccfcc3d73d2fc8e"></a><!-- doxytag: member="roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::argument_t" ref="gacb605f5f66cb80239ccfcc3d73d2fc8e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef function_t::argument_t <a class="el" href="a00095.html">roboptim::Problem</a>&lt; F, boost::mpl::vector&lt;&gt; &gt;::argument_t</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Argument type. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga31eec097ccd217fa1ab8396386027fb9"></a><!-- doxytag: member="roboptim::Problem::argument_t" ref="ga31eec097ccd217fa1ab8396386027fb9" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F, typename CLIST&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef function_t::argument_t <a class="el" href="a00095.html">roboptim::Problem</a>&lt; F, CLIST &gt;::argument_t</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Argument type. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga75dded03cc5626abe20a183b91f59855"></a><!-- doxytag: member="roboptim::Problem::constraint_t" ref="ga75dded03cc5626abe20a183b91f59855" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -587,14 +627,14 @@ template&lt;typename F, typename CLIST&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gabee31d1ddc6ceb56d98fd38a7efdb678"></a><!-- doxytag: member="roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::startingPoint_t" ref="gabee31d1ddc6ceb56d98fd38a7efdb678" args="" -->
+<a class="anchor" id="ga6867ebdef2c7569a9b99e5000dbe049f"></a><!-- doxytag: member="roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::startingPoint_t" ref="ga6867ebdef2c7569a9b99e5000dbe049f" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename F &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::optional&lt;vector_t&gt; <a class="el" href="a00095.html">roboptim::Problem</a>&lt; F, boost::mpl::vector&lt;&gt; &gt;::startingPoint_t</td>
+          <td class="memname">typedef boost::optional&lt;argument_t&gt; <a class="el" href="a00095.html">roboptim::Problem</a>&lt; F, boost::mpl::vector&lt;&gt; &gt;::startingPoint_t</td>
         </tr>
       </table>
 </div>
@@ -604,14 +644,14 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gac7dd58ab9bad60d0dad5eeb94dfe1966"></a><!-- doxytag: member="roboptim::Problem::startingPoint_t" ref="gac7dd58ab9bad60d0dad5eeb94dfe1966" args="" -->
+<a class="anchor" id="ga54cc9f9c4a2ce51572af2c2e106076d0"></a><!-- doxytag: member="roboptim::Problem::startingPoint_t" ref="ga54cc9f9c4a2ce51572af2c2e106076d0" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename F, typename CLIST&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::optional&lt;vector_t&gt; <a class="el" href="a00095.html">roboptim::Problem</a>&lt; F, CLIST &gt;::startingPoint_t</td>
+          <td class="memname">typedef boost::optional&lt;argument_t&gt; <a class="el" href="a00095.html">roboptim::Problem</a>&lt; F, CLIST &gt;::startingPoint_t</td>
         </tr>
       </table>
 </div>

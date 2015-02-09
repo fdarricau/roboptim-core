@@ -92,9 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#adda8d726a09e9d776bc2f597b04e3d0b">~Bind</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a29f1bcab4d91c3ecd75fdf00948f8198">origin</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a69de4a8f82057c2f6d3089caf1fdb1fb">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ac760c846779e6830e4f200ed912e48b5">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a84887e33a10c4dfae454f823594ce173">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aaeeeeea0d085f8f51314bb16e553644d">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a4fc7ea98bcfed0e1a2bc947925d3de91">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a55a8df765c283c2997c194ae5cd15096">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a86d08817481bc6e6da2e66d0c23b7b55">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U&gt;<br/>
@@ -182,7 +182,7 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#a5e1f635107cd3016a1da3d0813a5ec92">jacobian_</a>.</p>
+<p>References <a class="el" href="a00154.html#ac8e4d7d6f9f9af11c249371537ef67fb">jacobian_</a>.</p>
 
 </div>
 </div>
@@ -205,22 +205,22 @@ template&lt;typename U &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac760c846779e6830e4f200ed912e48b5"></a><!-- doxytag: member="roboptim::Bind::impl_compute" ref="ac760c846779e6830e4f200ed912e48b5" args="(result_t &amp;result, const argument_t &amp;x) const " -->
+<a class="anchor" id="a4fc7ea98bcfed0e1a2bc947925d3de91"></a><!-- doxytag: member="roboptim::Bind::impl_compute" ref="a4fc7ea98bcfed0e1a2bc947925d3de91" args="(result_ref result, const_argument_ref x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00028.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00028.html#ac760c846779e6830e4f200ed912e48b5">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00028.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00028.html#a4fc7ea98bcfed0e1a2bc947925d3de91">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramtype">result_ref&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -232,26 +232,26 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#ac14c610d38433b2977fbc10789c523eb">x_</a>.</p>
+<p>References <a class="el" href="a00154.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a84887e33a10c4dfae454f823594ce173"></a><!-- doxytag: member="roboptim::Bind::impl_gradient" ref="a84887e33a10c4dfae454f823594ce173" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
+<a class="anchor" id="a55a8df765c283c2997c194ae5cd15096"></a><!-- doxytag: member="roboptim::Bind::impl_gradient" ref="a55a8df765c283c2997c194ae5cd15096" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00028.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00028.html#a84887e33a10c4dfae454f823594ce173">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00028.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00028.html#a55a8df765c283c2997c194ae5cd15096">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
@@ -269,26 +269,26 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#ac14c610d38433b2977fbc10789c523eb">x_</a>.</p>
+<p>References <a class="el" href="a00154.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaeeeeea0d085f8f51314bb16e553644d"></a><!-- doxytag: member="roboptim::Bind::impl_jacobian" ref="aaeeeeea0d085f8f51314bb16e553644d" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
+<a class="anchor" id="a86d08817481bc6e6da2e66d0c23b7b55"></a><!-- doxytag: member="roboptim::Bind::impl_jacobian" ref="a86d08817481bc6e6da2e66d0c23b7b55" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00028.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00028.html#aaeeeeea0d085f8f51314bb16e553644d">impl_jacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00028.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00028.html#a86d08817481bc6e6da2e66d0c23b7b55">impl_jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
@@ -300,7 +300,7 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#a5e1f635107cd3016a1da3d0813a5ec92">jacobian_</a>, and <a class="el" href="a00154.html#ac14c610d38433b2977fbc10789c523eb">x_</a>.</p>
+<p>References <a class="el" href="a00154.html#ac8e4d7d6f9f9af11c249371537ef67fb">jacobian_</a>, and <a class="el" href="a00154.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
 
 </div>
 </div>

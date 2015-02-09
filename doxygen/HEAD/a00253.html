@@ -135,6 +135,8 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#a094daed4dffe81c61f1f9e78c7a90949">ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (<a class="el" href="a00109.html">Sin</a>&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;, <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; <a class="el" href="a00050.html">EigenMatrixDense</a> &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#a39832b72e2662fa10fb032153eefeead">ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (<a class="el" href="a00109.html">Sin</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;, <a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#a78ae5ee1ba15a6256b01f3bb3765a747">impl_print</a> (std::ostream &amp;o, Eigen::Ref&lt; T &gt; t)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#a974b01d3e6b19ebbfb1c45cc3cabd9ed">impl_print</a> (std::ostream &amp;o, const T *t)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#a92d03025b36c11fc83d49f550228996e">impl_print</a> (std::ostream &amp;o, const T &amp;t)</td></tr>
@@ -145,20 +147,20 @@ Functions</h2></td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#a87c42304ba76109480407b09310edc43">StateParameterPrint&lt; bool &gt;</a> (std::ostream &amp;o, const bool &amp;val)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#a5fb8289674ea71841299546308f6b09a">StateParameterPrint&lt; std::string &gt;</a> (std::ostream &amp;o, const std::string &amp;val)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#a949d11dcf394e98cfba78e6bc9965500">vector_to_array</a> (<a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> *dst, const <a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">Function::vector_t</a> &amp;src)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#a9189c68dd65912496f805aad9171288b">array_to_vector</a> (<a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">Function::vector_t</a> &amp;dst, const <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> *src)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#a45d027e5d21701eaed1833b65b9c479f">vector_to_array</a> (<a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> *dst, Function::const_vector_ref src)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#a18239091e8dccca412363bc04ab52748">array_to_vector</a> (Function::vector_ref dst, const <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> *src)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#a81de9d321de7e4aaccd11060a2d61643">jacobian_from_gradients</a> (typename <a class="el" href="a00060.html#a97054924c0f87acb1713be64782a6aab">DifferentiableFunction::matrix_t</a> &amp;jac, const std::vector&lt; const T * &gt; &amp;c, const <a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">DifferentiableFunction::vector_t</a> &amp;x)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00253.html#ac5457a6e26cce6c15044aaba1ab2f2c7">jacobian_from_gradients</a> (DifferentiableFunction::matrix_ref jac, const std::vector&lt; const T * &gt; &amp;c, DifferentiableFunction::const_vector_ref x)</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a9189c68dd65912496f805aad9171288b"></a><!-- doxytag: member="roboptim::detail::array_to_vector" ref="a9189c68dd65912496f805aad9171288b" args="(Function::vector_t &amp;dst, const Function::value_type *src)" -->
+<a class="anchor" id="a18239091e8dccca412363bc04ab52748"></a><!-- doxytag: member="roboptim::detail::array_to_vector" ref="a18239091e8dccca412363bc04ab52748" args="(Function::vector_ref dst, const Function::value_type *src)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00253.html#a9189c68dd65912496f805aad9171288b">roboptim::detail::array_to_vector</a> </td>
+          <td class="memname">void <a class="el" href="a00253.html#a18239091e8dccca412363bc04ab52748">roboptim::detail::array_to_vector</a> </td>
           <td>(</td>
-          <td class="paramtype">Function::vector_t &amp;&#160;</td>
+          <td class="paramtype">Function::vector_ref&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -178,6 +180,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a78ae5ee1ba15a6256b01f3bb3765a747"></a><!-- doxytag: member="roboptim::detail::impl_print" ref="a78ae5ee1ba15a6256b01f3bb3765a747" args="(std::ostream &amp;o, Eigen::Ref&lt; T &gt; t)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; <a class="el" href="a00253.html#a78ae5ee1ba15a6256b01f3bb3765a747">roboptim::detail::impl_print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Ref&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a974b01d3e6b19ebbfb1c45cc3cabd9ed"></a><!-- doxytag: member="roboptim::detail::impl_print" ref="a974b01d3e6b19ebbfb1c45cc3cabd9ed" args="(std::ostream &amp;o, const T *t)" -->
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +216,7 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; <a class="el" href="a00253.html#a974b01d3e6b19ebbfb1c45cc3cabd9ed">roboptim::detail::impl_print</a> </td>
+          <td class="memname">std::ostream&amp; <a class="el" href="a00253.html#a78ae5ee1ba15a6256b01f3bb3765a747">roboptim::detail::impl_print</a> </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em>, </td>
@@ -214,7 +245,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; <a class="el" href="a00253.html#a974b01d3e6b19ebbfb1c45cc3cabd9ed">roboptim::detail::impl_print</a> </td>
+          <td class="memname">std::ostream&amp; <a class="el" href="a00253.html#a78ae5ee1ba15a6256b01f3bb3765a747">roboptim::detail::impl_print</a> </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em>, </td>
@@ -236,16 +267,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a81de9d321de7e4aaccd11060a2d61643"></a><!-- doxytag: member="roboptim::detail::jacobian_from_gradients" ref="a81de9d321de7e4aaccd11060a2d61643" args="(typename DifferentiableFunction::matrix_t &amp;jac, const std::vector&lt; const T * &gt; &amp;c, const DifferentiableFunction::vector_t &amp;x)" -->
+<a class="anchor" id="ac5457a6e26cce6c15044aaba1ab2f2c7"></a><!-- doxytag: member="roboptim::detail::jacobian_from_gradients" ref="ac5457a6e26cce6c15044aaba1ab2f2c7" args="(DifferentiableFunction::matrix_ref jac, const std::vector&lt; const T * &gt; &amp;c, DifferentiableFunction::const_vector_ref x)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00253.html#a81de9d321de7e4aaccd11060a2d61643">roboptim::detail::jacobian_from_gradients</a> </td>
+          <td class="memname">void <a class="el" href="a00253.html#ac5457a6e26cce6c15044aaba1ab2f2c7">roboptim::detail::jacobian_from_gradients</a> </td>
           <td>(</td>
-          <td class="paramtype">typename DifferentiableFunction::matrix_t &amp;&#160;</td>
+          <td class="paramtype">DifferentiableFunction::matrix_ref&#160;</td>
           <td class="paramname"><em>jac</em>, </td>
         </tr>
         <tr>
@@ -257,7 +288,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DifferentiableFunction::vector_t &amp;&#160;</td>
+          <td class="paramtype">DifferentiableFunction::const_vector_ref&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -967,12 +998,12 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a949d11dcf394e98cfba78e6bc9965500"></a><!-- doxytag: member="roboptim::detail::vector_to_array" ref="a949d11dcf394e98cfba78e6bc9965500" args="(Function::value_type *dst, const Function::vector_t &amp;src)" -->
+<a class="anchor" id="a45d027e5d21701eaed1833b65b9c479f"></a><!-- doxytag: member="roboptim::detail::vector_to_array" ref="a45d027e5d21701eaed1833b65b9c479f" args="(Function::value_type *dst, Function::const_vector_ref src)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00253.html#a949d11dcf394e98cfba78e6bc9965500">roboptim::detail::vector_to_array</a> </td>
+          <td class="memname">void <a class="el" href="a00253.html#a45d027e5d21701eaed1833b65b9c479f">roboptim::detail::vector_to_array</a> </td>
           <td>(</td>
           <td class="paramtype">Function::value_type *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
@@ -980,7 +1011,7 @@ template&lt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Function::vector_t &amp;&#160;</td>
+          <td class="paramtype">Function::const_vector_ref&#160;</td>
           <td class="paramname"><em>src</em>&#160;</td>
         </tr>
         <tr>

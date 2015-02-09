@@ -8,12 +8,11 @@ var a00257 =
     [ "comment", "a00266.html#ga7a509faa4e3dd9a30373a2b320b98c23", null ],
     [ "help", "a00266.html#gabecfe2b1ab67fa65ea2fa8f9de592d0a", null ],
     [ "plot", "a00266.html#ga7a1939a1db1b12c576e85859b728458c", null ],
-    [ "plot_jac", "a00266.html#ga892fef0581371b322b075135b9348f74", null ],
-    [ "plot_jac", "a00266.html#ga8697553b2bd7673bec00d45090969a6b", null ],
-    [ "plot_jac", "a00266.html#ga2d65957a63de6ff08e9a338b519ac320", null ],
-    [ "plot_mat", "a00266.html#ga40c69971a140078c622852953fb092b3", null ],
-    [ "plot_mat", "a00266.html#ga156782554154a4064795107504821778", null ],
-    [ "plot_mat", "a00266.html#ga762c6f8a6573db7dfa3bf9a27b63ad90", null ],
+    [ "plot_jac", "a00266.html#ga82eb26a5bc780a491723b256fd0e3ff9", null ],
+    [ "plot_jac", "a00266.html#ga6089434a4bb7b902af79ee92fbfea1ea", null ],
+    [ "plot_jac", "a00266.html#gaa1f821ed4194ecba54db36327af0fd13", null ],
+    [ "plot_mat", "a00266.html#gadcb1b5fd0907ef64ce8b6b5aaff42db6", null ],
+    [ "plot_mat", "a00266.html#ga22b3284ccb0b83b4dccef09f4ce53cab", null ],
     [ "plot_xy", "a00266.html#ga0dba01288d4436dfa417d3dfd5520c27", null ],
     [ "pwd", "a00266.html#ga05e850b5c5dc912807d645863c01acd9", null ],
     [ "quit", "a00266.html#ga9ecd6983c2e9525527f1269b72b85291", null ],
@@ -22,5 +21,6 @@ var a00257 =
     [ "reset", "a00266.html#ga73987a2ddca2e5fc23ff8bbdf703842d", null ],
     [ "set", "a00266.html#gad77630a233193748534b41d069d4e180", null ],
     [ "show", "a00266.html#gaf90f5364d8c3597b8909ba99083fc23f", null ],
-    [ "unset", "a00266.html#ga2c2a188b2e89955eee09aa10b5426e43", null ]
+    [ "unset", "a00266.html#ga2c2a188b2e89955eee09aa10b5426e43", null ],
+    [ "plot_mat", "a00266.html#gabc8e5c002378981e9c06e741d221cffd", null ]
 ];

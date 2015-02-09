@@ -1,14 +1,14 @@
 var a00071 =
 [
-    [ "hessian_t", "a00071.html#a88566ea169ba77a2c2b9caf939c12cd1", null ],
     [ "hessianSize_t", "a00071.html#a8eb36050555e77e94717556bc0bf8d20", null ],
     [ "GenericTwiceDifferentiableFunction", "a00071.html#af01b4e2ebb1119493337e12c105128c2", null ],
-    [ "hessian", "a00071.html#a7ab6bda5039008fb215ab24ecacd85a2", null ],
-    [ "hessian", "a00071.html#a62c40461536ac03d4c457f8681f8c2b3", null ],
+    [ "hessian", "a00071.html#ae9cd62bec5a2c9637b96d738b90caeab", null ],
+    [ "hessian", "a00071.html#a1d3a2847469eaf4dfb754da35d9a4d6a", null ],
     [ "hessianSize", "a00071.html#ab88c89f971c0354c165165849b03c1f0", null ],
-    [ "impl_hessian", "a00071.html#ac5b5430ab527d7de393f876f4db314c2", null ],
-    [ "isValidHessian", "a00071.html#a1817e181cfbd18d6ffd6002c98763e6a", null ],
+    [ "impl_hessian", "a00071.html#af7263e60b22683378ea9027e976fbb29", null ],
+    [ "isValidHessian", "a00071.html#a95b5ca91432ba1dc459785802efd1057", null ],
     [ "print", "a00071.html#a78bf9018548e92c38803bbd0b39ef29a", null ],
     [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00071.html#ae1dfb2289bce927983df0ba0ecd3bf6f", null ],
-    [ "setZero", "a00071.html#a042286a811a4ec9b79c9d2c34f8e63c0", null ]
+    [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00071.html#aa9b80dc07bd5d9f629bfa639e856f9b5", null ],
+    [ "setZero", "a00071.html#a20d8d8792303c156102fbe8eec686b70", null ]
 ];

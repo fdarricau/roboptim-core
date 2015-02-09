@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> constructor.  <a href="#ad74746a49723e6f2a0ea5ddf8f4adad8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ad528238170b3b3a31da3a0c77c4691bf">~FunctionPool</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ad528238170b3b3a31da3a0c77c4691bf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a7beafaef4267c311f6bd015109954a4c">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a1972d0b5c0cbe1315474250b0de2857f">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a9dcea07b0d4efbce79279a128906e6b4">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2abfedba18b10cf2d99b4c571349ff14">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a71800c1d9a3e3dc67e577fe97f44f12d">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2aba032ac229b88c508a59e7f2aa1928">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a9f349b1f442566e1f7321bc2a41470ad">print</a> (std::ostream &amp;) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriden print function for pools.  <a href="#a9f349b1f442566e1f7321bc2a41470ad"></a><br/></td></tr>
 </table>
@@ -270,22 +270,22 @@ template&lt;typename F , typename FLIST &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a7beafaef4267c311f6bd015109954a4c"></a><!-- doxytag: member="roboptim::FunctionPool::impl_compute" ref="a7beafaef4267c311f6bd015109954a4c" args="(result_t &amp;result, const argument_t &amp;x) const " -->
+<a class="anchor" id="a2abfedba18b10cf2d99b4c571349ff14"></a><!-- doxytag: member="roboptim::FunctionPool::impl_compute" ref="a2abfedba18b10cf2d99b4c571349ff14" args="(result_ref result, const_argument_ref x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a7beafaef4267c311f6bd015109954a4c">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a2abfedba18b10cf2d99b4c571349ff14">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramtype">result_ref&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -299,22 +299,22 @@ template&lt;typename F , typename FLIST &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1972d0b5c0cbe1315474250b0de2857f"></a><!-- doxytag: member="roboptim::FunctionPool::impl_gradient" ref="a1972d0b5c0cbe1315474250b0de2857f" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
+<a class="anchor" id="a71800c1d9a3e3dc67e577fe97f44f12d"></a><!-- doxytag: member="roboptim::FunctionPool::impl_gradient" ref="a71800c1d9a3e3dc67e577fe97f44f12d" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a1972d0b5c0cbe1315474250b0de2857f">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a71800c1d9a3e3dc67e577fe97f44f12d">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
@@ -334,22 +334,22 @@ template&lt;typename F , typename FLIST &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9dcea07b0d4efbce79279a128906e6b4"></a><!-- doxytag: member="roboptim::FunctionPool::impl_jacobian" ref="a9dcea07b0d4efbce79279a128906e6b4" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
+<a class="anchor" id="a2aba032ac229b88c508a59e7f2aa1928"></a><!-- doxytag: member="roboptim::FunctionPool::impl_jacobian" ref="a2aba032ac229b88c508a59e7f2aa1928" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a9dcea07b0d4efbce79279a128906e6b4">impl_jacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a2aba032ac229b88c508a59e7f2aa1928">impl_jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>

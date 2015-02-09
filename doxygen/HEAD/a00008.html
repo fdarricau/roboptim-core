@@ -100,9 +100,9 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
   <span class="keyword">typename</span> <a class="code" href="a00067.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;::vector_t</a> b (5);
   <span class="keyword">typename</span> <a class="code" href="a00067.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;::vector_t</a> x (5);
 
-  a.<a name="a5"></a><a class="code" href="a00071.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
-  b.<a name="a6"></a><a class="code" href="a00071.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
-  x.<a class="code" href="a00071.html#a042286a811a4ec9b79c9d2c34f8e63c0" title="Set a symmetric matrix to zero.">setZero</a> ();
+  a.<a name="a5"></a><a class="code" href="a00071.html#a20d8d8792303c156102fbe8eec686b70" title="Set a symmetric matrix to zero.">setZero</a> ();
+  b.<a name="a6"></a><a class="code" href="a00071.html#a20d8d8792303c156102fbe8eec686b70" title="Set a symmetric matrix to zero.">setZero</a> ();
+  x.<a class="code" href="a00071.html#a20d8d8792303c156102fbe8eec686b70" title="Set a symmetric matrix to zero.">setZero</a> ();
 
   a.coeffRef (0, 0) = 1., a.coeffRef (0, 1) = 0.,
     a.coeffRef (0, 2) = 0., a.coeffRef (0, 3) = 0., a.coeffRef (0, 4) = 0.;
@@ -132,7 +132,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
 
       std::cout &lt;&lt; <span class="stringliteral">&quot;x = &quot;</span> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
       std::cout &lt;&lt; <span class="stringliteral">&quot;f(x) = &quot;</span> &lt;&lt; f (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
-      std::cout &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.<a name="a7"></a><a class="code" href="a00057.html#a18879d9ec115089c02e685a020a11c4d" title="Computes the jacobian.">jacobian</a> (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+      std::cout &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.<a name="a7"></a><a class="code" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c" title="Computes the jacobian.">jacobian</a> (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
       std::cout &lt;&lt; <span class="stringliteral">&quot;G(x) = &quot;</span> &lt;&lt; f.gradient (x, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
       std::cout &lt;&lt; <span class="stringliteral">&quot;H(x) = &quot;</span> &lt;&lt; f.hessian (x, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
 
@@ -148,11 +148,11 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
     std::cout &lt;&lt; J.coeffRef (0, i) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
   }
 
-      BOOST_CHECK (<a name="a8"></a><a class="code" href="a00247.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.jacobian (x), J));
-      BOOST_CHECK (<a class="code" href="a00247.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.hessian (x, 0), a));
+      BOOST_CHECK (<a name="a8"></a><a class="code" href="a00247.html#a553b9a5a35bb96778d0f07cedf0a3bb6" title="Compare sparse vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.jacobian (x), J));
+      BOOST_CHECK (<a class="code" href="a00247.html#a553b9a5a35bb96778d0f07cedf0a3bb6" title="Compare sparse vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.hessian (x, 0), a));
 
-      BOOST_CHECK (<a name="a9"></a><a class="code" href="a00262.html#ga7b974ed3d440aab33b573448ff332552" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
-      BOOST_CHECK (<a name="a10"></a><a class="code" href="a00262.html#gaa32250244db065fae2e23e779ae6cf12" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
+      BOOST_CHECK (<a name="a9"></a><a class="code" href="a00262.html#ga243acdc164ebcb9129d073149f02e7ec" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
+      BOOST_CHECK (<a name="a10"></a><a class="code" href="a00262.html#gaa79713104bed214820abec2b998d3dba" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
     }
 }
 
@@ -186,8 +186,8 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (random_gradient_check, T, sparseOnly_t)
     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 5; ++j)
       x[j] = std::ceil (rand () % 50);
 
-    BOOST_CHECK (<a class="code" href="a00262.html#ga7b974ed3d440aab33b573448ff332552" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
-    BOOST_CHECK (<a class="code" href="a00262.html#gaa32250244db065fae2e23e779ae6cf12" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
+    BOOST_CHECK (<a class="code" href="a00262.html#ga243acdc164ebcb9129d073149f02e7ec" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
+    BOOST_CHECK (<a class="code" href="a00262.html#gaa79713104bed214820abec2b998d3dba" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
   }
     }
 }

@@ -24,7 +24,7 @@ var searchData=
   ['matplotlib_2ehh',['matplotlib.hh',['../a00182.html',1,'']]],
   ['matplotlib_5funary_5fcommand',['MATPLOTLIB_UNARY_COMMAND',['../a00178.html#ada98b8f63c02be17bdbf654bc529d0bd',1,'matplotlib-commands.cc']]],
   ['matplotlib_5funary_5fcommand_5fvar',['MATPLOTLIB_UNARY_COMMAND_VAR',['../a00178.html#ae91cb430ac819bcd54672228ac6094cd',1,'matplotlib-commands.cc']]],
-  ['matrix_5ft',['matrix_t',['../a00041.html#a83f856b4d5ec300fdd47d3eaa1059027',1,'roboptim::DerivableParametrizedFunction::matrix_t()'],['../a00060.html#a97054924c0f87acb1713be64782a6aab',1,'roboptim::GenericFunction::matrix_t()'],['../a00062.html#aaa0dc6619aef4b629fac544cb527cffc',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::matrix_t()'],['../a00063.html#a6c134d447ffd0e219d15864cc94b216c',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t()'],['../a00089.html#ae1ae1137efff66af2fc84c967a2e64e5',1,'roboptim::ParametrizedFunction::matrix_t()']]],
+  ['matrix_5ft',['matrix_t',['../a00041.html#a83f856b4d5ec300fdd47d3eaa1059027',1,'roboptim::DerivableParametrizedFunction::matrix_t()'],['../a00089.html#ae1ae1137efff66af2fc84c967a2e64e5',1,'roboptim::ParametrizedFunction::matrix_t()']]],
   ['maxdelta_5f',['maxDelta_',['../a00026.html#a41da132097e037c090594dff45e4683a',1,'roboptim::BadGradient::maxDelta_()'],['../a00027.html#a800b0d3dd5fb7425c2f4f26584bf895e',1,'roboptim::BadJacobian::maxDelta_()']]],
   ['maxdeltacol_5f',['maxDeltaCol_',['../a00027.html#ab188c9d017ce58c5c0a71ad23915d0dd',1,'roboptim::BadJacobian']]],
   ['maxdeltacomponent_5f',['maxDeltaComponent_',['../a00026.html#a152b5bee9fce8fee0344d8215f936693',1,'roboptim::BadGradient']]],

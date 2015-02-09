@@ -93,21 +93,21 @@ Inheritance diagram for roboptim::GenericConstantFunction&lt; T &gt;:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#addaf70df2c7d3dbf77ef6e53658d656d">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00065.html">GenericLinearFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9f9dae33c9657528e0a82410cb161817">GenericConstantFunction</a> (const <a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;offset)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a9f9dae33c9657528e0a82410cb161817">GenericConstantFunction</a> (const vector_t &amp;offset)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a constant function.  <a href="#a9f9dae33c9657528e0a82410cb161817"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a31cb64dc0c788b9c3c8f71a591c20f17">GenericConstantFunction</a> (<a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> input_size, const <a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;offset)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a31cb64dc0c788b9c3c8f71a591c20f17">GenericConstantFunction</a> (<a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> input_size, const vector_t &amp;offset)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a constant function.  <a href="#a31cb64dc0c788b9c3c8f71a591c20f17"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aab88e6da3308d2ca7b8b58ac6bd87504">~GenericConstantFunction</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#ac98c86704dc8443933a50ad664cca533">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ac98c86704dc8443933a50ad664cca533"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#afa384a6db99a3d7c8c5fddb3e8cb92c3">impl_compute</a> (<a class="el" href="a00060.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#afa384a6db99a3d7c8c5fddb3e8cb92c3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a6d30bac1095a5fa14db29ab113dc4502">impl_gradient</a> (<a class="el" href="a00057.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00057.html#a0d0772c3e1ea6ff70c2909ceaf776169">gradient</a>, const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>=0) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#a6d30bac1095a5fa14db29ab113dc4502"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#af3c5004a7d90783c0ff2548e63be9d32">impl_jacobian</a> (<a class="el" href="a00057.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;<a class="el" href="a00057.html#a18879d9ec115089c02e685a020a11c4d">jacobian</a>, const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian evaluation.  <a href="#af3c5004a7d90783c0ff2548e63be9d32"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a18ba1d5574d1c5d4b20930ba56e384d3">impl_compute</a> (result_ref result, const_argument_ref) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a18ba1d5574d1c5d4b20930ba56e384d3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a053b938b015f59da2afef5be46c9b1e3">impl_gradient</a> (gradient_ref <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049">gradient</a>, const_argument_ref, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>=0) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#a053b938b015f59da2afef5be46c9b1e3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a77adebf8f590e6cba316b69446aabe57">impl_jacobian</a> (jacobian_ref <a class="el" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c">jacobian</a>, const_argument_ref) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian evaluation.  <a href="#a77adebf8f590e6cba316b69446aabe57"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -130,7 +130,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html">GenericConstantFunction</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
+          <td class="paramtype">const vector_t &amp;&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -163,7 +163,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00060.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
+          <td class="paramtype">const vector_t &amp;&#160;</td>
           <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
         <tr>
@@ -205,22 +205,22 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="afa384a6db99a3d7c8c5fddb3e8cb92c3"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_compute" ref="afa384a6db99a3d7c8c5fddb3e8cb92c3" args="(result_t &amp;result, const argument_t &amp;) const " -->
+<a class="anchor" id="a18ba1d5574d1c5d4b20930ba56e384d3"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_compute" ref="a18ba1d5574d1c5d4b20930ba56e384d3" args="(result_ref result, const_argument_ref) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html#afa384a6db99a3d7c8c5fddb3e8cb92c3">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html#a18ba1d5574d1c5d4b20930ba56e384d3">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00060.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;&#160;</td>
+          <td class="paramtype">result_ref&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>&#160;</td>
         </tr>
         <tr>
@@ -234,7 +234,7 @@ template&lt;typename T &gt; </div>
 
 <p>Function evaluation. </p>
 <p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00060.html#a58f0bde147e54bbeb8df944ef194f9ae" title="Evaluate the function at a specified point.">operator()(result_t&amp;, const argument_t&amp;) const</a> instead. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00060.html#a4a8297b3ba77ee0e291a31c4049a2acd" title="Evaluate the function at a specified point.">operator()(result_ref, const_argument_ref) const</a> instead. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
@@ -243,26 +243,26 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00060.html#a19fb6005aabfae3862429de2c736ab6e">roboptim::GenericFunction&lt; T &gt;</a>.</p>
+<p>Implements <a class="el" href="a00060.html#a6c50a900a98c913158bac04419bb79a3">roboptim::GenericFunction&lt; T &gt;</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6d30bac1095a5fa14db29ab113dc4502"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_gradient" ref="a6d30bac1095a5fa14db29ab113dc4502" args="(gradient_t &amp;gradient, const argument_t &amp;, size_type=0) const " -->
+<a class="anchor" id="a053b938b015f59da2afef5be46c9b1e3"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_gradient" ref="a053b938b015f59da2afef5be46c9b1e3" args="(gradient_ref gradient, const_argument_ref, size_type=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html#a6d30bac1095a5fa14db29ab113dc4502">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html#a053b938b015f59da2afef5be46c9b1e3">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00057.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;&#160;</td>
+          <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
@@ -282,7 +282,7 @@ template&lt;typename T &gt; </div>
 
 <p>Gradient evaluation. </p>
 <p>Compute the gradient, has to be implemented in concrete classes. The gradient is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a0d0772c3e1ea6ff70c2909ceaf776169" title="Computes the gradient.">gradient</a> instead. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049" title="Computes the gradient.">gradient</a> instead. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">gradient</td><td>gradient will be store in this argument </td></tr>
@@ -292,26 +292,26 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00057.html#a84657c4eb2f67ea3bbaf49462f54fb68">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
+<p>Implements <a class="el" href="a00057.html#af392bd6266e56fbf8e38c0df16d22224">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af3c5004a7d90783c0ff2548e63be9d32"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_jacobian" ref="af3c5004a7d90783c0ff2548e63be9d32" args="(jacobian_t &amp;jacobian, const argument_t &amp;) const " -->
+<a class="anchor" id="a77adebf8f590e6cba316b69446aabe57"></a><!-- doxytag: member="roboptim::GenericConstantFunction::impl_jacobian" ref="a77adebf8f590e6cba316b69446aabe57" args="(jacobian_ref jacobian, const_argument_ref) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html#af3c5004a7d90783c0ff2548e63be9d32">impl_jacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00056.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00056.html#a77adebf8f590e6cba316b69446aabe57">impl_jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00057.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;&#160;</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
@@ -325,7 +325,7 @@ template&lt;typename T &gt; </div>
 
 <p>Jacobian evaluation. </p>
 <p>Computes the jacobian, can be overridden by concrete classes. The default behavior is to compute the jacobian from the gradient. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a18879d9ec115089c02e685a020a11c4d" title="Computes the jacobian.">jacobian</a> instead. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c" title="Computes the jacobian.">jacobian</a> instead. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">jacobian</td><td>jacobian will be store in this argument </td></tr>
@@ -335,7 +335,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
 
-<p>Reimplemented from <a class="el" href="a00057.html#a5aa21359d6844bc4c21280cbd1155d22">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="a00057.html#a69908de96e02e56b0f3332307ed03d94">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
 
 </div>
 </div>

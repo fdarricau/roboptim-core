@@ -101,8 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a00e124bc18548130332a1f5ceacf70c5"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a9749a34f22d1c9471b078449090309a6">impl_hessian</a> (<a class="el" href="a00071.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00071.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#a9749a34f22d1c9471b078449090309a6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a2c6a7b8371cb6d4046e9f3fe016b2eda">impl_hessian</a> (hessian_ref <a class="el" href="a00071.html#ae9cd62bec5a2c9637b96d738b90caeab">hessian</a>, const_argument_ref argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#a2c6a7b8371cb6d4046e9f3fe016b2eda"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -158,22 +158,22 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9749a34f22d1c9471b078449090309a6"></a><!-- doxytag: member="roboptim::GenericLinearFunction::impl_hessian" ref="a9749a34f22d1c9471b078449090309a6" args="(hessian_t &amp;hessian, const argument_t &amp;argument, size_type functionId=0) const " -->
+<a class="anchor" id="a2c6a7b8371cb6d4046e9f3fe016b2eda"></a><!-- doxytag: member="roboptim::GenericLinearFunction::impl_hessian" ref="a2c6a7b8371cb6d4046e9f3fe016b2eda" args="(hessian_ref hessian, const_argument_ref argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00065.html">roboptim::GenericLinearFunction</a>&lt; T &gt;::<a class="el" href="a00065.html#a9749a34f22d1c9471b078449090309a6">impl_hessian</a> </td>
+          <td class="memname">void <a class="el" href="a00065.html">roboptim::GenericLinearFunction</a>&lt; T &gt;::<a class="el" href="a00065.html#a2c6a7b8371cb6d4046e9f3fe016b2eda">impl_hessian</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00071.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;&#160;</td>
+          <td class="paramtype">hessian_ref&#160;</td>
           <td class="paramname"><em>hessian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00060.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
@@ -193,7 +193,7 @@ template&lt;typename T &gt; </div>
 
 <p>Hessian evaluation. </p>
 <p>Compute the hessian, has to be implemented in concrete classes. The hessian is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00071.html#a7ab6bda5039008fb215ab24ecacd85a2" title="Compute the hessian at a given point.">hessian</a> instead. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00071.html#ae9cd62bec5a2c9637b96d738b90caeab" title="Compute the hessian at a given point.">hessian</a> instead. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">hessian</td><td>hessian will be stored here </td></tr>
@@ -203,7 +203,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00071.html#ac5b5430ab527d7de393f876f4db314c2">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
+<p>Implements <a class="el" href="a00071.html#af7263e60b22683378ea9027e976fbb29">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
 
 </div>
 </div>

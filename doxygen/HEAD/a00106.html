@@ -91,9 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a647ad16eec9c7afb716a748c42c1fd1f">~SelectionById</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a3fe469f5a1b03ea25527636b326d85ab">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a1cca0cd96fea488847ebfbb72654d847">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a3b0117c02c3ddd6d20852926666dd11e">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a2d27d08c7623c09c3e33777bfcd66570">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U&gt;<br/>
@@ -165,7 +165,7 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#a840daf1fd897a5021f9937d0de2752f1">result_</a>.</p>
+<p>References <a class="el" href="a00154.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
 
 </div>
 </div>
@@ -188,22 +188,22 @@ template&lt;typename U &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1cca0cd96fea488847ebfbb72654d847"></a><!-- doxytag: member="roboptim::SelectionById::impl_compute" ref="a1cca0cd96fea488847ebfbb72654d847" args="(result_t &amp;result, const argument_t &amp;x) const " -->
+<a class="anchor" id="a9e64ceaf5be532b1d08b43fd48fc1802"></a><!-- doxytag: member="roboptim::SelectionById::impl_compute" ref="a9e64ceaf5be532b1d08b43fd48fc1802" args="(result_ref result, const_argument_ref x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a1cca0cd96fea488847ebfbb72654d847">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
+          <td class="paramtype">result_ref&#160;</td>
           <td class="paramname"><em>result</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -215,26 +215,26 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#a840daf1fd897a5021f9937d0de2752f1">result_</a>.</p>
+<p>References <a class="el" href="a00154.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3b0117c02c3ddd6d20852926666dd11e"></a><!-- doxytag: member="roboptim::SelectionById::impl_gradient" ref="a3b0117c02c3ddd6d20852926666dd11e" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
+<a class="anchor" id="a670b69ecefa042ad5e6e2f14300c3482"></a><!-- doxytag: member="roboptim::SelectionById::impl_gradient" ref="a670b69ecefa042ad5e6e2f14300c3482" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a3b0117c02c3ddd6d20852926666dd11e">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> </td>
           <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
+          <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>argument</em>, </td>
         </tr>
         <tr>
@@ -254,22 +254,22 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2d27d08c7623c09c3e33777bfcd66570"></a><!-- doxytag: member="roboptim::SelectionById::impl_jacobian" ref="a2d27d08c7623c09c3e33777bfcd66570" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
+<a class="anchor" id="a27306334779e090f25bbd7d630418aa8"></a><!-- doxytag: member="roboptim::SelectionById::impl_jacobian" ref="a27306334779e090f25bbd7d630418aa8" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a2d27d08c7623c09c3e33777bfcd66570">impl_jacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
+          <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>

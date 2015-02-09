@@ -127,12 +127,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="a00049.html#a111982763cc612288cf9eafdb422ff6e">roboptim::DummySolverTd</a>
 , <a class="el" href="a00048.html#a3857347af4ffe3a2da4f19c361e11bce">roboptim::DummySolver</a>
 , <a class="el" href="a00068.html#ae53c4978f626bcb0c85fa1155a1f4f12">roboptim::GenericQuadraticFunction&lt; T &gt;</a>
-, <a class="el" href="a00070.html#ad971f607bed919f3e6b1aef48d144945">roboptim::GenericSumOfC1Squares&lt; T &gt;</a>
 </li>
 <li>parentType_t
-: <a class="el" href="a00028.html#a58322098d06c8face6286742fc6869dd">roboptim::Bind&lt; U &gt;</a>
-, <a class="el" href="a00031.html#a2758ec83589ff92f05a3fd33419e8cee">roboptim::Chain&lt; U, V &gt;</a>
+: <a class="el" href="a00031.html#a2758ec83589ff92f05a3fd33419e8cee">roboptim::Chain&lt; U, V &gt;</a>
 , <a class="el" href="a00035.html#a296934dc4f3e7ce26fe30d70af74f13b">roboptim::Concatenate&lt; U &gt;</a>
+, <a class="el" href="a00042.html#a1d88c319dd2fa86439a86fd0c6a7da1a">roboptim::Derivative&lt; U &gt;</a>
 , <a class="el" href="a00079.html#aa472baf5213f2a8afc29b442073031eb">roboptim::Map&lt; U &gt;</a>
 , <a class="el" href="a00081.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031">roboptim::Minus&lt; U, V &gt;</a>
 , <a class="el" href="a00090.html#ab4d12a8f0bcae135aff2dc0e8998801b">roboptim::Plus&lt; U, V &gt;</a>
@@ -140,6 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="a00104.html#a7953a20600361495460caa1f213e9011">roboptim::Scalar&lt; U &gt;</a>
 , <a class="el" href="a00106.html#a10ceafe26463a6befaf1a83bae6f2ba3">roboptim::SelectionById&lt; U &gt;</a>
 , <a class="el" href="a00105.html#a6802dfd6761714f83c4dbbe5f9bcef19">roboptim::Selection&lt; U &gt;</a>
+, <a class="el" href="a00028.html#a58322098d06c8face6286742fc6869dd">roboptim::Bind&lt; U &gt;</a>
 </li>
 <li>path()
 : <a class="el" href="a00087.html#a046deb8bf8d4d59ac41008bcc88c4052">roboptim::OptimizationLogger&lt; T &gt;</a>
@@ -213,19 +213,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>printConstraint()
 : <a class="el" href="a00094.html#a35564e35bcf0ad780f30fa11d401513c">roboptim::detail::printConstraint&lt; P &gt;</a>
 </li>
-<li>Problem()
-: <a class="el" href="a00264.html#gacaa910e2f9c1242183acba8cde0887d5">roboptim::Problem&lt; F, CLIST &gt;</a>
-, <a class="el" href="a00264.html#gacc081cc87e465ee811f25f9676550d09">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</a>
-, <a class="el" href="a00264.html#ga6ca16bc6a4e146d58e92445a3b4dce27">roboptim::Problem&lt; F, CLIST &gt;</a>
-, <a class="el" href="a00264.html#gafc8876f9b6f551a7f410c7839768cee9">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</a>
+<li>Problem
+: <a class="el" href="a00264.html#gacc081cc87e465ee811f25f9676550d09">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</a>
 </li>
 <li>problem()
 : <a class="el" href="a00110.html#a7920ef2fd1c7068111df0496c4f742ce">roboptim::Solver&lt; F, C &gt;</a>
 </li>
 <li>Problem()
-: <a class="el" href="a00264.html#gac2a43bc8b9231f7549a61b5b3d01eec0">roboptim::Problem&lt; F, CLIST &gt;</a>
+: <a class="el" href="a00264.html#gacaa910e2f9c1242183acba8cde0887d5">roboptim::Problem&lt; F, CLIST &gt;</a>
+, <a class="el" href="a00264.html#gafc8876f9b6f551a7f410c7839768cee9">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</a>
+, <a class="el" href="a00264.html#gac2a43bc8b9231f7549a61b5b3d01eec0">roboptim::Problem&lt; F, CLIST &gt;</a>
 , <a class="el" href="a00264.html#ga58de36c497db8306e8648cd7f23b401f">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</a>
-, <a class="el" href="a00264.html#gacc081cc87e465ee811f25f9676550d09">roboptim::Problem&lt; F, CLIST &gt;</a>
 </li>
 <li>problem_
 : <a class="el" href="a00110.html#a62a6d4aad9eeeb13ee63f3bf0f9aac25">roboptim::Solver&lt; F, C &gt;</a>
@@ -233,9 +231,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>problem_t
 : <a class="el" href="a00058.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">roboptim::GenericDummySolverLastState&lt; F &gt;</a>
 , <a class="el" href="a00113.html#adcc4cd9042785fbf8eefda6becdc30d7">roboptim::SolverState&lt; P &gt;</a>
-, <a class="el" href="a00082.html#addc09c5f72e9a83057c2ed4999057759">roboptim::callback::Multiplexer&lt; S &gt;</a>
 , <a class="el" href="a00077.html#a81fc882c5a4cd9b7dafe32c246277a46">roboptim::detail::LogJacobianConstraint&lt; P &gt;</a>
 , <a class="el" href="a00112.html#ad075bea9aed21b399b4684d5c2258da7">roboptim::SolverFactory&lt; T &gt;</a>
+, <a class="el" href="a00082.html#addc09c5f72e9a83057c2ed4999057759">roboptim::callback::Multiplexer&lt; S &gt;</a>
 , <a class="el" href="a00110.html#a5b5c016b1da3aadc3d619023124b2197">roboptim::Solver&lt; F, C &gt;</a>
 , <a class="el" href="a00087.html#a0212b30a8be78730debbb9b9bab8526a">roboptim::OptimizationLogger&lt; T &gt;</a>
 </li>

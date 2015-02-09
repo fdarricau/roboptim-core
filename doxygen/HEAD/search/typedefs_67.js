@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['gradient_5ft',['gradient_t',['../a00041.html#a7969d8e3c0b37c2ab9b3d2e1172e97bf',1,'roboptim::DerivableParametrizedFunction::gradient_t()'],['../a00057.html#a2e38d8c20eaa91296f62cfb804add7a1',1,'roboptim::GenericDifferentiableFunction::gradient_t()'],['../a00029.html#ac62b42083a55feb98eb9589558c1494e',1,'roboptim::CachedFunction::gradient_t()'],['../a00042.html#af912e785dd7900da9c316b94f180fb54',1,'roboptim::Derivative::gradient_t()'],['../a00118.html#ac1d10d2e062c9df230d2e824f21ac055',1,'roboptim::detail::ProductDifferentiation::Types::gradient_t()'],['../a00115.html#ab6afba027d207efd11ad85598102863e',1,'roboptim::Split::gradient_t()'],['../a00062.html#a03f528d352e2aa33375198b8905e7252',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::gradient_t()'],['../a00063.html#a980c849a750d10a91b3e577a9aea94d8',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::gradient_t()'],['../a00070.html#a6d42700d59e8d7889fbfb90ddd450193',1,'roboptim::GenericSumOfC1Squares::gradient_t()']]],
+  ['gradient_5fref',['gradient_ref',['../a00041.html#aaadb4ed6b19d8d259a17458b231103c7',1,'roboptim::DerivableParametrizedFunction::gradient_ref()'],['../a00118.html#a3a3547a08d34aa4772b152d32753a636',1,'roboptim::detail::ProductDifferentiation::Types::gradient_ref()']]],
+  ['gradient_5ft',['gradient_t',['../a00041.html#a7d30aed062b13be6c1b0dbdc8202c1a5',1,'roboptim::DerivableParametrizedFunction::gradient_t()'],['../a00118.html#ac1d10d2e062c9df230d2e824f21ac055',1,'roboptim::detail::ProductDifferentiation::Types::gradient_t()']]],
   ['gradientcache_5ft',['gradientCache_t',['../a00029.html#a18c31f0c1074aa94c91e71b0a6540320',1,'roboptim::CachedFunction']]],
+  ['gradientu_5fref',['gradientU_ref',['../a00118.html#a1477f94f1ae327bdad97d63112552476',1,'roboptim::detail::ProductDifferentiation::Types']]],
   ['gradientu_5ft',['gradientU_t',['../a00118.html#af31cbe6ad6b4decc7f93f05b96758df4',1,'roboptim::detail::ProductDifferentiation::Types']]],
+  ['gradientv_5fref',['gradientV_ref',['../a00118.html#af005feb543fb95ab4d5aab6fac059c7a',1,'roboptim::detail::ProductDifferentiation::Types']]],
   ['gradientv_5ft',['gradientV_t',['../a00118.html#a22311a22a417e5cfb32bbaf1c201fba4',1,'roboptim::detail::ProductDifferentiation::Types']]]
 ];
