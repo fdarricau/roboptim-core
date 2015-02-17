@@ -1,7 +1,8 @@
 var searchData=
 [
   ['cachekey_5ft',['cacheKey_t',['../a00029.html#a61a77acf14689b311a564408f64c57d4',1,'roboptim::CachedFunction']]],
-  ['callback_5ft',['callback_t',['../a00082.html#ab4e9c0b66b2cdde84febafbf7af28dd1',1,'roboptim::callback::Multiplexer::callback_t()'],['../a00055.html#a596d9aeff97f202e6dd69bfffccffbdc',1,'roboptim::FunctionPool::callback_t()'],['../a00087.html#a8a8b67820eca81c2071abab2dc7491ba',1,'roboptim::OptimizationLogger::callback_t()'],['../a00058.html#acff89ad608c772f445edb654d4c234c2',1,'roboptim::GenericDummySolverLastState::callback_t()'],['../a00110.html#a8cb27cc8f35c120bf91513297156de88',1,'roboptim::Solver::callback_t()']]],
+  ['callback_5fptr',['callback_ptr',['../a00055.html#a7749bfa7f16a9961f3d2c709c3fd76f2',1,'roboptim::FunctionPool']]],
+  ['callback_5ft',['callback_t',['../a00082.html#ab4e9c0b66b2cdde84febafbf7af28dd1',1,'roboptim::callback::Multiplexer::callback_t()'],['../a00055.html#a4e2e2a12f214de9da478174ed1558f2a',1,'roboptim::FunctionPool::callback_t()'],['../a00087.html#a8a8b67820eca81c2071abab2dc7491ba',1,'roboptim::OptimizationLogger::callback_t()'],['../a00058.html#acff89ad608c772f445edb654d4c234c2',1,'roboptim::GenericDummySolverLastState::callback_t()'],['../a00110.html#a8cb27cc8f35c120bf91513297156de88',1,'roboptim::Solver::callback_t()']]],
   ['callbacks_5ft',['callbacks_t',['../a00082.html#aa62a2cdb76976179c27d6f3aaf7c3c39',1,'roboptim::callback::Multiplexer']]],
   ['chainshptr_5ft',['ChainShPtr_t',['../a00031.html#a455221a00edbb17db76f12fff0c11af7',1,'roboptim::Chain']]],
   ['concatenateshptr_5ft',['ConcatenateShPtr_t',['../a00035.html#a5d14bdcac92150922c3a6ab7e0e83ac3',1,'roboptim::Concatenate']]],

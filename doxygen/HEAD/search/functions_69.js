@@ -12,7 +12,7 @@ var searchData=
   ['incindent',['incindent',['../a00247.html#a053552edbb5c42ac287c22175ea43e69',1,'roboptim']]],
   ['indent',['indent',['../a00247.html#a2b00a3916f44e9f9d69e4fc157a0da79',1,'roboptim']]],
   ['infinity',['infinity',['../a00060.html#a050d43e8aff39880ae05a5ba8c4e2705',1,'roboptim::GenericFunction']]],
-  ['inputsize',['inputSize',['../a00060.html#ac56c279d34f3c4047c0f66b738a1bd7f',1,'roboptim::GenericFunction::inputSize()'],['../a00089.html#aa11a87582936a2ce58f853f6ea4541d8',1,'roboptim::ParametrizedFunction::inputSize()']]],
+  ['inputsize',['inputSize',['../a00055.html#ab35b9967678efeefb77c3099cf66bbb0',1,'roboptim::FunctionPool::inputSize()'],['../a00060.html#ac56c279d34f3c4047c0f66b738a1bd7f',1,'roboptim::GenericFunction::inputSize()'],['../a00089.html#aa11a87582936a2ce58f853f6ea4541d8',1,'roboptim::ParametrizedFunction::inputSize()']]],
   ['insert',['insert',['../a00078.html#a11377d5e3391617d897a5df265e1a9a7',1,'roboptim::LRUCache']]],
   ['isvalidderivative',['isValidDerivative',['../a00086.html#a2e9a8778445f0b28d444b24eddf8dad0',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;']]],
   ['isvalidgradient',['isValidGradient',['../a00041.html#a3eae70842eed08c5ae278349dfe1854c',1,'roboptim::DerivableParametrizedFunction::isValidGradient()'],['../a00057.html#a0a061e75f289dc6c21530bba1f28a82e',1,'roboptim::GenericDifferentiableFunction::isValidGradient()']]],
