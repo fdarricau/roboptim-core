@@ -64,7 +64,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt; Struct Template Reference<div class="ingroups"><a class="el" href="a00261.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
@@ -83,13 +84,17 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef matrix_t::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#af0e69c7fd4c248106029270aef16c58e">value_type</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (matrix, Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() Eigen::RowMajor &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (matrix, Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() <a class="el" href="a00063.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a6d3d40b5090bc22216c60c54210b6a5b">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (vector, Eigen::Matrix&lt; double BOOST_PP_COMMA() Eigen::Dynamic BOOST_PP_COMMA() 1 &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a3ceb25a89bb5ff29ab19ad8f4607081f">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (result, vector_t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a74204a2ae21b1ee5b380e571108ab684">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (argument, vector_t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a42e3d89e7934125e2d85223d40cbef90">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (gradient, Eigen::SparseVector&lt; double &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#aed5e8ac8cc2ff9b0844f14de973b29e1">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (jacobian, matrix_t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#a470dbcc845cdd0d3f2e0a73be5f80417">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (hessian, matrix_t)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> = Eigen::RowMajor</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix storage order.  <a href="#ac589de0ba331e2f4963b3a1de6441815"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;&gt;<br/>
@@ -124,12 +129,12 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a0fd451375c60605423e3d5ad5ac76447"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_REF" ref="a0fd451375c60605423e3d5ad5ac76447" args="(matrix, Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() Eigen::RowMajor &gt;)" -->
+<a class="anchor" id="aa5b8e636856f9f0c2607841f89366f0c"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_REF" ref="aa5b8e636856f9f0c2607841f89366f0c" args="(matrix, Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() StorageOrder &gt;)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">matrix&#160;</td>
           <td class="paramname">, </td>
@@ -137,7 +142,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() Eigen::RowMajor &gt;&#160;</td>
+          <td class="paramtype">Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() <a class="el" href="a00063.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> &gt;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -156,7 +161,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">vector&#160;</td>
           <td class="paramname">, </td>
@@ -183,7 +188,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">result&#160;</td>
           <td class="paramname">, </td>
@@ -210,7 +215,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">argument&#160;</td>
           <td class="paramname">, </td>
@@ -237,7 +242,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">gradient&#160;</td>
           <td class="paramname">, </td>
@@ -264,7 +269,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">jacobian&#160;</td>
           <td class="paramname">, </td>
@@ -291,7 +296,7 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#a0fd451375c60605423e3d5ad5ac76447">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td class="memname"><a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
           <td>(</td>
           <td class="paramtype">hessian&#160;</td>
           <td class="paramname">, </td>
@@ -310,6 +315,22 @@ struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="ac589de0ba331e2f4963b3a1de6441815"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::StorageOrder" ref="ac589de0ba331e2f4963b3a1de6441815" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="a00061.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00063.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> = Eigen::RowMajor<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Matrix storage order. </p>
 
 </div>
 </div>

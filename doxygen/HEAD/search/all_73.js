@@ -84,6 +84,7 @@ var searchData=
   ['stateparameterprintvisitor',['StateParameterPrintVisitor',['../a00117.html#ac14fc5b1346664d250561b92678185ca',1,'roboptim::detail::StateParameterPrintVisitor']]],
   ['stateparameterprintvisitor',['StateParameterPrintVisitor',['../a00117.html',1,'roboptim::detail']]],
   ['stateparametervalues_5ft',['stateParameterValues_t',['../a00116.html#a50eb5a3c9554f3b004c82a3591481e63',1,'roboptim::StateParameter']]],
+  ['storageorder',['StorageOrder',['../a00062.html#a7a177358a7da7afbda5befb6210933f3',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::StorageOrder()'],['../a00063.html#ac589de0ba331e2f4963b3a1de6441815',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::StorageOrder()']]],
   ['sum_2dof_2dc1_2dsquares_2ehh',['sum-of-c1-squares.hh',['../a00232.html',1,'']]],
   ['sum_2dof_2dc1_2dsquares_2ehxx',['sum-of-c1-squares.hxx',['../a00233.html',1,'']]],
   ['sumofc1squares',['SumOfC1Squares',['../a00261.html#gafefbc90e9cc685f442eb32986ceca7ca',1,'roboptim']]],
