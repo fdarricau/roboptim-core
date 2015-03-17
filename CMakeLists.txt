@@ -51,6 +51,8 @@ SET(HEADERS
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/derivative.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/map.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/map.hxx
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map.hh
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/minus.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/minus.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/plus.hh
@@ -180,6 +182,11 @@ ENDIF()
 PKG_CONFIG_APPEND_LIBS(ltdl)
 PKG_CONFIG_APPEND_CFLAGS (-DEIGEN_RUNTIME_NO_MALLOC)
 HEADER_INSTALL("${HEADERS}")
+
+#FIXME: verify that libmanifolds.so exists
+ADD_REQUIRED_DEPENDENCY(manifolds)
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
 OPTION(DISABLE_TESTS "Disable test programs" OFF)
 
