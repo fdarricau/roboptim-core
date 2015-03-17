@@ -62,6 +62,36 @@ MACRO(ROBOPTIM_CORE_TEST NAME)
     "LD_LIBRARY_PATH=${CMAKE_BINARY_DIR}/src:$ENV{LD_LIBRARY_PATH}")
 ENDMACRO(ROBOPTIM_CORE_TEST)
 
+# ROBOPTIM_CORE_TEST_MANIFOLDS(NAME)
+# ------------------------
+#
+# Define a test named `NAME'.
+#
+# This macro will create a binary from `NAME.cc', link it against
+# Boost and add it to the test suite.
+#
+MACRO(ROBOPTIM_CORE_TEST_MANIFOLDS NAME)
+  ADD_EXECUTABLE(${NAME} ${NAME}.cc)
+  ADD_TEST(NAME ${NAME}
+    COMMAND ${CHECK_PREFIX} ${CMAKE_CURRENT_BINARY_DIR}/${NAME})
+
+  TARGET_LINK_LIBRARIES(${NAME} roboptim-core)
+  PKG_CONFIG_USE_DEPENDENCY(${NAME} eigen3)
+  PKG_CONFIG_USE_DEPENDENCY(${NAME} liblog4cxx)
+  PKG_CONFIG_USE_DEPENDENCY(${NAME} manifolds)
+
+  # Link against Boost.
+  TARGET_LINK_LIBRARIES(${NAME} ${Boost_LIBRARIES})
+
+  # Make sure the plugins will be found.
+  SET_PROPERTY(
+    TEST ${NAME} PROPERTY ENVIRONMENT
+    "LTDL_LIBRARY_PATH=${CMAKE_BINARY_DIR}/src:$ENV{LTDL_LIBRARY_PATH}")
+  SET_PROPERTY(
+    TEST ${NAME} PROPERTY ENVIRONMENT
+    "LD_LIBRARY_PATH=${CMAKE_BINARY_DIR}/src:$ENV{LD_LIBRARY_PATH}")
+ENDMACRO(ROBOPTIM_CORE_TEST_MANIFOLDS)
+
 
 # simple
 # Link the dummy solver with this test to bypass the plug-in system.
@@ -132,7 +162,7 @@ ROBOPTIM_CORE_TEST(filter-cached-function)
 ROBOPTIM_CORE_TEST(filter-chain)
 ROBOPTIM_CORE_TEST(filter-concatenate)
 ROBOPTIM_CORE_TEST(filter-derivative)
-ROBOPTIM_CORE_TEST(filter-manifold-map)
+ROBOPTIM_CORE_TEST_MANIFOLDS(filter-manifold-map)
 ROBOPTIM_CORE_TEST(filter-map)
 ROBOPTIM_CORE_TEST(filter-minus)
 ROBOPTIM_CORE_TEST(filter-plus)
