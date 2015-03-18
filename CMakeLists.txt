@@ -51,8 +51,10 @@ SET(HEADERS
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/derivative.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/map.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/map.hxx
-  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map.hh
-  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map.hxx
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map/instance-wrapper.hh
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map/instance-wrapper.hxx
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map/descriptive-wrapper.hh
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/manifold-map/descriptive-wrapper.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/minus.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/minus.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/filter/plus.hh
