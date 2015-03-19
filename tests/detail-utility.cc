@@ -21,6 +21,7 @@
 #include <boost/type_traits/is_same.hpp>
 
 #include <roboptim/core/fwd.hh>
+#include <roboptim/core/n-times-derivable-function.hh>
 #include <roboptim/core/detail/utility.hh>
 
 using namespace roboptim;
@@ -46,6 +47,17 @@ BOOST_AUTO_TEST_CASE (detail_utility)
     typedef vector<shared_ptr<int>, shared_ptr<std::string>, shared_ptr<bool> >
       expectedTestSeq_ptr;
     typedef boost::mpl::equal<testSeq_ptr, expectedTestSeq_ptr> predicate_t;
+
+    TEST_PREDICATE (predicate_t);
+  }
+
+  // Test shared_ptr_variant.
+  {
+    typedef vector<int, std::string, bool> testVector_t;
+    typedef shared_ptr_variant<testVector_t>::type testVariant_ptr;
+    typedef variant<shared_ptr<int>, shared_ptr<std::string>, shared_ptr<bool> >
+      expectedTestVariant_ptr;
+    typedef boost::mpl::equal<testVariant_ptr, expectedTestVariant_ptr> predicate_t;
 
     TEST_PREDICATE (predicate_t);
   }
@@ -125,6 +137,80 @@ BOOST_AUTO_TEST_CASE (detail_utility)
     TEST_PREDICATE (predicate1_t);
     TEST_PREDICATE (predicate2_t);
     TEST_PREDICATE (predicate3_t);
+  }
+
+  // Test derives_from_function.
+  {
+    typedef derives_from_function<Function> predicate1_t;
+    typedef derives_from_function<DifferentiableSparseFunction> predicate2_t;
+    typedef derives_from_function<QuadraticFunction> predicate3_t;
+
+    typedef not_<derives_from_function<std::string> > predicate4_t;
+    typedef not_<derives_from_function<float> > predicate5_t;
+
+    TEST_PREDICATE (predicate1_t);
+    TEST_PREDICATE (predicate2_t);
+    TEST_PREDICATE (predicate3_t);
+    TEST_PREDICATE (predicate4_t);
+    TEST_PREDICATE (predicate5_t);
+  }
+
+  // Test derives_from_differentiable_function.
+  {
+    typedef derives_from_differentiable_function<DifferentiableFunction> predicate1_t;
+    typedef derives_from_differentiable_function<DifferentiableSparseFunction> predicate2_t;
+    typedef derives_from_differentiable_function<QuadraticFunction> predicate3_t;
+
+    typedef not_<derives_from_differentiable_function<std::string> > predicate4_t;
+    typedef not_<derives_from_differentiable_function<SparseFunction> > predicate5_t;
+
+    TEST_PREDICATE (predicate1_t);
+    TEST_PREDICATE (predicate2_t);
+    TEST_PREDICATE (predicate3_t);
+    TEST_PREDICATE (predicate4_t);
+    TEST_PREDICATE (predicate5_t);
+  }
+
+  // Test derives_from_twice_differentiable_function.
+  {
+    typedef derives_from_twice_differentiable_function
+             <TwiceDifferentiableFunction> predicate1_t;
+    typedef derives_from_twice_differentiable_function
+             <TwiceDifferentiableSparseFunction> predicate2_t;
+    typedef derives_from_twice_differentiable_function
+             <QuadraticFunction> predicate3_t;
+
+    typedef not_<derives_from_twice_differentiable_function
+                 <std::string> > predicate4_t;
+    typedef not_<derives_from_twice_differentiable_function
+                 <DifferentiableSparseFunction> > predicate5_t;
+
+    TEST_PREDICATE (predicate1_t);
+    TEST_PREDICATE (predicate2_t);
+    TEST_PREDICATE (predicate3_t);
+    TEST_PREDICATE (predicate4_t);
+    TEST_PREDICATE (predicate5_t);
+  }
+
+  // Test derives_from_ntimes_derivable_function.
+  {
+    typedef derives_from_ntimes_derivable_function
+             <NTimesDerivableFunction<2> > predicate1_t;
+    typedef derives_from_ntimes_derivable_function
+             <NTimesDerivableFunction<3> > predicate2_t;
+    typedef derives_from_ntimes_derivable_function
+             <NTimesDerivableFunction<4> > predicate3_t;
+
+    typedef not_<derives_from_ntimes_derivable_function
+                 <std::string> > predicate4_t;
+    typedef not_<derives_from_ntimes_derivable_function
+                 <TwiceDifferentiableFunction> > predicate5_t;
+
+    TEST_PREDICATE (predicate1_t);
+    TEST_PREDICATE (predicate2_t);
+    TEST_PREDICATE (predicate3_t);
+    TEST_PREDICATE (predicate4_t);
+    TEST_PREDICATE (predicate5_t);
   }
 }
 

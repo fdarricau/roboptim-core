@@ -25,7 +25,6 @@
 # include <boost/shared_ptr.hpp>
 # include <boost/functional/hash.hpp>
 
-# include <roboptim/core/n-times-derivable-function.hh>
 # include <roboptim/core/cache.hh>
 
 namespace roboptim
@@ -38,6 +37,12 @@ namespace roboptim
       return boost::hash_range (x.data (), x.data () + x.size ());
     }
   };
+
+  namespace detail
+  {
+    template <typename T>
+    struct CachedFunctionTypes;
+  } // end of namespace detail
 
   /// \addtogroup roboptim_filter
   /// @{
@@ -75,12 +80,68 @@ namespace roboptim
     /// \brief Cache a RobOptim function.
     /// \param fct function to cache.
     /// \param size size of the LRU cache.
-    explicit CachedFunction (boost::shared_ptr<const T> fct,
+    explicit CachedFunction (boost::shared_ptr<T> fct,
                              size_t size = 10);
     ~CachedFunction ();
 
     /// \brief Reset the caches.
     void reset ();
+
+  protected:
+
+    template <typename U>
+    void cachedFunctionGradient (gradient_ref gradient,
+                                 const_argument_ref argument,
+                                 size_type functionId,
+                                 typename detail::CachedFunctionTypes<U>::isDifferentiable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionGradient (gradient_ref gradient,
+                                 const_argument_ref argument,
+                                 size_type functionId,
+                                 typename detail::CachedFunctionTypes<U>::isNotDifferentiable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionJacobian (jacobian_ref jacobian,
+                                 const_argument_ref argument,
+                                 typename detail::CachedFunctionTypes<U>::isDifferentiable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionJacobian (jacobian_ref jacobian,
+                                 const_argument_ref argument,
+                                 typename detail::CachedFunctionTypes<U>::isNotDifferentiable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionHessian (hessian_ref hessian,
+                                const_argument_ref argument,
+                                size_type functionId,
+                                typename detail::CachedFunctionTypes<U>::isTwiceDifferentiable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionHessian (hessian_ref hessian,
+                                const_argument_ref argument,
+                                size_type functionId,
+                                typename detail::CachedFunctionTypes<U>::isNotTwiceDifferentiable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionDerivative (gradient_ref derivative,
+                                   value_type argument,
+                                   size_type order,
+                                   typename detail::CachedFunctionTypes<U>::isNTimesDerivable_t::type* = 0)
+      const;
+
+    template <typename U>
+    void cachedFunctionDerivative (gradient_ref derivative,
+                                   value_type argument,
+                                   size_type order,
+                                   typename detail::CachedFunctionTypes<U>::isNotNTimesDerivable_t::type* = 0)
+      const;
 
   protected:
     virtual void impl_compute (result_ref result, const_argument_ref argument)
@@ -104,7 +165,7 @@ namespace roboptim
                                   size_type order = 1) const;
 
   protected:
-    boost::shared_ptr<const T> function_;
+    boost::shared_ptr<T> function_;
     mutable std::vector<functionCache_t> cache_;
     mutable std::vector<gradientCache_t> gradientCache_;
     mutable jacobianCache_t jacobianCache_;

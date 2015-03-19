@@ -137,6 +137,17 @@ namespace roboptim
     if (compress)
       matrix.makeCompressed ();
   }
+
+  inline double normalize (double x)
+  {
+      return (std::fabs (x) < 1e-8)? 0:x;
+  }
+
+  template <typename T>
+  inline T normalize (const T& x)
+  {
+    return (x.array ().abs () < 1e-8).select (0, x);
+  }
 } // end of namespace roboptim.
 
 #endif //! ROBOPTIM_CORE_UTIL_HXX

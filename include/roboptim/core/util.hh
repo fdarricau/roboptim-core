@@ -109,6 +109,13 @@ namespace roboptim
    const U& block,
    Function::size_type startRow, Function::size_type startCol,
    bool compress = false);
+
+  /// \brief Apply normalize to a scalar.
+  inline double normalize (double x);
+
+  /// \brief Apply normalize to each element of an Eigen vector.
+  template <typename T>
+  inline T normalize (const T& x);
 } // end of namespace roboptim.
 
 # include <roboptim/core/util.hxx>
