@@ -30,7 +30,6 @@
 # include <roboptim/core/result-with-warnings.hh>
 # include <roboptim/core/derivable-function.hh>
 # include <roboptim/core/derivable-parametrized-function.hh>
-# include <roboptim/core/finite-difference-gradient.hh>
 # include <roboptim/core/function.hh>
 # include <roboptim/core/generic-solver.hh>
 # include <roboptim/core/function/constant.hh>
@@ -55,21 +54,23 @@
 // Callbacks.
 # include <roboptim/core/callback/multiplexer.hh>
 
+// Decorators.
+# include <roboptim/core/decorator/cached-function.hh>
+# include <roboptim/core/decorator/finite-difference-gradient.hh>
 
-// Filters.
-# include <roboptim/core/filter/bind.hh>
-# include <roboptim/core/filter/cached-function.hh>
-# include <roboptim/core/filter/chain.hh>
-# include <roboptim/core/filter/concatenate.hh>
-# include <roboptim/core/filter/derivative.hh>
-# include <roboptim/core/filter/map.hh>
-# include <roboptim/core/filter/minus.hh>
-# include <roboptim/core/filter/plus.hh>
-# include <roboptim/core/filter/product.hh>
-# include <roboptim/core/filter/scalar.hh>
-# include <roboptim/core/filter/selection.hh>
-# include <roboptim/core/filter/selection-by-id.hh>
-# include <roboptim/core/filter/split.hh>
+// Operators.
+# include <roboptim/core/operator/bind.hh>
+# include <roboptim/core/operator/chain.hh>
+# include <roboptim/core/operator/concatenate.hh>
+# include <roboptim/core/operator/derivative.hh>
+# include <roboptim/core/operator/map.hh>
+# include <roboptim/core/operator/minus.hh>
+# include <roboptim/core/operator/plus.hh>
+# include <roboptim/core/operator/product.hh>
+# include <roboptim/core/operator/scalar.hh>
+# include <roboptim/core/operator/selection.hh>
+# include <roboptim/core/operator/selection-by-id.hh>
+# include <roboptim/core/operator/split.hh>
 
 
 // Functions.
