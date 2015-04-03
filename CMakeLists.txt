@@ -44,8 +44,8 @@ SET(HEADERS
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/cached-function.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/finite-difference-gradient.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/finite-difference-gradient.hxx
-  ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/instance-wrapper.hh
-  ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/instance-wrapper.hxx
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/function-on-manifold.hh
+  ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/function-on-manifold.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/descriptive-wrapper.hh
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/descriptive-wrapper.hxx
   ${CMAKE_SOURCE_DIR}/include/roboptim/core/decorator/manifold-map/manifold-desc.hh

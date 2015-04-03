@@ -3,7 +3,7 @@
 
 # include <roboptim/core/decorator/manifold-map/descriptive-wrapper.hh>
 # include <roboptim/core/decorator/manifold-map/manifold-desc.hh>
-# include <roboptim/core/decorator/manifold-map/instance-wrapper.hh>
+# include <roboptim/core/decorator/manifold-map/function-on-manifold.hh>
 
 #include <manifolds/SO3.h>
 #include <manifolds/RealSpace.h>
@@ -29,9 +29,9 @@
   pgs::Manifold* Manifold_##name <U>::getInstance(U*)
 
 #define BIND_FUNCTION_ON_MANIFOLD(function, manifold) typedef DescriptiveWrapper<function, manifold> function##_On_##manifold; \
-  typedef InstanceWrapper<typename function::parent_t> Instance_##function##_On_##manifold
+  typedef FunctionOnManifold<typename function::parent_t> Instance_##function##_On_##manifold
 #define NAMED_FUNCTION_BINDING(name, function, manifold) typedef DescriptiveWrapper<function, manifold> name; \
-  typedef InstanceWrapper<typename function::parent_t> Instance_##name
+  typedef FunctionOnManifold<typename function::parent_t> Instance_##name
 
 // Library-defined elementary descriptive manifolds
 // I do not think we should put those in a namespace of their own,
